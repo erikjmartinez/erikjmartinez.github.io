@@ -5,7 +5,10 @@
 * { margin: 0; box-sizing: border-box; } 
 
 body { 
-    background-color:whitesmoke;
+    /*background-color:whitesmoke;*/
+    background-image: url("https://www.wallpapersin4k.org/wp-content/uploads/2017/04/Html-Wallpaper-Background-Code-15.jpg");
+    background-position: center;
+    background-attachment: fixed; 
     font-size: 16px; 
     line-height: 32px;
     font-family: Ubuntu;
@@ -14,15 +17,17 @@ body {
 
 h1 {
     font-size: 2 rem;
-    color: black;
-    text-decoration: underline;
-    /*text-decoration-color: black;*/
+    color: blsck;
+   /* this is for the underline under my name
+    text-decoration: underline;*/
+   /* this is for the underline color that is under my name
+    text-decoration-color: black;*/
 }
 
 h2 {
     font-size: 2rem;
     text-align: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 ul {
@@ -37,7 +42,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: white;
+   /* background-color: white;*/
     color: black;
 }
 /*footer a {
@@ -50,9 +55,10 @@ header img {
     width: /*  */;
     height: auto;
     float: center;
+    box-shadow: 10px 10px 10px #44576d;
 }
 a {
-   color:crimson; 
+   color:white; 
 }
 footer {
     font-size: /* smaller */;
