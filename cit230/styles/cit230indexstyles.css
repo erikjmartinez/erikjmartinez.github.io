@@ -27,7 +27,8 @@ h1 {
 h2 {
     font-size: 2rem;
     text-align: center;
-    border-bottom: 2px solid white;
+   /* this adds an underline underneth "cit ass..."
+    border-bottom: 2px solid white;*/
 }
 
 ul {
@@ -56,6 +57,7 @@ header img {
     height: auto;
     float: center;
     box-shadow: 10px 10px 10px #44576d;
+    border-radius: 50%; 
 }
 a {
    color:white; 
