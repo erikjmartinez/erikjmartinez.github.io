@@ -6,18 +6,18 @@
 
 body { 
     /*background-color:whitesmoke;*/
-    background-image: url("https://www.wallpapersin4k.org/wp-content/uploads/2017/04/Html-Wallpaper-Background-Code-15.jpg");
+    background-image: url("https://taxischiphol-airport.com/970164.jpg");
     background-position: center;
     background-attachment: fixed; 
     font-size: 16px; 
     line-height: 32px;
     font-family: Ubuntu;
-    color: black;
+    color: white;
 }
 
 h1 {
     font-size: 2 rem;
-    color: blsck;
+    color: white;
    /* this is for the underline under my name
     text-decoration: underline;*/
    /* this is for the underline color that is under my name
@@ -44,19 +44,19 @@ header, main, footer {
 header, footer, footer a {
     text-align: center;
    /* background-color: white;*/
-    color: black;
+    color: white;
 }
-/*footer a {
-   background-color: white;
+footer a {
+   background-color: #339bab;
 }
 footer p {
-    background-color:white;
-}*/
+    background-color: #339bab;
+}
 header img {
     width: /*  */;
     height: auto;
     float: center;
-    box-shadow: 10px 10px 10px #44576d;
+    box-shadow: 10px 10px 10px #2d8892;
     border-radius: 50%; 
 }
 a {
