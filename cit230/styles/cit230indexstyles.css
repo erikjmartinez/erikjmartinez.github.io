@@ -5,19 +5,19 @@
 * { margin: 0; box-sizing: border-box; } 
 
 body { 
-    /*background-color:whitesmoke;*/
+    /*background-color:whitesmoke;
     background-image: url("https://taxischiphol-airport.com/970164.jpg");
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;*/ 
     font-size: 16px; 
     line-height: 32px;
     font-family: Ubuntu;
-    color: white;
+    color: black;
 }
 
 h1 {
     font-size: 2 rem;
-    color: white;
+    color: black;
    /* this is for the underline under my name
     text-decoration: underline;*/
    /* this is for the underline color that is under my name
@@ -36,6 +36,7 @@ ul {
     list-style-position: inside;
 }
 header, main, footer {
+    flex-wrap: wrap;
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: /* xxxpx (px = pixel is a unit of measure)  */;
@@ -44,23 +45,24 @@ header, main, footer {
 header, footer, footer a {
     text-align: center;
    /* background-color: white;*/
-    color: white;
+    color: black;
 }
 footer a {
-   background-color: #339bab;
+   background-color: white;
 }
 footer p {
-    background-color: #339bab;
+    background-color: white;
 }
 header img {
     width: /*  */;
     height: auto;
     float: center;
-    box-shadow: 10px 10px 10px #2d8892;
+   /* shadow for pic
+    box-shadow: 10px 10px 10px white;*/
     border-radius: 50%; 
 }
 a {
-   color:white; 
+   color: red; 
 }
 footer {
     font-size: /* smaller */;
