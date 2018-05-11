@@ -1,0 +1,26 @@
+/* classes */
+.copyright {
+    text-align: center;
+}
+/* id's */
+
+/* other */
+header {
+    text-align: center;
+    justify-content: center; 
+}
+
+body {
+     font-family: 'Pridi', serif;
+}
+
+main img:hover {
+      opacity: 0.7;
+}
+
+main img {
+     padding: 5px;
+}
+footer {
+    
+}
