@@ -24,13 +24,15 @@ h1 {
 }
 
 main img:hover {
-    opacity: 0.7;
+    /*opacity: 0.7;*/
+    transform:scale(1.5);
 }
 
 main img {
     width: 300px;
     height: 300px;
     padding: 4px;
+    transition:transform 0.25s ease;
 }
 
 figure {
