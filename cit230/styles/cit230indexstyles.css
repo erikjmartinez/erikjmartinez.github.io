@@ -14,8 +14,16 @@
     text-decoration-color: black;*/
 }
 .links {
-   color: white; 
+   color: white;
+    
 }
+.links:visited {
+    color: #3b5998;
+}
+.links:hover {
+    color: #dfe3ee;
+}
+
 body { 
     background-color: #8b9dc3;
     /*background-image: url("https://taxischiphol-airport.com/970164.jpg");
