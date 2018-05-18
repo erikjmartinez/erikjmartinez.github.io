@@ -3,7 +3,19 @@
 
 /* * is a wildcard referring to all elements. */
 * { margin: 0; box-sizing: border-box; } 
+/* classes */
 
+.myname {
+    font-size: 2 rem;
+    color: white;
+   /* this is for the underline under my name
+    text-decoration: underline;*/
+   /* this is for the underline color that is under my name
+    text-decoration-color: black;*/
+}
+.links {
+   color: white; 
+}
 body { 
     background-color: #8b9dc3;
     /*background-image: url("https://taxischiphol-airport.com/970164.jpg");
@@ -35,37 +47,15 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-   /* background-color: white;*/
     color: white;
 }
-/* adds color to byu link at bottom of page
-footer a {
-   background-color: ;
-}
-footer p {
-    background-color: ;
-}*/
+
 header img {
     width: /*  */;
     height: auto;
     float: center;
-   /* shadow for pic
-    box-shadow: 10px 10px 10px white;*/
     border-radius: 50%; 
 }
 footer {
     font-size: /* smaller */;
-}
-
-/* classes */
-.myname {
-    font-size: 2 rem;
-    color: white;
-   /* this is for the underline under my name
-    text-decoration: underline;*/
-   /* this is for the underline color that is under my name
-    text-decoration-color: black;*/
-}
-.links {
-   color: white; 
 }
