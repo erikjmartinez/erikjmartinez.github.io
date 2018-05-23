@@ -1,5 +1,10 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
+/* ids */
 
+
+/* classes */
+
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
 * {
     box-sizing: border-box;
@@ -8,47 +13,70 @@
 body {
     font-size: 16px;
     font-family: 'Arvo', serif;
+    background-color: #eeddff; /*aaddff bbddff ccddff ddddff eeddff*/
 }
 
 header {
-    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
 }
 
-nav {
-    max-width: 600px;
+header h1 {
+    font-family: 'permanent marker'
 }
-
-main {
-    max-width: 600px;
+header h2 {
+    margin: -15px;
+    font-weight:;
 }
-
-footer {
-    max-width: 600px;
-}
-
-header {}
-
-header h1 {}
 
 header img {}
 
 header .subheading {}
+ 
+nav {
 
-nav {}
-
+}
 nav button {}
 
-nav ul {}
 
-nav ul li {}
+.container {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.container > li {
+    flex: 1;
+}
+/*
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    
+}
 
+nav ul li {
+    margin: 5px;
+    flex: 1;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+*/
 nav ul li a {}
 
 nav ul li.active a {}
 
 nav ul li a:hover {}
 
-main {}
+
+main {
+    text-align: center;
+}
 
 main h2 {}
 
@@ -59,4 +87,10 @@ main figure {
 
 main figure img {}
 
-footer {}
+
+footer {
+}
+
+
+
+
