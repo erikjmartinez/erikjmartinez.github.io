@@ -3,7 +3,20 @@
 
 /* classes */
 
-
+.container {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.container > li {
+    flex: 1;
+    text-align: center;
+}
+.forecast{
+    display: none;
+}
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * {
@@ -40,33 +53,6 @@ nav {
 nav button {}
 
 
-.container {
-    list-style-type: none;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.container > li {
-    flex: 1;
-}
-/*
-nav ul {
-    list-style-type: none;
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    
-}
-
-nav ul li {
-    margin: 5px;
-    flex: 1;
-    flex-basis: 100%;
-    flex-wrap: wrap;
-}
-*/
 nav ul li a {}
 
 nav ul li.active a {}
@@ -87,8 +73,12 @@ main figure {
 
 main figure img {}
 
+table {
+    margin: auto;
+}
 
 footer {
+    text-align: center;
 }
 
 
