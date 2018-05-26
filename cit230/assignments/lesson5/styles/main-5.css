@@ -1,63 +1,100 @@
+* { box-sizing: border-box; margin: 0 auto;}
 /* ids */
-
 
 /* classes */
 
 .container {
     list-style-type: none;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
+
 .container > li {
-    flex: 1;
+    flex-basis: 100%;
     text-align: center;
+    padding: 7px;
 }
-.forecast{
+
+.forecast {
     display: none;
 }
-/* This main css file contains the default rules and is geared toward the small/phone view */
 
-* {
-    box-sizing: border-box;
+.sunny {
+    width: 70px;
 }
 
+.hmm {
+    min-width: 10px;
+    max-width: 25px;
+}
+
+.ftitle{
+    margin: 20px;
+}
+.weather-summary{
+    margin: 20px;
+}
+.highlow p {
+    margin: 2px;
+}
+.conditions p{
+    margin: 2px;
+}
+
+.peeked {
+    max-width: 300px;
+    margin: 0 0 20px;
+}
+.town-article {
+    margin: 0 60px 60px;
+}
+/* -----------------------------------------------------*/
 body {
     font-size: 16px;
     font-family: 'Arvo', serif;
-    background-color: #eeddff; /*aaddff bbddff ccddff ddddff eeddff*/
+    background-color: #8b88ff;
+    /*aaddff bbddff ccddff ddddff eeddff*/
 }
 
 header {
     margin: 0 auto;
     text-align: center;
-    border-radius: 10px;
 }
 
 header h1 {
-    font-family: 'permanent marker'
+    font-family: 'permanent marker';
+    display: inline;
 }
+
 header h2 {
-    margin: -15px;
-    font-weight:;
+    margin: -1px;
+    font-weight: ;
 }
 
 header img {}
 
 header .subheading {}
- 
-nav {
 
-}
+nav {}
+
 nav button {}
 
+nav ul li a{
+    color: black;
+}
+nav ul li a:link {
+    text-decoration: none;
+}
 
-nav ul li a {}
+nav ul li a.visited {
+    
+}
 
-nav ul li.active a {}
-
-nav ul li a:hover {}
+nav ul li a:hover {
+    
+}
 
 
 main {
@@ -73,14 +110,14 @@ main figure {
 
 main figure img {}
 
+
 table {
     margin: auto;
 }
+article h3 {
+        margin: 20px 0;
+    }
 
 footer {
     text-align: center;
 }
-
-
-
-
