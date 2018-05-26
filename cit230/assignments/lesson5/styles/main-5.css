@@ -49,6 +49,7 @@
 }
 .town-article {
     margin: 0 60px 60px;
+    line-height: 1.4;
 }
 /* -----------------------------------------------------*/
 body {
@@ -79,7 +80,11 @@ header .subheading {}
 
 nav {}
 
-nav button {}
+nav button {
+   background: none;
+    border: none;
+    float: right
+}
 
 nav ul li a{
     color: black;
@@ -120,4 +125,5 @@ article h3 {
 
 footer {
     text-align: center;
+    
 }
