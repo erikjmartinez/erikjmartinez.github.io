@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* ids */
+
+/* classes */
+.hamburger {
+    margin-top: 10px;
+    margin-bottom: -5px;
+    background: none;
+    border-color: #2196f3;
+ 
+}
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation.responsive {
+    position: relative;
+}
+
+.navigation.responsive li {
+    background-color: #2196f3; /*add color*/
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.navigation.responsive li a:hover {
+    background-color: #d9d9d9; /*add color*/
+}
+
+.forecast {
+    display: none;
+}
+
+.sunny {
+    width: 70px;
+}
+
+.hmm {
+    min-width: 10px;
+    max-width: 25px;
+}
+
+.ftitle {
+    margin: 20px;
+}
+
+.weather-summary {
+    margin: 20px;
+}
+
+.highlow p {
+    margin: 2px;
+}
+
+.conditions p {
+    margin: 2px;
+}
+
+.peeked {
+    max-width: 300px;
+    margin: 0 0 20px;
+}
+
+.town-article {
+    margin: 0 60px 60px;
+    line-height: 1.4;
+}
+
+/* -----------------------------------------------------*/
+
+body {
+    font-size: 16px;
+    font-family: 'Arvo', serif;
+    background-color: #2196f3; /*add color*/
+    color: white;
+    /*aaddff bbddff ccddff ddddff eeddff*/
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'permanent marker';
+    display: inline;
+    /*margin: 0 0 0 -20px; to correct the misalignment*/
+}
+
+header h2 {
+    margin: -1px;
+    font-weight: ;
+}
+
+header img {
+    margin: 0 0 0 -18px;
+}
+
+header .subheading {}
+
+nav {}
+
+nav button {
+   
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+}
+
+nav ul li a.visited {}
+
+nav ul li a:hover {}
+
+
+main {
+    text-align: center;
+}
+
+main h2 {}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {}
+
+main article h3 {}
+
+main article.peek {}
+
+main article.peek img {
+    width: 100%;
+    min-width: 160px;
+
+}
+
+table {
+    margin: auto;
+}
+
+article h3 {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+
+}
+
+
+
+/*<img src="images/space-needle.jpg"
+srcset="images/space-needle.jpg 1x, images/space-needle-2x.jpg 2x,
+images/space-needle-hd.jpg 3x">*/
