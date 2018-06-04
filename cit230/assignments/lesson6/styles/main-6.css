@@ -140,13 +140,10 @@ main {
 
 main h2 {}
 
-main figure {
-    margin: 0 0 .2rem 2%;
-    width: 96%;
-}
+main figure {}
 
 main figure img {}
-
+ 
 main article h3 {}
 
 main article.peek {}
