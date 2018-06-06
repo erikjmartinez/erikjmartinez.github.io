@@ -41,8 +41,8 @@ h1 {
 }
 
 main img:hover {
-    /*opacity: 0.7;
-    transform:scale(1.5);*/
+    opacity: 0.7;
+    /*transform:scale(1.5);*/
 }
 
 main img {

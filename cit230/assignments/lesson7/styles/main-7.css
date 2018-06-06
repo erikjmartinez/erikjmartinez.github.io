@@ -6,13 +6,15 @@
 /* ids */
 
 /* classes */
+
 .hamburger {
     margin-top: 10px;
     margin-bottom: -5px;
     background: none;
     border-color: #2196f3;
- 
+
 }
+
 .navigation {
     list-style: none;
     padding-left: 0;
@@ -27,7 +29,8 @@
 }
 
 .navigation.responsive li {
-    background-color: #2196f3; /*add color*/
+    background-color: #2196f3;
+    /*add color*/
     display: block;
     width: 100%;
     margin: 2px 0;
@@ -41,7 +44,23 @@
 }
 
 .navigation.responsive li a:hover {
-    background-color: #d9d9d9; /*add color*/
+    background-color: #d9d9d9;
+    /*add color*/
+}
+
+.piccontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: ;
+    grid-column-gap: 50px;
+    
+}
+
+.item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .forecast {
@@ -88,7 +107,8 @@
 body {
     font-size: 16px;
     font-family: 'Arvo', serif;
-    background-color: #2196f3; /*add color*/
+    background-color: #2196f3;
+    /*add color*/
     color: white;
     /*aaddff bbddff ccddff ddddff eeddff*/
 }
@@ -117,9 +137,7 @@ header .subheading {}
 
 nav {}
 
-nav button {
-   
-}
+nav button {}
 
 nav ul li a {
     color: black;
@@ -140,10 +158,14 @@ main {
 
 main h2 {}
 
-main figure {}
+/*main figure img {
+    width: 300px;
+    height: 300px;
+    padding: 4px;
+}*/
 
 main figure img {}
- 
+
 main article h3 {}
 
 main article.peek {}
