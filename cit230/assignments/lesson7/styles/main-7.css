@@ -12,9 +12,11 @@
     margin-bottom: -5px;
     background: none;
     border-color: #2196f3;
-
 }
 
+button > img {
+    width: 6%;
+}
 .navigation {
     list-style: none;
     padding-left: 0;
@@ -57,9 +59,12 @@
 }
 
 .item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    border: 1px solid #2196f3;;
+    padding: 10px 20px;
     width: 100%;
+}
+figure:hover{
+    opacity: 0.6;
 }
 
 .forecast {
@@ -188,8 +193,3 @@ footer {
 
 }
 
-
-
-/*<img src="images/space-needle.jpg"
-srcset="images/space-needle.jpg 1x, images/space-needle-2x.jpg 2x,
-images/space-needle-hd.jpg 3x">*/
