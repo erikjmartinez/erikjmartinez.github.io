@@ -51,16 +51,15 @@
 .piccontainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: ;
-    grid-column-gap: 50px;
+/*    grid-template-rows: ;*/
+    grid-column-gap: 20px;
     
 }
 
 .item {
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    width: 100%;
 }
 
 .forecast {

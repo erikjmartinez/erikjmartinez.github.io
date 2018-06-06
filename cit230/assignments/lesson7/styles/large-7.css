@@ -5,7 +5,7 @@
     .piccontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: ;
+/*    grid-template-rows: ;*/
     grid-column-gap: 50px;
     
 }
