@@ -47,14 +47,13 @@ button > img {
 
 .navigation.responsive li a:hover {
     background-color: #d9d9d9;
-    /*add color*/
 }
 
 .piccontainer {
     display: grid;
     grid-template-columns: 1fr;
-/*    grid-template-rows: ;*/
-    grid-column-gap: 20px;
+/*  grid-template-rows: ;*/
+/*    grid-column-gap: 20px;*/
     
 }
 
@@ -63,8 +62,9 @@ button > img {
     padding: 10px 20px;
     width: 100%;
 }
-figure:hover{
-    opacity: 0.6;
+figure:hover {
+/*    opacity: 0.6;*/
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.3) inset;
 }
 
 .forecast {
@@ -144,16 +144,20 @@ nav {}
 nav button {}
 
 nav ul li a {
-    color: black;
+    color: white;
 }
 
 nav ul li a:link {
     text-decoration: none;
 }
 
-nav ul li a.visited {}
+nav ul li a.visited {
+    
+}
 
-nav ul li a:hover {}
+nav ul li a:hover {
+    color: black;
+}
 
 
 main {
