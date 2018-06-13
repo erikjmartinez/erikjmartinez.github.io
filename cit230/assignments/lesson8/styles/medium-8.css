@@ -20,16 +20,13 @@
         flex-basis: 100%;
         flex: 1;
     }
-    .links{
-
-    }
+    .links {}
     .piccontainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-/*    grid-template-rows: ;*/
-    grid-column-gap: 50px;
-    
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*    grid-template-rows: ;*/
+        grid-column-gap: 50px;
+    }
     .tenday {
         margin: 20px 0 10px;
     }
@@ -45,6 +42,7 @@
     }
 }
 
+/*------form for storm center-----*/
 
 /*.navigation {
     list-style-type: none;
