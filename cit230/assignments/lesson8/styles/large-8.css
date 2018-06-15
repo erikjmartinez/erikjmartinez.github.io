@@ -27,6 +27,7 @@
     }
     .formcontainer > fieldset {
         flex-wrap: wrap;
+        margin: 30px;
     }
 
 }
