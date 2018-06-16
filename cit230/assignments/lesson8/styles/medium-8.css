@@ -40,6 +40,8 @@
     .town-article {
         margin: 0 115px 60px;
     }
-
+    fieldset {
+        width: 730px;
+    }
 }
 

@@ -37,28 +37,30 @@
         <h2 class="ftitle">Weather or Not</h2>
 
         <form method="get" action="thanks.html">
-<section  class="formcontainer">
-            <fieldset>
-                <legend>Report the weather</legend>
+            <legend>Report the weather in your area and stay up to date with our Weather or Not email or text messages! (optional)
+            </legend>
+            <section class="formcontainer">
+                <fieldset>
+                    <legend>Report the weather</legend>
 
-                <label class="top">*First Name:<input type="text" name="fName" pattern="[A-Za-z ]{3,}" title="fname" required></label>
+                    <label class="top">*First Name:<input type="text" name="fName" pattern="[A-Za-z ]{3,}" title="fname" required></label>
 
-                <label class="top">*Last Name:<input type="text" name="lName" pattern="[A-Za-z ]{3,}" required></label>
+                    <label class="top">*Last Name:<input type="text" name="lName" pattern="[A-Za-z ]{3,}" required></label>
 
-                <label class="top">Email:<input type="email" name="email" placeholder="example@gmail.com"></label>
+                    <label class="top">Email:<input type="email" name="email" placeholder="example@gmail.com"></label>
 
-                <label class="top">*Telephone Number:<input type="tel" name="tele" pattern="[0-9]{10,}" required></label>
+                    <label class="top">*Telephone Number:<input type="tel" name="tele" pattern="[0-9]{10,}" required></label>
 
-                <label class="top">*Zip Code:<input type="number" name="zipCode" pattern="[0-9]{5,}" required></label>
+                    <label class="top">*Zip Code:<input type="number" name="zipCode" pattern="[0-9]{5,}" required></label>
 
-            </fieldset>
+                </fieldset>
 
-            <fieldset>
-                <legend>Storm information</legend>
-                <label class="top">Storm Date:<input type="date" name="date"></label>
+                <fieldset>
+                    <legend>Storm information</legend>
+                    <label class="top">Storm Date:<input type="date" name="date"></label>
 
-                <label class="top">Storm Type:
-                <input list="browsers" name="stormtype">
+                    <label class="top">Storm Type:
+                <input list="browsers" name="stormtype" placeholder="Please Select One...">
                 <datalist id="browsers">
                 <option value="Flash Flood">
                 <option value="Hail">
@@ -68,10 +70,10 @@
                 </datalist>
                 </label>
 
-                <label for="rating" class="top">Storm Severity: <span id="ratingvalue">5</span><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <label for="rating" class="top">Storm Severity: <span id="ratingvalue">5</span><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 		        </label>
 
-                <label class="top">Storm Region
+                    <label class="top">Storm Region
                 <select name="stormRegion">
                     <option value="">Select Region ...</option>
                     <option value="region">Franklin</option>
@@ -83,28 +85,27 @@
                 <div>
                <label>Are conditions dangerous?<br><br>
                <input type="radio" name="inDanger" value="yes" class="radio"> Yes</label>
-                </div>
+                    </div>
 
-                <div>
-                    <label>
+                    <div>
+                        <label>
                 <input type="radio" name="inDanger" value="maybe" class="radio"> Maybe</label>
-                </div>
+                    </div>
 
-                <div>
-                    <label>
+                    <div>
+                        <label>
                 <input type="radio" name="inDanger" value="no" class="radio"> No</label>
-                </div>
-                
-            </fieldset>
+                    </div>
 
+                </fieldset>
 
-            <fieldset>
-                <legend>Additional Information Or Comments</legend>
-                <label class="top"><textarea name="additionalComments" rows="10" cols="35">
+                <fieldset>
+                    <legend>Additional Information Or Comments</legend>
+                    <label class="top"><textarea name="additionalComments" rows="10" cols="35">
                 </textarea></label>
 
-            </fieldset>
-</section>
+                </fieldset>
+            </section>
 
             <input type="submit" value="Submit" class="submitBtn">
 
