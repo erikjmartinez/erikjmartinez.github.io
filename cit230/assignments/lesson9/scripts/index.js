@@ -11,9 +11,6 @@
         request.onload = function() {
             var citydata = request.response;
             var cities = citydata['towns'];
-            var myH3 = document.createElement('h3');
-            myH3.textContent = cities[0].name;
-            output.appendChild(myH3);
             showTowns(citydata);
         };
 
