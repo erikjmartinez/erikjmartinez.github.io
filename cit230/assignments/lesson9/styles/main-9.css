@@ -271,7 +271,6 @@ section p {
 }
 
 section ul {
-    margin-top: 5px;
     text-align: center;
     list-style-type: none;
     margin-left: -40px;
@@ -283,6 +282,7 @@ section ul li {
 
 img {
     width: 300px;
+    min-width: 100px;
     margin-top: 15px;
 }
 /*-----------------------------------------------*/

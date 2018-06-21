@@ -29,7 +29,7 @@
         flex: 1;
         border: 3px solid white;
         padding: 20px;
-        height: 580px;
+        height: 585px;
     }
     .webInfo {
         position: relative;
@@ -41,7 +41,6 @@
     img {
         width: 300px;
         margin-top: 15px;
-
     }
     .formcontainer {
         display: flex;
