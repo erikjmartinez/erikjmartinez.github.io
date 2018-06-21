@@ -266,18 +266,25 @@ section p {
     margin: 5px 0;
     display: flex;
     justify-content: center;
-    text-decoration: underline;
+    text-decoration: none;
 /*    font-weight: bold;*/
 }
 
 section ul {
-    margin-top: 0;
+    margin-top: 5px;
     text-align: center;
     list-style-type: none;
     margin-left: -40px;
 }
 
+section ul li {
+    margin-top: 5px;
+}
 
+img {
+    width: 300px;
+    margin-top: 15px;
+}
 /*-----------------------------------------------*/
 
 table {

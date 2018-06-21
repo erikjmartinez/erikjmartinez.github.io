@@ -33,11 +33,11 @@
           myH2.textContent = ct[i].name;
           var myImg = document.createElement('img');
           if (ct[i].name === 'Franklin') {
-              myImg.src = "./images/";
+              myImg.src = "./images/benji.jpg";
           } else if (ct[i].name === 'Greenville') {
-              myImg.src = "./images/";
+              myImg.src = "./images/green.jpg";
           } else {
-               myImg.src = "./images/";
+               myImg.src = "./images/sf.jpg";
           }
           myPara1.textContent = 'Average Rainfall: ' + ct[i].averageRainfall;
           myPara2.textContent = 'Current Population: ' + ct[i].currentPopulation;

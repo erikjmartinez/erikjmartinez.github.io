@@ -20,44 +20,28 @@
         width: 500px;
         /*margin: auto;*/
     }
-    section article {
-        float: left;
-        margin: auto;
-        width: 33%;
+    .weatherInfo {
+        display: flex;
+    }
+    .weatherInfo article {
+        margin: 15px;
+        height: 280px;
+        flex: 1;
         border: 3px solid white;
-        padding: 10px;
-        margin-left: 3.3px;
-/*
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column-gap: 50px;
-*/
+        padding: 20px;
+        height: 580px;
     }
+    .webInfo {
+        position: relative;
+        float: unset;
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    img {
+        width: 300px;
+        margin-top: 15px;
 
-    section p {
-/*
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
-*/
-    }
-
-    section ul {
-/*
-        grid-column-start: 1;
-        grid-column-end: 3;
-*/
-    }
-    img{
-/*
-        grid-column-start: 2;
-        grid-column-end: 3;
-*/
-    }
-    footer {
-        clear: both;
     }
     .formcontainer {
         display: flex;
