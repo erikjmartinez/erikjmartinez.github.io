@@ -17,6 +17,7 @@
 button > img {
     width: 6%;
 }
+
 .navigation {
     list-style: none;
     padding-left: 0;
@@ -52,19 +53,20 @@ button > img {
 .piccontainer {
     display: grid;
     grid-template-columns: 1fr;
-/*  grid-template-rows: ;*/
-/*    grid-column-gap: 20px;*/
-    
+    /*  grid-template-rows: ;*/
+    /*    grid-column-gap: 20px;*/
 }
 
 .item {
-    border: 1px solid #2196f3;;
+    border: 1px solid #2196f3;
+    ;
     padding: 10px 20px;
     width: 100%;
 }
+
 figure:hover {
-/*    opacity: 0.6;*/
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+    /*    opacity: 0.6;*/
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.3) inset;
 }
 
 .forecast {
@@ -151,9 +153,7 @@ nav ul li a:link {
     text-decoration: none;
 }
 
-nav ul li a.visited {
-    
-}
+nav ul li a.visited {}
 
 nav ul li a:hover {
     color: black;
@@ -185,7 +185,7 @@ main article.peek img {
 }
 
 
-/*--------form---------*/
+/*---------------------form----------------------*/
 
 form fieldset {
     margin: 2rem 0;
@@ -193,20 +193,25 @@ form fieldset {
     border-radius: 10px;
     padding: .5rem 2%;
 }
+
 form legend {
     color: blue;
     margin: 0 1rem;
     padding: 0 .5rem;
     color: white;
-/*    text-align: left;*/
+    /*    text-align: left;*/
 }
-form label.top, form div {
+
+form label.top,
+form div {
     display: block;
     padding-top: 1rem;
     color: white;
-    font-size:;
+    font-size: ;
 }
-form label.top input, form label.top select {
+
+form label.top input,
+form label.top select {
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -216,23 +221,27 @@ form label.top input, form label.top select {
     background-color: white;
     width: 100%;
     max-width: 20rem;
-/*    margin: auto;*/
+    /*    margin: auto;*/
 }
 
 form label.top input:required {
     border-left: red solid 6px;
 }
+
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
 input.radio[type="radio"] {
     display: inline !important;
-    width: auto;   
+    width: auto;
 }
-    
-.storminfo, .top {
+
+.storminfo,
+.top {
     text-align: left;
 }
+
 form input.submitBtn {
     border: white solid 3px;
     background-color: #2196f3;
@@ -243,8 +252,33 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 }
-/*-----------------------*/
 
+/*-----------------------------------------------*/
+
+/*------------------json styling-----------------*/
+
+section article {
+    
+
+}
+
+section p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+/*    font-weight: bold;*/
+}
+
+section ul {
+    margin-top: 0;
+    text-align: center;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+
+/*-----------------------------------------------*/
 
 table {
     margin: auto;
@@ -255,7 +289,6 @@ article h3 {
 }
 
 footer {
-    text-align: center;
+    text-align: center !important;
     margin: 10px 0;
 }
-

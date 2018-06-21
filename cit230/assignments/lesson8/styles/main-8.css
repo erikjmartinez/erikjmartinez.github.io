@@ -53,7 +53,7 @@ button > img {
     display: grid;
     grid-template-columns: 1fr;
 /*  grid-template-rows: ;*/
-/*    grid-column-gap: 20px;*/
+/*  grid-column-gap: 20px;*/
     
 }
 

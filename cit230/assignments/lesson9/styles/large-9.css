@@ -18,10 +18,47 @@
     }
     form fieldset {
         width: 500px;
-       /*margin: auto;*/
+        /*margin: auto;*/
     }
-  
+    section article {
+        float: left;
+        margin: auto;
+        width: 33%;
+        border: 3px solid white;
+        padding: 10px;
+        margin-left: 3.3px;
+/*
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 50px;
+*/
+    }
 
+    section p {
+/*
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+*/
+    }
+
+    section ul {
+/*
+        grid-column-start: 1;
+        grid-column-end: 3;
+*/
+    }
+    img{
+/*
+        grid-column-start: 2;
+        grid-column-end: 3;
+*/
+    }
+    footer {
+        clear: both;
+    }
     .formcontainer {
         display: flex;
     }

@@ -30,6 +30,13 @@
     .tenday {
         margin: 20px 0 10px;
     }
+
+    section article {
+        margin: auto;
+        width: 50%;
+        border: 3px solid white;
+        padding: 10px;
+    }
     table {
         border-style: solid;
         border-color: #f9cf00;
@@ -44,4 +51,3 @@
         width: 730px;
     }
 }
-
