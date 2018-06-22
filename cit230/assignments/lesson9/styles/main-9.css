@@ -257,33 +257,31 @@ form input.submitBtn {
 
 /*------------------json styling-----------------*/
 
-section article {
-    
+section article {}
 
-}
-
-section p {
+section.para {
     margin: 5px 0;
     display: flex;
     justify-content: center;
     text-decoration: none;
-/*    font-weight: bold;*/
+    /*    font-weight: bold;*/
 }
 
-section ul {
+.myL {
     text-align: center;
     list-style-type: none;
     margin-left: -40px;
 }
 
-section ul li {
+.para {
     margin-top: 5px;
 }
 
-img {
+.images {
     width: 300px;
     margin-top: 15px;
 }
+
 /*-----------------------------------------------*/
 
 table {

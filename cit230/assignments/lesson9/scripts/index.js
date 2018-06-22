@@ -25,13 +25,20 @@
           /* this is for the name or it should be idk */
           var myH2 = document.createElement('h2');
           var myPara1 = document.createElement('p');
+          myPara1.className += "para";
           var myPara2 = document.createElement('p');
+          myPara2.className += "para";
           var myPara3 = document.createElement('p');
+          myPara3.className += "para";
           var myPara4 = document.createElement('p');
+          myPara4.className += "para";
           var myPara5 = document.createElement('p');
+          myPara5.className += "para";
           var myList = document.createElement('ul');
+          myList.className += "myL";
           myH2.textContent = ct[i].name;
           var myImg = document.createElement('img');
+          myImg.className += "images";
           if (ct[i].name === 'Franklin') {
               myImg.src = "./images/benji.jpg";
           } else if (ct[i].name === 'Greenville') {
