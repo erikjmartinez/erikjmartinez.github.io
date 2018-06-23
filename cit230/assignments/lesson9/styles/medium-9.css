@@ -27,6 +27,15 @@
         /*    grid-template-rows: ;*/
         grid-column-gap: 50px;
     }
+    .weather-summary h3 {
+        font-size: 1.7em;
+    }
+    .forecast h3 {
+        font-size: 1.5em;
+    }
+    .peek h3 {
+    font-size: 1.7em;
+}
     .tenday {
         margin: 20px 0 10px;
     }
@@ -42,8 +51,10 @@
         border-color: #f9cf00;
         border-radius: 10px;
         border-width: 5px;
-        padding: 5px;
+        padding: 10px;
+        line-height: 1.4em;
     }
+
     .town-article {
         margin: 0 115px 60px;
     }

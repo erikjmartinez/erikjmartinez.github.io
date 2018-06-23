@@ -40,24 +40,28 @@
         </figure>
         <section class="weather-summary">
             <h3>Weather Summary</h3>
-            <div class="highlow">
-                <p>High: 90°F</p>
-                <p>Low: 66°F</p>
-            </div>
+
             <div class="current">
-                <p>Sunny</p>
+                <p><span id="crip"></span></p>
                 <picture>
-                    <img class="sunny" src="images/sunny.png" alt="sun">
+                    <img src="images/placeholder.png" alt="current weather" id="weather_icon">
                 </picture>
             </div>
+
+            <div class="highlow">
+                <p>High: <span id="high">00</span>&deg;F</p>
+                <p>Low: <span id="low">00</span>&deg;F</p>
+            </div>
+
             <div class="conditions">
                 <h3>Current Weather</h3>
                 <p>Tempetaure: <span id="currenttemp"></span>&deg;F</p>
                 <p>Wind Speed: <span id="currentspeed"></span></p>
-                <p>Precipitation: 0%</p>
+                <!-- <p>Precipitation: 0%</p>-->
                 <p>Windchill: <span id="windchill"></span>&deg;F
                 </p>
             </div>
+
         </section>
 
         <section class="forecast">
@@ -79,16 +83,16 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
+                        <td><span id="day1"></span> &deg;F</td>
+                        <td><span id="day2"></span> &deg;F</td>
+                        <td><span id="day3"></span> &deg;F</td>
+                        <td><span id="day4"></span> &deg;F</td>
+                        <td><span id="day5"></span> &deg;F</td>
+                        <td><span id="day6"></span> &deg;F</td>
+                        <td><span id="day7"></span> &deg;F</td>
+                        <td><span id="day8"></span> &deg;F</td>
+                        <td><span id="day9"></span> &deg;F</td>
+                        <td><span id="day10"></span> &deg;F</td>
                     </tr>
                 </tbody>
             </table>
@@ -112,7 +116,8 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!--    <script src="scripts/windchill.js"></script>-->
+    <script src="scripts/openweather.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,9 @@
 }
 
 /* ids */
-
+#weather_icon {
+    width: 80px;
+}
 /* classes */
 
 .hamburger {
@@ -74,7 +76,7 @@ figure:hover {
 }
 
 .sunny {
-    width: 70px;
+    width: 60px;
 }
 
 .hmm {
@@ -87,17 +89,35 @@ figure:hover {
 }
 
 .weather-summary {
-    margin: 20px;
+    margin-top: 20px;
+}
+
+.weather-summary h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.current p {
+    font-size: 1.5em;
+}
+
+.highlow {
+    font-size: 1.2em;
 }
 
 .highlow p {
-    margin: 2px;
+    margin: 5px;
 }
-
+.conditions h3 {
+    margin-top: 15px;
+}
 .conditions p {
-    margin: 2px;
+    margin: 5px;
+    font-size: 1.2em;
 }
-
+.peek h3 {
+    font-size: 1.5em;
+}
 .peeked {
     max-width: 300px;
     margin: 0 0 20px;
