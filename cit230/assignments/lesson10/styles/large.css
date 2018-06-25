@@ -1,0 +1,65 @@
+@media only screen and (min-width: 1024px) {
+    .ftitle {
+    font-size: 1.8em;
+}
+    .navigation {
+        margin: 15px 275px 15px;
+    }
+    .piccontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*    grid-template-rows: ;*/
+        grid-column-gap: 50px;
+
+    }
+    .town-article {
+        margin: 0 350px 60px;
+    }
+
+    .peeked {
+        max-width: 400px;
+    }
+    form fieldset {
+        width: 500px;
+        /*margin: auto;*/
+    }
+    .weatherInfo {
+        display: flex;
+    }
+    .weatherInfo article {
+        margin: 15px;
+        height: 280px;
+        flex: 1;
+        border: 3px solid white;
+        padding: 20px;
+        height: 585px;
+    }
+    .webInfo {
+        position: relative;
+        float: unset;
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    .images {
+        width: 300px;
+        margin-top: 15px;
+    }
+    .formcontainer {
+        display: flex;
+    }
+    .formcontainer > fieldset {
+        flex-wrap: wrap;
+        margin: 30px;
+    }
+    .weather-summary h3 {
+        font-size: 1.7em;
+    }
+    .current p {
+        font-size: 1.5em;
+    }
+    .highlow {
+        font-size: 1.3em;
+    }
+
+}
