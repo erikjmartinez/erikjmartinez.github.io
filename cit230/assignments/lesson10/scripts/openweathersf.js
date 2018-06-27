@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=75401,us&appid=25187f2c68d8950cbad7de4d8c50ff5b&units=imperial', true)
+weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=56087,us&appid=25187f2c68d8950cbad7de4d8c50ff5b&units=imperial', true)
 weatherObject.send();
 
 weatherObject.onload = function () {
@@ -26,7 +26,7 @@ weatherObject.onload = function () {
 //below pulls in the forcast for the next ten days
 
 var forcastObject = new XMLHttpRequest();
-forcastObject.open('GET', '//api.openweathermap.org/data/2.5/forecast?zip=75401us&appid=25187f2c68d8950cbad7de4d8c50ff5b&units=imperial', true)
+forcastObject.open('GET', '//api.openweathermap.org/data/2.5/forecast?zip=56087,us&appid=25187f2c68d8950cbad7de4d8c50ff5b&units=imperial', true)
 forcastObject.send();
 
 forcastObject.onload = function () {

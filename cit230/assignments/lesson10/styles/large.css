@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1024px) {
     .ftitle {
-    font-size: 1.8em;
-}
+        font-size: 1.8em;
+    }
     .navigation {
         margin: 15px 275px 15px;
     }
@@ -30,7 +30,9 @@
         margin: 15px;
         height: 280px;
         flex: 1;
-        border: 3px solid white;
+        border-right: 3px solid white;
+        border-left: 3px solid white;
+        border-bottom: none;
         padding: 20px;
         height: 585px;
     }

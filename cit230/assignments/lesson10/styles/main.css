@@ -186,7 +186,7 @@ nav ul li a:hover {
 }
 
 nav ul li:active a {
-    background: linear-graadient(#147429 0%, #1a9835 100%);
+    background-color: blueviolet;
 }
 
 main {
@@ -286,7 +286,10 @@ form input.submitBtn {
 
 /*------------------json styling-----------------*/
 
-section article {}
+section article {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
 
 section.para {
     margin: 5px 0;
