@@ -50,6 +50,7 @@
     .images {
         width: 300px;
         margin-top: 15px;
+        border-radius: 10px;
     }
     .formcontainer {
         display: flex;

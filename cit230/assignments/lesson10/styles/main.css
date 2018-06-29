@@ -60,10 +60,12 @@ button > img {
     /*  grid-template-rows: ;*/
     /*    grid-column-gap: 20px;*/
 }
-
+.images {
+    border-radius: 10px;
+}
 .item {
     border: 1px solid #2196f3;
-    ;
+    border-radius: 25px;
     padding: 10px 20px;
     width: 100%;
 }
@@ -71,6 +73,7 @@ button > img {
 figure:hover {
     /*    opacity: 0.6;*/
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 10px;
 }
 
 .forecast {
