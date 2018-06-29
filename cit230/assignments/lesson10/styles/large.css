@@ -19,6 +19,10 @@
     .peeked {
         max-width: 400px;
     }
+    .peeked2 {
+        max-width: 400px;
+        margin: 40px 0 40px;
+    }
     form fieldset {
         width: 500px;
         /*margin: auto;*/

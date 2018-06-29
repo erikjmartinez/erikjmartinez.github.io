@@ -1,5 +1,16 @@
 @media only screen and (min-width: 600px) {
+    th,
+    td {
+        border-style: solid;
+        padding: 10px;
 
+    }
+    /*
+    td {
+        border-style: solid;
+        border-top: none;
+    }
+*/
     .hamburger {
         display: none;
     }
@@ -36,6 +47,10 @@
     .peek h3 {
         font-size: 1.7em;
     }
+    .peeked2 {
+        max-width: 350px;
+        margin: 50px 0 50px;
+    }
     .tenday {
         margin: 20px 0 10px;
     }
@@ -52,6 +67,7 @@
     table {
         border-style: solid;
         border-color: #f9cf00;
+        border-collapse: collapse;
         border-radius: 10px;
         border-width: 5px;
         padding: 10px;
@@ -59,7 +75,7 @@
     }
 
     .town-article {
-        margin: 0 115px 60px;
+        margin: 0 115px 30px;
     }
     fieldset {
         width: 730px;

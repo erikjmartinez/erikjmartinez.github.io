@@ -15,10 +15,8 @@
 
 <body>
 
-    <header>
-        <img class="hmm" src="images/hmm.png" alt="thinking emoji">
-        <h1>Weather or Not</h1>
-        <h2>Here I Come</h2>
+    <header w3-include-html='modules/header.html'>
+        
         <button class="hamburger" onclick="toggleHam()"><img src="images/Hamburger_icon.png" alt=""></button>
     </header>
 
@@ -107,17 +105,15 @@
 
     </main>
 
-    <footer>
-        <section class="contact">
-            Dank Weather 1738 Weather or Not Dr. California, US
-        </section>
-        <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather or Not | <span id="currentdate">May 23 2018</span>
-        </section>
+   <footer w3-include-html='modules/footer.html'>
+        
     </footer>
+     <script src="scripts/include.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/wayfinding.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/openweathergv.js"></script>
-    <script src="scripts/wayfinding.js"></script>
 </body>
 
 </html>
