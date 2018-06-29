@@ -44,7 +44,7 @@
           } else if (ct[i].name === 'Greenville') {
               myImg.src = "./images/green.jpg";
           } else {
-               myImg.src = "./images/sf.jpg";
+              myImg.src = "./images/sf.jpg";
           }
           myPara1.textContent = 'Average Rainfall: ' + ct[i].averageRainfall;
           myPara2.textContent = 'Current Population: ' + ct[i].currentPopulation;
