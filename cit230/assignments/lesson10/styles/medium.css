@@ -58,22 +58,22 @@
     section article {
         margin: auto;
         width: 70%;
-        border-bottom: 3px solid white;
-        border-top: none;
-        border-right: none;
-        border-left: none;
+        border: 3px solid white;
         padding: 10px;
     }
     table {
         border-style: solid;
         border-color: #f9cf00;
         border-collapse: collapse;
-        border-radius: 10px;
+        border-radius: 30px;
         border-width: 5px;
         padding: 10px;
         line-height: 1.4em;
     }
-
+    .aroundTen {
+        border-style: solid;
+        border-color: #f9cf00;
+    }
     .town-article {
         margin: 0 115px 30px;
     }

@@ -58,7 +58,7 @@ button > img {
     display: grid;
     grid-template-columns: 1fr;
     /*  grid-template-rows: ;*/
-    /*    grid-column-gap: 20px;*/
+    /*  grid-column-gap: 20px;*/
 }
 .images {
     border-radius: 10px;
@@ -301,8 +301,9 @@ form input.submitBtn {
 /*------------------json styling-----------------*/
 
 section article {
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 section.para {
