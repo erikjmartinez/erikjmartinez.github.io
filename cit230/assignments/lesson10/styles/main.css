@@ -11,6 +11,11 @@
 
 /* classes */
 
+.headLink {
+    text-decoration: none;
+    color: white;
+}
+
 .hamburger {
     margin-top: 10px;
     margin-bottom: -5px;
@@ -60,12 +65,14 @@ button > img {
     /*  grid-template-rows: ;*/
     /*  grid-column-gap: 20px;*/
 }
+
 .images {
     border-radius: 10px;
 }
+
 .item {
     border: 1px solid #2196f3;
-    border-radius: 25px;
+    border-radius: 39px;
     padding: 10px 20px;
     width: 100%;
 }
@@ -73,7 +80,7 @@ button > img {
 figure:hover {
     /*    opacity: 0.6;*/
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.3) inset;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .forecast {
@@ -131,6 +138,7 @@ figure:hover {
     max-width: 300px;
     margin: 0 0 20px;
 }
+
 .peeked2 {
     max-width: 300px;
     margin: 40px 0 40px;
@@ -192,17 +200,18 @@ nav ul li a:hover {
     color: #f9cf00;
 }
 
-nav ul li:active a {
-    
-}
+nav ul li:active a {}
+
 .active a {
     border-bottom: solid;
     border-color: white;
 }
+
 .active:hover a {
     border-bottom: dashed;
     border-color: #f9cf00;
 }
+
 main {
     text-align: center;
 }
