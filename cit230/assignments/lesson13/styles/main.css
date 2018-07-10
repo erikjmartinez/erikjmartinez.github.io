@@ -1,0 +1,125 @@
+/* Font fam for site - for reference
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Russo One', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif
+}
+
+h5 {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 3px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2,
+h3,
+h5,
+a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+.main-nav {
+    margin-top: 5px;
+
+}
+
+.logo a,
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+.main-nav a {
+    color: white;
+    font-size: .99em;
+}
+
+.main-nav li {
+    display: none;
+}
+.main-nav.responsive {
+    position: relative;
+}
+
+.main-nav.responsive li {
+    background-color: black;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.main-nav.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.main-nav.responsive li a:hover {
+    background-color: dimgray;
+}
+
+.hamburger {
+    width: 100%;
+    background: none;
+    border-color: white; 
+    
+}
+button img {
+    width: 6%;
+}
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #a2a2a2;
+    background-color: black;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+}
+
+footer p {
+    padding: 1em;
+    color: black;
+    margin: 2px;
+    text-align: center;
+}

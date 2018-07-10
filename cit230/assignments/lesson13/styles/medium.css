@@ -1,0 +1,27 @@
+@media only screen and (min-width: 600px) {
+
+    .header,
+    .main-nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        .header {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1150px;
+        }
+    }
+
+    .main-nav li {
+        display: contents;
+    }
+    .main-nav a:hover {
+        color: dimgray;
+    }
+    .hamburger {
+        display: none;
+    }
+
+}
