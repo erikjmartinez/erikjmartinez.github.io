@@ -1,3 +1,4 @@
+function setCurrentDate() {
 var today = new Date();
 
 var weekday = new Array(7);
@@ -30,3 +31,4 @@ var mm = month[today.getMonth()];
 
 
 document.getElementById("currentDate").innerHTML = wd + ', ' + today.getDate() + ' ' + mm + ' ' + today.getFullYear();
+}

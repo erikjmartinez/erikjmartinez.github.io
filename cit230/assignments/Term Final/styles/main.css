@@ -49,7 +49,7 @@ a {
 }
 
 .main-nav {
-    margin-top: 5px;
+    margin-top: -5px;
 
 }
 
@@ -90,6 +90,16 @@ a {
 .main-nav.responsive li a:hover {
     background-color: dimgray;
 }
+.active a {
+    border-bottom: solid;
+    border-color: white;
+}
+
+.active:hover a {
+    border-bottom: solid;
+    border-color: #f9cf00;
+}
+
 
 .hamburger {
     width: 100%;

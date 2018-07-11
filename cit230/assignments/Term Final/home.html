@@ -13,30 +13,20 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="logo"><a href="home.html">The Mountain Spoke</a></h1>
-        <h5>Bikes &centerdot; Gear &centerdot; Cummunity</h5>
-        <button class="hamburger" onclick="toggleHam()"><img src="images/anotherone.png" alt=""></button>
-        <nav>
-            <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Events and Tours</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Services & repairs</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header" w3-include-html='modules/header.html'>
+
     </header>
 
     <main>
 
     </main>
 
-    <footer>
-
-        <p> 3950 Valley Commons Drive Bozeman, MT &copy;2018 | All Rights Reserved | The Spoke Shop | <span id="currentDate">placehoder</span></p>
+    <footer w3-include-html='modules/footer.html'>
 
     </footer>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/wayfinding.js"></script>
     <script src="scripts/currentDate.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>
