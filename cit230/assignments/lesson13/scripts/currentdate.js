@@ -1,7 +1,6 @@
-function setCurrentDate() {
-    var today = new Date();
+var today = new Date();
 
-    var weekday = new Array(7);
+var weekday = new Array(7);
     weekday[0] = "Sunday";
     weekday[1] = "Monday";
     weekday[2] = "Tuesday";
@@ -10,9 +9,9 @@ function setCurrentDate() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
 
-    var wd = weekday[today.getDay()];
+var wd = weekday[today.getDay()];
 
-    var month = new Array(12);
+var month = new Array(12);
     month[0] = "January";
     month[1] = "February";
     month[2] = "March";
@@ -26,9 +25,8 @@ function setCurrentDate() {
     month[10] = "November";
     month[11] = "December";
 
-    var mm = month[today.getMonth()];
+var mm = month[today.getMonth()];
 
 
 
-    document.getElementById("currentdate").innerHTML = wd + ', ' + today.getDate() + ' ' + mm + ' ' + today.getFullYear();
-}
+document.getElementById("currentDate").innerHTML = wd + ', ' + today.getDate() + ' ' + mm + ' ' + today.getFullYear();

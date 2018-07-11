@@ -25,7 +25,7 @@ weatherObject.onload = function () {
 
 
 
-
+ 
 var forcastObject = new XMLHttpRequest();
 forcastObject.open('GET', '//api.openweathermap.org/data/2.5/forecast?zip=55333,us&appid=25187f2c68d8950cbad7de4d8c50ff5b&units=imperial', true)
 forcastObject.send();
