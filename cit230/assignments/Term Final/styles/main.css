@@ -69,6 +69,7 @@ a {
 .main-nav li {
     display: none;
 }
+
 .main-nav.responsive {
     position: relative;
 }
@@ -90,6 +91,7 @@ a {
 .main-nav.responsive li a:hover {
     background-color: dimgray;
 }
+
 .active a {
     border-bottom: solid;
     border-color: white;
@@ -106,6 +108,7 @@ a {
     background: none;
     border-color: black;
 }
+
 button img {
     width: 6%;
 }
@@ -126,7 +129,10 @@ button img {
 main {
     flex: 1;
 }
-
+.bicyclePics img {
+    width: 100%;
+    height: 200px;
+}
 footer p {
     padding: 1em;
     color: white;

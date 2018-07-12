@@ -23,5 +23,9 @@
     .hamburger {
         display: none;
     }
+    .bicyclePics img {
+        width: 100%;
+        height: 300px;
+    }
 
 }
