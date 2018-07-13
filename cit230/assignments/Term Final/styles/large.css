@@ -12,12 +12,15 @@
         height: 500px;
     }
     .mensWomensBikes img {
-/*        max-width: 500px;
+        /*        max-width: 500px;
         height: 400px;
         padding: 4px;*/
     }
     .bikeProductCap {
         font-size: 50px;
         line-height: 57px;
+    }
+    .item {
+        width: 33.3%;
     }
 }

@@ -150,12 +150,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-/*
+
+    /*
     flex-direction: column;
     align-items: flex-start;
 */
-
 }
 
 .mensWomensBikes img {
@@ -163,10 +162,47 @@ main {
     height: auto;
 }
 
+
 footer p {
     padding: 1em;
     color: white;
     background-color: black;
     margin: 2px;
+    text-align: center;
+}
+
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 2em auto;
+    background-color: #eee;
+    overflow: hidden;
+    padding: .5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.item {
+    min-width: 25%;
+    max-width: 100%;
+    float: left;
+    padding: .5em;
+    border: 1px dotted #ddd;
+    /*background-color:#fff;*/
+}
+
+
+
+.item p {
+    min-height: 3em;
+    /*background-color:#fed;*/
+    margin: .5em 0 0 0;
+    font-size: .9em;
     text-align: center;
 }
