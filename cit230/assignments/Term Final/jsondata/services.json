@@ -1,5 +1,17 @@
 {
-    "drive train clean": 32.00,
-    "minor tune": 40.00,
-    "major tune": 50.00
+    "Serivces": [
+        {
+            "Replace Tube (wheel only)": "$" + 10.00,
+            "Replace Tube (on the bike)": "$" + 12.00,
+            "Mounting a new tire": "$" + 12.00,
+            "Adjust Front or Rear Brake": "$" + 20.00,
+            "Install new Brake Cable": "$" + 20.00,
+            "Install new Brake Pads": "$" + 20.00 + "(per wheel)",
+            "Install new Chain": "$" + 50.00,
+            "Install new Disc Brake": "$" + 25.00 + "(per wheel)",
+            "Bleed Caliper": "$" + 20.00 + "(per wheel)",
+            "Complete Overhaul": "$" + 275.00,
+            "Full Suspension Overhaul": "$" + 200.00
+    }
+  ]
 }

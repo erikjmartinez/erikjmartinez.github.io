@@ -48,4 +48,7 @@
     .item p {
         font-size: .8em;
     }
+    iframe {
+        height: 280px;
+    }
 }
