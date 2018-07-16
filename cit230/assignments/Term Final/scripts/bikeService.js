@@ -55,5 +55,8 @@ bikeServices.onload = function () {
     document.getElementById('item20').innerHTML = "$" + bS.Services["9"].price;
     document.getElementById('item21').innerHTML = bS.Services["10"].title;
     document.getElementById('item22').innerHTML = "$" + bS.Services["10"].price;
-
+    document.getElementById('item23').innerHTML = bS.Services["11"].title;
+    document.getElementById('item24').innerHTML = "$" + bS.Services["11"].price;
+    document.getElementById('item25').innerHTML = bS.Services["12"].title;
+    document.getElementById('item26').innerHTML = "$" + bS.Services["12"].price;
 }
