@@ -133,10 +133,12 @@ main {
     width: 100%;
     height: 180px;
 }
+
 .bicyclePics2 img {
     width: 100%;
     height: 180px;
 }
+
 .bikeProductCap {
     font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
@@ -148,6 +150,7 @@ main {
     text-align: left;
     font-size: 20px;
 }
+
 .mensWomensBikes {
     width: 90%;
     max-width: 1300px;
@@ -156,6 +159,7 @@ main {
     overflow: hidden;
     padding: .5em;
 }
+
 img {
     max-width: 100%;
 }
@@ -198,7 +202,9 @@ footer p {
     margin: 2px;
     text-align: center;
 }
+
 /*------------table--------------*/
+
 table {
     border-collapse: collapse;
     border: 2px solid black;
@@ -217,6 +223,7 @@ tbody > tr > th {
     background-color: white;
     color: black;
 }
+
 td {
     text-align: center;
 }
@@ -224,16 +231,14 @@ td {
 tfoot {
     background-color: white;
 }
+
 /*------------------------------*/
 
 .picMenu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
 }
 
 .picMenu img {
-    min-width:;
-    
+    width: 33.3%;
+    height: 300px;
 }

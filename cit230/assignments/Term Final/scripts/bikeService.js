@@ -59,4 +59,4 @@ bikeServices.onload = function () {
     document.getElementById('item24').innerHTML = "$" + bS.Services["11"].price;
     document.getElementById('item25').innerHTML = bS.Services["12"].title;
     document.getElementById('item26').innerHTML = "$" + bS.Services["12"].price;
-}
+};
