@@ -211,7 +211,9 @@ table {
     letter-spacing: 1px;
     font-size: 0.8rem;
     width: 100%;
-    margin-top: -5px;
+    margin-top: -6.9px;
+    margin-bottom: -2px;
+    height: 100%;
 }
 
 td,
@@ -229,7 +231,7 @@ tr:nth-child(even) {
 }
 
 tr:nth-child(odd) {
-    background: #E1E0E6;
+    background: #606060;
 }
 
 td {
@@ -254,7 +256,7 @@ tfoot {
 #item20,
 #item23,
 #item24 {
-    color: white;
+    color: #A8A8A8;
 }
 
 /*------------------------------*/
