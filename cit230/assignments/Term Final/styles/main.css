@@ -207,21 +207,29 @@ footer p {
 
 table {
     border-collapse: collapse;
-    border: 2px solid black;
+    /*    border: 2px solid black;*/
     letter-spacing: 1px;
     font-size: 0.8rem;
-    width: 100%
+    width: 100%;
+    margin-top: -5px;
 }
 
 td,
 th {
-    border: 1px solid black;
+    /*    border: 1px solid black;*/
     padding: 10px 20px;
 }
 
 tbody > tr > th {
-    background-color: white;
     color: black;
+}
+
+tr:nth-child(even) {
+    background: black;
+}
+
+tr:nth-child(odd) {
+    background: #E1E0E6;
 }
 
 td {
@@ -229,7 +237,24 @@ td {
 }
 
 tfoot {
-    background-color: white;
+    background-color: ;
+}
+
+#item1,
+#item2,
+#item5,
+#item6,
+#item9,
+#item10,
+#item13,
+#item14,
+#item17,
+#item18,
+#item19,
+#item20,
+#item23,
+#item24 {
+    color: white;
 }
 
 /*------------------------------*/
