@@ -3,251 +3,262 @@ font-family: 'Ubuntu', sans-serif;
 font-family: 'Russo One', sans-serif;*/
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+	font-family: 'Ubuntu', sans-serif !important;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 h1 {
-    font-family: 'Russo One', sans-serif
+	font-family: 'Russo One', sans-serif
 }
 
 h5 {
-    text-align: center;
-    margin-top: -10px;
-    margin-bottom: 3px;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 3px;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 h2,
 h3,
 h5,
 a {
-    color: white;
+	color: white;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .logo {
-    margin: 0;
-    font-size: 1.45em;
+	margin: 0;
+	font-size: 1.45em;
 }
 
 .main-nav {
-    margin-top: -5px;
+	margin-top: -5px;
 
 }
 
 .logo a,
 .main-nav a {
-    padding: 10px 15px;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
 }
 
 .main-nav a {
-    color: white;
-    font-size: .99em;
+	color: white;
+	font-size: .99em;
 }
 
 .main-nav li {
-    display: none;
+	display: none;
 }
 
 .main-nav.responsive {
-    position: relative;
+	position: relative;
 }
 
 .main-nav.responsive li {
-    background-color: black;
-    display: block;
-    width: 100%;
-    margin: 2px 0;
+	background-color: black;
+	display: block;
+	width: 100%;
+	margin: 2px 0;
 }
 
 .main-nav.responsive li a {
-    padding: 0.8rem;
-    text-align: center;
-    display: block;
-    text-decoration: none;
+	padding: 0.8rem;
+	text-align: center;
+	display: block;
+	text-decoration: none;
 }
 
 .main-nav.responsive li a:hover {
-    background-color: dimgray;
+	background-color: dimgray;
 }
 
 .active a {
-    border-bottom: solid;
-    border-color: white;
+	border-bottom: solid;
+	border-color: white;
 }
 
 .active:hover a {
-    border-bottom: solid;
-    border-color: dimgray;
+	border-bottom: solid;
+	border-color: dimgray;
 }
 
 
 .hamburger {
-    width: 100%;
-    background: none;
-    border-color: black;
+	width: 100%;
+	background: none;
+	border-color: black;
 }
 
 button img {
-    width: 6%;
+	width: 6%;
 }
 
 .header {
-    padding-top: .5em;
-    padding-bottom: .5em;
-    border: 1px solid #a2a2a2;
-    background-color: black;
-    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: black;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 main {
-    flex: 1;
+	flex: 1;
 }
 
 .bicyclePics img {
-    width: 100%;
-    height: 180px;
+	width: 100%;
+	height: 180px;
 }
 
 .bicyclePics2 img {
-    width: 100%;
-    height: 180px;
+	width: 100%;
+	height: 180px;
 }
 
 .bikeProductCap {
-    font-family: 'Russo One', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: normal;
-    color: #fff;
-    margin-top: -50px;
-    margin-left: 20px;
-    margin-bottom: 0;
-    text-align: left;
-    font-size: 20px;
+	font-family: 'Russo One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: normal;
+	color: #fff;
+	margin-top: -50px;
+	margin-left: 20px;
+	margin-bottom: 0;
+	text-align: left;
+	font-size: 20px;
 }
 
 .mensWomensBikes {
-    width: 90%;
-    max-width: 1300px;
-    margin: 4em auto;
-    background-color: white;
-    overflow: hidden;
-    padding: .5em;
+	width: 90%;
+	max-width: 1300px;
+	margin: 4em auto;
+	background-color: white;
+	overflow: hidden;
+	padding: .5em;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .item {
-    min-width: 25%;
-    max-width: 100%;
-    float: left;
-    padding: .5em;
-    border: 1px solid white;
-    /*background-color:#fff;*/
+	min-width: 25%;
+	max-width: 100%;
+	float: left;
+	padding: .5em;
+	border: 1px solid white;
+	/*background-color:#fff;*/
 }
 
 .item p {
-    min-height: 3em;
-    /*background-color:#fed;*/
-    margin: .5em 0 0 0;
-    font-size: .9em;
-    text-align: center;
+	min-height: 3em;
+	/*background-color:#fed;*/
+	margin: .5em 0 0 0;
+	font-size: .9em;
+	text-align: center;
 }
 
 iframe {
-    width: 100%;
-    height: 180px;
+	width: 100%;
+	height: 180px;
 }
 
 .hoursOfOp {
-    color: black;
-    font-family: 'Russo One', sans-serif;
+	color: black;
+	font-family: 'Russo One', sans-serif;
 }
 
 .text {
-    margin: 5px;
+	margin: 5px;
 }
+
 .picMenu {
-    display: flex;
+	display: flex;
 }
 
 .picMenu img {
-    width: 33.3%;
-    height: 300px;
+	width: 33.3%;
+	height: 300px;
+}
+
+.ctcd {
+	text-align: center;
+
+}
+
+.ctcdsh a {
+	text-align: center;
+	color: black;
 }
 
 footer p {
-    padding: 1em;
-    color: white;
-    background-color: black;
-    margin: 2px;
-    text-align: center;
+	padding: 1em;
+	color: white;
+	background-color: black;
+	margin: 2px;
+	text-align: center;
 }
 
 /*------------table--------------*/
 
 table {
-    border-collapse: collapse;
-    /*    border: 2px solid black;*/
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    width: 100%;
-    margin-top: -6.9px;
-    margin-bottom: -2px;
-    height: 100%;
+	border-collapse: collapse;
+	/*    border: 2px solid black;*/
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+	width: 100%;
+	margin-top: -6.9px;
+	margin-bottom: -2px;
+	height: 100%;
 }
 
 td,
 th {
-    /*    border: 1px solid black;*/
-    padding: 10px 20px;
+	/*    border: 1px solid black;*/
+	padding: 10px 20px;
 }
 
 tbody > tr > th {
-    color: black;
+	color: black;
 }
 
 tr:nth-child(even) {
-    background: black;
+	background: black;
 }
 
 tr:nth-child(odd) {
-    background: #606060;
+	background: #BEBEBE;
 }
 
 td {
-    text-align: center;
+	text-align: center;
 }
 
 tfoot {
-    background-color: ;
+	background-color: ;
 }
 
 #item1,
@@ -264,10 +275,86 @@ tfoot {
 #item20,
 #item23,
 #item24 {
-    color: #A8A8A8;
+	color: #A8A8A8;
 }
 
-/*------------------------------*/
+/*------------form------------------*/
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.col-75 input:required {
+	border-left: red solid 6px;
+}
+
+.col-75 input:required:valid {
+	border-left: green solid 6px;
+}
 
 
-/*------------------------------*/
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+	.col-25,
+	.col-75,
+	input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+
+h1.thankU {
+    text-align: center;
+}

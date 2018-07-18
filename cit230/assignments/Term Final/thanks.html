@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Mountain Spoke - America's Best Bike Shop</title>
+	<link rel="icon" href="./images/bikeSprocket.png">
+	<meta name="description" content="Montana's Best Bicycle Shop! We sell Specialized, Trek, Diamondback, and Giant bicycles. Our experienced staff and service department, can help you find and fix your bike today!!">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="logo"><a href="home.html">The Mountain Spoke</a></h1>
+		<h5 class="subhead">Bikes &centerdot; Gear &centerdot; Cummunity</h5>
+		<button class="hamburger" onclick="toggleHam()"><img src="images/anotherone.png" alt=""></button>
+		<nav>
+			<ul class="main-nav" id="mainmenu">
+				<li><a href="home.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<div class="bicyclePics">
+				<img src="images/homeBannerSmall.jpg" alt="Bicycle Picutres" srcset="./images/homeBanner.jpg 1200w, ./images/homeBannerMed.jpg 800w, ./images/homeBannerSmall.jpg 400w">
+			</div>
+		</section>
+
+		<div class='ty'>
+			<h1 class="thankU">Thank You For Signing Up!</h1>
+			<h1 class="uWill">You Will Receive An Email With Further Instructions.</h1>
+			<p>While you wait</p>
+			<h1>Woundering what you can do now to prepare?</h1>
+		</div>
+	</main>
+
+	<footer w3-include-html='modules/footer.html'>
+
+	</footer>
+	<script src="scripts/include.js"></script>
+	<script src="scripts/modularize.js"></script>
+	<script src="scripts/wayfinding.js"></script>
+	<script src="scripts/currentDate.js"></script>
+	<script src="scripts/hamburger.js"></script>
+</body>
+
+</html>

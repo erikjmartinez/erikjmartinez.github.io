@@ -4,8 +4,8 @@
         justify-content: space-between;
     }
 
-    h5 {
-        display: none;
+    .subhead {
+       display: none;
     }
     .bicyclePics img {
         width: 100%;
@@ -33,4 +33,11 @@
      iframe {
         height: 350px;
     }
+	main .ctcd {
+		text-align: center;
+	}
+	.ctcdsh a {
+		display: contents;
+		text-align: center;
+	}
 }

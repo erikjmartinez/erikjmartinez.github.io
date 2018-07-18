@@ -175,8 +175,8 @@ a:visited.ui-button,
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-	border: 1px solid #2e242c;
-	background: #2e242c;
+	border: 1px solid #F63248;
+	background: #F63248;
 	font-weight: normal;
 	color: #2b2b2b;
 }
