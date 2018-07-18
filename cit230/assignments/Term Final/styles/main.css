@@ -98,7 +98,7 @@ a {
 
 .active:hover a {
     border-bottom: solid;
-    border-color: #f9cf00;
+    border-color: dimgray;
 }
 
 
