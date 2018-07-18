@@ -194,6 +194,14 @@ iframe {
 .text {
     margin: 5px;
 }
+.picMenu {
+    display: flex;
+}
+
+.picMenu img {
+    width: 33.3%;
+    height: 300px;
+}
 
 footer p {
     padding: 1em;
@@ -261,11 +269,5 @@ tfoot {
 
 /*------------------------------*/
 
-.picMenu {
-    display: flex;
-}
 
-.picMenu img {
-    width: 33.3%;
-    height: 300px;
-}
+/*------------------------------*/
