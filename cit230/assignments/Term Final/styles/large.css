@@ -40,4 +40,18 @@
 		display: contents;
 		text-align: center;
 	}
+	h1.thankU {
+    text-align: center;
+}
+	h2.uWill {
+    text-align: center;
+		color: black;
+}
+	h1.prep {
+    text-align: center;
+}
+	h2.prep2 {
+    text-align: center;
+		color: black;
+}
 }

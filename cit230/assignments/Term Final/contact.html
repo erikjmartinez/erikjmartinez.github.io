@@ -2,54 +2,82 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Mountain Spoke - America's Best Bike Shop</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Mountain Spoke - America's Best Bike Shop</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
-    <header class="header" w3-include-html='modules/header.html'>
+	<header class="header" w3-include-html='modules/header.html'>
 
-    </header>
+	</header>
 
-    <main>
-        <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9247583896476!2d-111.09322942028035!3d45.67241077920631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345458556c9d0dd%3A0xae439f0e5e0abe42!2sValley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531324106101" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <!--<h2 class="hoursOfOp">Contact Information</h2>
-            <p class="text">Store Address: 3950 Valley Commons Drive Bozeman, MT</p>
-            <p class="text">Store Number: 406-499-4257</p>
-            <p class="text">Email: themountainspoke@montana.com</p>
-            
-            <h2 class="hoursOfOp">Store Hours</h2>
-            <p class="text">Monday: 7am - 7pm</p>
-            <p class="text">Tuesday: 7am - 7pm</p>
-            <p class="text">Wednesday: 8am - 8pm</p>
-            <p class="text">Thursday: 7am - 7pm</p>
-            <p class="text">Friday: 7am - 7pm</p>
-            <p class="text">Saturday: 9am - 5pm</p>
-            <p class="text">Sunday: Closed</p> <br>
--->
-        </div>
-        
-        
-       
-    </main>
+	<main>
+		<div class="maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9247583896476!2d-111.09322942028035!3d45.67241077920631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345458556c9d0dd%3A0xae439f0e5e0abe42!2sValley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531324106101" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<h1 class="thankU">Feel Free To Contact Us!</h1>
+			<div class="container">
+				<form method="get" action="thanks.html">
+					<div class="row">
+						<div class="col-25">
+							<label for="fname">*First Name</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="fname" name="firstname" placeholder="Your name.." pattern="[A-Za-z ]{3,}" title="fname" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="lname">*Last Name</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="lname" name="lastname" placeholder="Your last name.." pattern="[A-Za-z ]{3,}" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="email">*Email</label>
+						</div>
+						<div class="col-75">
+							<input type="email" name="email" placeholder="example@gmail.com" required>
+						</div>
+					</div>
+					<div class="row">
+						<input type="submit" value="I'm Ready To CTCD!">
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="subject">Question/Concern</label>
+						</div>
+						<div class="col-75">
+							<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+						</div>
+					</div>
+				</form>
+				<h4 class="caution">Fields with an asterisk (*) are REQUIRED.</h4>
+				<h4 class="caution1">Please allow up to 3 Business days for one of our Associates to respond back to you.</h4>
+			</div>
+		</div>
 
-    <footer w3-include-html='modules/footer.html'>
+
+
+	</main>
+
+	<footer w3-include-html='modules/footer.html'>
 
 
 
-    </footer>
-    <script src="scripts/include.js"></script>
-    <script src="scripts/modularize.js"></script>
-    <script src="scripts/wayfinding.js"></script>
-    <script src="scripts/currentDate.js"></script>
-    <script src="scripts/hamburger.js"></script>
+	</footer>
+	<script src="scripts/include.js"></script>
+	<script src="scripts/modularize.js"></script>
+	<script src="scripts/wayfinding.js"></script>
+	<script src="scripts/currentDate.js"></script>
+	<script src="scripts/hamburger.js"></script>
 </body>
 
 </html>
