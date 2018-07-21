@@ -52,23 +52,25 @@
 		height: 280px;
 	}
 	h1.thankU {
-    text-align: center;
-}
+		text-align: center;
+	}
 	h2.uWill {
-    text-align: center;
+		text-align: center;
 		color: black;
-}
+	}
 	h1.prep {
-    text-align: center;
-}
+		text-align: center;
+	}
 	h2.prep2 {
-    text-align: center;
+		text-align: center;
 		color: black;
-}
+	}
 	.prep2 a {
 		color: black;
 	}
 	.eventTour {
-	margin-top: -7px;
-}
+		margin-top: ;
+	}
+	
+
 }

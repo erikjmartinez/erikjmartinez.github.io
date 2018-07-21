@@ -287,6 +287,167 @@ tfoot {
 	color: #A8A8A8;
 }
 
+/*----------table2-------------*/
+
+.event-itinerary__label,
+.event-itinerary__day {
+	background-color: white;
+	font-family: 'Ubuntu', sans-serif;
+	border-style: none;
+}
+
+.event-itinerary__wrapper {
+	color: #000;
+}
+
+@media (max-width: 540px) {
+	.event-itinerary__wrapper {
+		padding: 2.5rem 1rem;
+	}
+}
+
+.event-itinerary__title {
+	display: block;
+	margin: 0 0 2rem;
+	text-align: center;
+	margin: 0 0 0.5rem;
+	color: black;
+}
+
+@media (max-width: 1024px) {
+	.event-itinerary__title {
+		margin: 0 0 1rem;
+	}
+}
+
+.event-itinerary__title::before {
+	display: inline-block;
+	margin: 0 1.5rem 0 0;
+}
+
+@media (max-width: 640px) {
+	.event-itinerary__title::before {
+		display: none;
+	}
+}
+
+.event-itinerary__subtitle {
+	font-weight: 300;
+	text-align: center;
+	color: black;
+}
+
+@media (max-width: 640px) {
+	.event-itinerary__subtitle {
+		margin: 0 0 1.5rem;
+		font-size: 1.3rem;
+	}
+}
+
+.event-itinerary__days {
+	margin: 0 0 2rem;
+}
+
+@media (max-width: 540px) {
+	.event-itinerary__days td {
+		display: block;
+	}
+}
+
+.event-itinerary__label {
+	padding: 0.5rem 2rem 1.5rem 0.5rem;
+	white-space: nowrap;
+	text-align: right;
+	font-weight: 700;
+}
+
+@media (max-width: 540px) {
+	.event-itinerary__label {
+		padding: 0.5rem;
+		text-align: left;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	}
+}
+
+.event-itinerary__day {
+	padding: 0.5rem 0.5rem 1.5rem;
+	font-weight: 300;
+	line-height: 1.5;
+	text-align: left;
+}
+
+@media (max-width: 540px) {
+	.event-itinerary__day {
+		padding: 0.5rem 0.5rem 3rem;
+	}
+}
+
+.event-itinerary__day strong {
+	text-decoration: underline;
+}
+
+.event-itinerary__actions {
+	text-align: center;
+}
+
+.event-itinerary__actions h4 {
+	display: block;
+}
+
+.event-itinerary__date .button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem;
+	cursor: pointer;
+	border-radius: 4px;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	transition: all 0.1s ease-in-out;
+	background-color: black;
+	border: 2px solid black;
+}
+
+@media (max-width: 800px) {
+	.event-itinerary__date .button {
+		font-size: 0.9rem;
+	}
+}
+
+.event-itinerary__date .button.button--disabled {
+	background-color: #94B8CA;
+	border-color: #94B8CA;
+	text-shadow: 0 1px 2px rgba(65, 110, 132, 0.5);
+}
+
+.event-itinerary__date .button.button--disabled:hover {
+	background-color: #72a1b9;
+	border-color: #72a1b9;
+	text-shadow: 0 1px 2px rgba(65, 110, 132, 0.5);
+}
+
+.event-itinerary__date .button:hover {
+	text-decoration: none;
+	background-color: dimgray;
+	border-color: dimgray;
+	}
+
+.event-itinerary__date .button::after {
+	display: inline-block;
+	margin: 0 0 0 0.75rem;
+}
+
+@media (max-width: 540px) {
+	.event-itinerary__date .button {
+		flex-direction: column;
+	}
+}
+
+
+/*----------------------------------------*/
+
 /*------------form------------------*/
 
 input[type=text],

@@ -6,3 +6,4 @@
          collapsible: true
      });
  });
+
