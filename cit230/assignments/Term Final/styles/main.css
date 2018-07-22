@@ -407,7 +407,7 @@ tfoot {
 	letter-spacing: 1px;
 	transition: all 0.1s ease-in-out;
 	background-color: black;
-	border: 2px solid black;
+	border: 2px solid black;;
 }
 
 @media (max-width: 800px) {
@@ -477,7 +477,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-	background-color: #45a049;
+	background-color: dimgray;
+}
+input[type=submit] {
+	background-color: black;
+	margin-top: 20px;
 }
 
 .col-75 input:required {
@@ -487,8 +491,12 @@ input[type=submit]:hover {
 .col-75 input:required:valid {
 	border-left: green solid 6px;
 }
-
-
+.col-75 select:required {
+	border-left: red solid 6px;
+}
+.col-75 select:required:valid {
+	border-left: green solid 6px;
+}
 .container {
 	border-radius: 5px;
 	background-color: #f2f2f2;
@@ -522,7 +530,7 @@ input[type=submit]:hover {
 	.col-75,
 	input[type=submit] {
 		width: 100%;
-		margin-top: 0;
+		margin-top: 25px;
 	}
 
 }
@@ -558,7 +566,13 @@ h2.prep2 {
 .tyBody {
 	background: #BEBEBE;
 }
-
+.text {
+	text-align: center;
+}
+.textC {
+	border-bottom: 1px solid black;
+	margin-bottom: -0.3px;
+}
 /*-------------------------*/
 
 .eventTour {

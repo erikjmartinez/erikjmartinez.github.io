@@ -21,12 +21,12 @@
 		<button class="hamburger" onclick="toggleHam()"><img src="images/anotherone.png" alt=""></button>
 		<nav>
 			<ul class="main-nav" id="mainmenu">
-				<li><a href="events&tours.html">Nevermind</a></li>
+				<li><a href="home.html">Nevermind</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-	<section>
+		<section>
 			<div class="bicyclePics">
 				<img src="images/nottrek.jpg" alt="Bicycle Picutres">
 			</div>
@@ -58,7 +58,20 @@
 					</div>
 				</div>
 				<div class="row">
-					<input type="submit" value="I'm Ready To CTCD!">
+					<div class="col-25">
+						<label for="TypeOfEvent">*Event</label>
+					</div>
+					<div class="col-75">
+						<select id="TypeOfEvent" name="Event" required>
+         <option value="" class="disabled" disabled selected>Select Event/Tour</option>
+          <option value="CTCD">Cycle the Continental Divide</option>
+          <option value="GlacierRide">The Glacier Ride</option>
+          <option value="">Somthing</option>
+        </select>
+					</div>
+				</div>
+				<div class="row sub">
+					<input type="submit" value="Let's Ride!">
 				</div>
 			</form>
 			<h4 class="caution">Fields with an asterisk (*) are REQUIRED.</h4>
