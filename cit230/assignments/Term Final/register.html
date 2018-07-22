@@ -59,14 +59,22 @@
 				</div>
 				<div class="row">
 					<div class="col-25">
-						<label for="TypeOfEvent">*Event</label>
+						<label for="PhoneNumber">Phone Number</label>
+					</div>
+					<div class="col-75">
+						<input type="tel" name="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="TypeOfEvent">*Event/Tour</label>
 					</div>
 					<div class="col-75">
 						<select id="TypeOfEvent" name="Event" required>
          <option value="" class="disabled" disabled selected>Select Event/Tour</option>
-          <option value="CTCD">Cycle the Continental Divide</option>
-          <option value="GlacierRide">The Glacier Ride</option>
-          <option value="">Somthing</option>
+          <option value="CTCD">Cycle the Continental Divide - Event</option>
+          <option value="GlacierRide">The Glacier Ride - Tour</option>
+          <option value="">The Colorado Ride - Tour</option>
         </select>
 					</div>
 				</div>
@@ -76,6 +84,7 @@
 			</form>
 			<h4 class="caution">Fields with an asterisk (*) are REQUIRED.</h4>
 			<h4 class="caution1">Please make sure that your email is correct as it will be needed to send payment instructions.</h4>
+			<h4 class="caution1">All information on the Event or Tour you choose will also be emailed to you.</h4>
 		</div>
 
 	</main>
