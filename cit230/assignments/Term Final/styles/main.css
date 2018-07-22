@@ -408,7 +408,8 @@ tfoot {
 	letter-spacing: 1px;
 	transition: all 0.1s ease-in-out;
 	background-color: black;
-	border: 2px solid black;;
+	border: 2px solid black;
+	;
 }
 
 @media (max-width: 800px) {
@@ -433,7 +434,7 @@ tfoot {
 	text-decoration: none;
 	background-color: dimgray;
 	border-color: dimgray;
-	}
+}
 
 .event-itinerary__date .button::after {
 	display: inline-block;
@@ -448,6 +449,74 @@ tfoot {
 
 
 /*----------------------------------------*/
+
+.container2,.container3, .container4{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	width: 100%;
+	padding-bottom: 50%;
+	/* 2:1 */
+}
+.container2 {
+	background-image: url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/homeBanner.jpg');
+}
+.container3 {
+	background-image: url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/events&toursLarge.jpg');
+	
+}
+.container4 {
+	background-image: url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/nottrek2.jpg');
+	
+}
+
+.content2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 30px;
+	right: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+
+	.container2, .container3, .container4  {
+		padding-bottom: 0;
+	}
+	.content2 {
+		position: relative;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 30px;
+	}
+
+}
+
+/* Optional CSS for Codepen demo only */
+
+.content2 {
+	font-size: 120%;
+	color: #fff;
+	text-shadow: 0 0 8px #000;
+}
+
+.content2 h2 {
+	margin: 0 0 16px;
+}
+
+.content2 p {
+	margin: 0 0 16px;
+}
+
+.content2 p:last-of-type {
+	margin-bottom: 0;
+}
 
 /*------------form------------------*/
 
@@ -481,6 +550,7 @@ input[type=submit] {
 input[type=submit]:hover {
 	background-color: dimgray;
 }
+
 input[type=submit] {
 	background-color: black;
 	margin-top: 20px;
@@ -493,12 +563,15 @@ input[type=submit] {
 .col-75 input:required:valid {
 	border-left: green solid 6px;
 }
+
 .col-75 select:required {
 	border-left: red solid 6px;
 }
+
 .col-75 select:required:valid {
 	border-left: green solid 6px;
 }
+
 .container {
 	border-radius: 5px;
 	background-color: #f2f2f2;
@@ -568,13 +641,16 @@ h2.prep2 {
 .tyBody {
 	background: #BEBEBE;
 }
+
 .text {
 	text-align: center;
 }
+
 .textC {
 	border-bottom: 1px solid black;
 	margin-bottom: -0.3px;
 }
+
 /*-------------------------*/
 
 .eventTour {
