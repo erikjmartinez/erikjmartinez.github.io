@@ -450,7 +450,9 @@ tfoot {
 
 /*----------------------------------------*/
 
-.container2,.container3, .container4{
+.container2,
+.container3,
+.container4 {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -459,16 +461,19 @@ tfoot {
 	padding-bottom: 50%;
 	/* 2:1 */
 }
+
 .container2 {
 	background-image: url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/homeBanner.jpg');
 }
+
 .container3 {
 	background-image: url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/events&toursLarge.jpg');
-	
+
 }
+
 .container4 {
 	background-image: url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/nottrek2.jpg');
-	
+
 }
 
 .content2 {
@@ -482,9 +487,17 @@ tfoot {
 	right: 30px;
 }
 
+.content2 p a {
+	background-color: black;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
 @media only screen and (max-width: 480px) {
 
-	.container2, .container3, .container4  {
+	.container2,
+	.container3,
+	.container4 {
 		padding-bottom: 0;
 	}
 	.content2 {
@@ -496,6 +509,18 @@ tfoot {
 		padding: 30px;
 	}
 
+}
+
+@media only screen and (max-width: 480px) {
+	.content2 h2 {
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.content2 p {
+		font-size: .9em;
+	}
 }
 
 /* Optional CSS for Codepen demo only */
