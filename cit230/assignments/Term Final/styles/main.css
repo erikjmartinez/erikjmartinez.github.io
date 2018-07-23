@@ -463,16 +463,22 @@ tfoot {
 }
 
 .container2 {
-	background-image: url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/homeBanner.jpg');
+	background-image: linear-gradient( rgba(0, 0, 0, 0.2),
+	rgba(0, 0, 0, 0.2)),
+	url(https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/homeBanner.jpg);
 }
 
 .container3 {
-	background-image: url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/events&toursLarge.jpg');
+	background-image: linear-gradient( rgba(0, 0, 0, 0.2),
+	rgba(0, 0, 0, 0.2)),
+	url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/events&toursLarge.jpg');
 
 }
 
 .container4 {
-	background-image: url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/nottrek2.jpg');
+	background-image: linear-gradient( rgba(0, 0, 0, 0.2),
+	rgba(0, 0, 0, 0.2)),
+	url('https://gringuitolokito.github.io/cit230/assignments/Term%20Final/images/nottrek2.jpg');
 
 }
 
