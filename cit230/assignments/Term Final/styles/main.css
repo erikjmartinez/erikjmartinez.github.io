@@ -448,7 +448,7 @@ tfoot {
 }
 
 
-/*----------------------------------------*/
+/*--------------homepage--------------------------*/
 
 .container2,
 .container3,
@@ -687,4 +687,7 @@ h2.prep2 {
 .eventTour {
 	margin-top: -7px;
 	margin-bottom: -7px;
+}
+main .refs {
+	text-align: center
 }
