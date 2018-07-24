@@ -688,6 +688,13 @@ h2.prep2 {
 	margin-top: -7px;
 	margin-bottom: -7px;
 }
+
 main .refs {
 	text-align: center
+}
+
+.centerVid {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
