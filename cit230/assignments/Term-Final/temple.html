@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Temple Inn & Suites! We are happy you are here ;)">
+    <title>Temple Inn & Suites - Temples</title>
+    <link rel="tab-icon" href="./images/temple.png">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!--    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">-->
+    <link rel="stylesheet" href="styles/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="align">
+            <img class="logo" src="images/logo.png" alt="logo">
+           <h1 class="headTitle"><a href="index.html">Temple Inn & Suites</a></h1>
+        </div>
+        <h3 class="headCaption">It's time to relax.</h3>
+
+        <nav class="navbar">
+            <button class="hamburger" onclick="toggleHam()">
+                <p>Menu</p><img src="images/temple.png" alt="hamburger icon">
+            </button>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div id="accordion">
+            <h3>Washington D.C Temple</h3>
+            <div>
+                <div class="tempGridInfo">
+                    <img src="images/washington-dc2.jpg" alt="d.c temple">
+                    <div class="lineheight">
+                        <p>9900 Stoneybrook Dr Kensington MD 20895-3199
+                            United States</p>
+                        <div class="conline">
+                            <p>Tel: 1-301-588-0650</p>
+                            <p>&#8214; Email: VCWashington@ldschurch.org</p>
+                        </div>
+                        <p>Current Weather is <span id="currenttempw"></span></p>
+                        <hr>
+                        <h4>Temple closures</h4>
+                        <p>&#187; <span id="wdct"></span></p>
+                        <hr>
+                    </div>
+                    <div class="lineheightdco">
+                        <h4>Temple Background</h4>
+                        <p>The Washington D.C. Temple was the first temple built in the eastern United States and was the 16th of the Church when President Spencer W. Kimball dedicated it on November 19, 1974. </p>
+
+                        <p>At 288 feet, it is the tallest temple, and it is the only temple outside of Utah to have six ordinance rooms.</p>
+
+                        <p>The temple serves Latter-day Saints in Washington, D.C., Pennsylvania, Virginia, West Virginia, Maryland, Delaware, and New Jersey.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Oakland Temple</h3>
+            <div>
+                <div class="tempGridInfo">
+                    <img src="images/oakland-california2.jpg" alt="oakland temple">
+                    <div class="lineheight">
+                        <p>4770 Lincoln Ave Oakland CA 94602-2535 United States</p>
+                        <div class="conline">
+                            <p>Tel: 1-858-622-0991</p>
+                            <p>&#8214; Email: VCOakland@ldschurch.org</p>
+                        </div>
+                        <p>Current Weather is <span id="currenttempo"></span></p>
+                        <hr>
+                        <h4>Temple closures</h4>
+                        <p>&#187; <span id="oct"></span></p>
+                        <hr>
+                    </div>
+                    <div class="lineheightdco">
+                        <h4>Temple Background</h4>
+                        <p>The Oakland California Temple was the 13th temple of the Church when President David O. McKay dedicated it on November 17, 1964.</p>
+
+                        <p>The temple was the second in California (following the Los Angeles California Temple) and currently serves Latter-day Saints in the Bay Area of northern California.</p>
+
+                        <p>The temple’s last renovation, which finished in 1990, took two years of extensive refurbishing and updating.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>San Diego</h3>
+            <div>
+                <div class="tempGridInfo">
+                    <img src="images/san-diego2.jpg" alt="san diego temple">
+                    <div class="lineheight">
+                        <p>7474 Charmant Dr San Diego CA 92122-5000
+                            United States</p>
+                        <div class="conline">
+                            <p>Tel: 1-510-531-1475</p>
+                        </div>
+                        <p>Current Weather is <span id="currenttempsd"></span></p>
+                        <!--                   <p class="test"></p>-->
+                        <h4>Temple ordinance, session and closure schedules are detailed below</h4>
+                        <p><em>* For initiatory and sealing information and schedules, please call the temple.</em></p>
+                    </div>
+                    <div id="sdtabs">
+                        <ul>
+                            <li><a href="#tabs-1">Baptisms</a></li>
+                            <li><a href="#tabs-3">Endowments</a></li>
+                            <li><a href="#tabs-4">Temple Closures</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <h4>Sunday - Monday</h4>
+                            <p>Closed</p>
+                            <h4>Tuesday - Thursday</h4>
+                            <p>7:00 AM - 3:00 PM - Appointment Required</p>
+                            <p>3:00 PM - 7:30 PM - Family Priority Time - Appointment Preferred</p>
+                            <h4>Friday</h4>
+                            <p>8:00 AM - 5:00 PM
+                                Appointment Preferred</p>
+                            <p>5:00 PM - 8:00 PM
+                                Family Priority Time - Appointment Preferred</p>
+                            <h4>Saturday</h4>
+                            <p>7:00 AM - 3:00 PM
+                                Appointment Required</p>
+                            <p>3:00 PM - 7:30 PM
+                                Family Priority Time - Appointment Preferred</p>
+                        </div>
+
+                        <div id="tabs-3">
+                            <h4>Sunday - Monday</h4>
+                            <p>Closed</p>
+                            <h4>Tuesday</h4>
+                            <p>First session is at 5:30 AM.</p>
+                            <p>After that, sessions start every hour from 8:00 AM to 6:00 PM.</p>
+                            <p>From 6:30 PM to 7:30 PM sessions will start every 30 minutes.</p>
+                            <h4>Wednesday - Friday</h4>
+                            <p>From 8:00 AM - 6:00 PM sessions will start every hour</p>
+                            <p>From 6:30 PM to 7:30 PM sessions will start every 30 minutes.</p>
+                            <h4>Saturday</h4>
+                            <p>From 7:30 AM to 12:30 AM sessions will be every 30 minutes.</p>
+                            <p>From 1:00 PM to 7:00 PM sessions will be every hour</p>
+                        </div>
+                        <div id="tabs-4">
+                            <h4>Temple closures</h4>
+                            <p>&#187; <span id="sdt0"></span></p>
+                            <p>&#187; <span id="sdt1"></span></p>
+                            <p>&#187; <span id="sdt2"></span></p>
+                            <p>&#187; <span id="sdt3"></span></p>
+                            <p>&#187; <span id="sdt4"></span></p>
+                            <p>&#187; <span id="sdt5"></span></p>
+                            <p>&#187; <span id="sdt6"></span></p>
+                            <p>&#187; <span id="sdt7"></span></p>
+                            <p>&#187; <span id="sdt8"></span></p>
+                            <p>&#187; <span id="sdt9"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="lineheightdco">
+                        <h4>Temple Background</h4>
+                        <p>The San Diego California Temple was the 45th temple of the Church when President Gordon B. Hinckley, then first counselor in the First Presidency of The Church of Jesus Christ of Latter-day Saints, dedicated it on April 25, 1993.</p>
+
+                        <p>It was the third temple built in California, following the Los Angeles California Temple and the Oakland California Temple.</p>
+
+                        <p>The temple serves Latter-day Saints in the San Diego area and northwestern Mexico.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Manhattan Temple</h3>
+            <div>
+                <div class="tempGridInfo">
+                    <img src="images/manhattan-temple2.jpg" alt="manhattan temple">
+                    <div class="lineheight">
+                        <p>125 Columbus Ave, Fourth Floor New York NY 10023-6514 United States</p>
+                        <div class="conline">
+                            <p>Tel: 1-510-531-1475</p>
+                        </div>
+                        <p>Current Weather is <span id="currenttempm"></span></p>
+                        <h4>Temple ordinance, session and closure schedules are detailed below</h4>
+                        <p><em>* For initiatory and sealing information and schedules, please call the temple.</em></p>
+                    </div>
+                    <div id="mtabs">
+                        <ul>
+                            <li><a href="#tabs-1">Baptisms</a></li>
+                            <li><a href="#tabs-3">Endowments</a></li>
+                            <li><a href="#tabs-4">Temple Closures</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <h4>Sunday - Monday</h4>
+                            <p>Closed</p>
+
+                            <h4>Tuesday - Wednesday</h4>
+                            <p>11:00 AM - 12:00 PM
+                                Appointment Required
+                            </p>
+                            <p>2:30 PM - 3:30 PM
+                                Appointment Required</p>
+                            <p>4:00 PM - 4:30 PM
+                                Appointment Required</p>
+                            <p>6:30 PM - 7:30 PM
+                                Appointment Required</p>
+
+                            <h4>Thursday</h4>
+                            <p>7:00 AM - 7:45 AM
+                                Appointment Required
+                            </p>
+                            <p>11:00 AM - 12:00 PM
+                                Appointment Required</p>
+                            <p>2:30 PM - 3:30 PM
+                                Appointment Required</p>
+                            <p>4:00 PM - 4:30 PM
+                                Appointment Required</p>
+                            <p>6:30 PM - 7:30 PM
+                                Appointment Required</p>
+
+                            <h4>Friday</h4>
+                            <p>11:00 AM - 12:00 PM
+                                Appointment Required
+                            </p>
+                            <p>2:30 PM - 3:30 PM
+                                Appointment Required</p>
+                            <p>4:00 PM - 5:00 PM
+                                Appointment Required</p>
+                            <p>6:30 PM - 8:00 PM
+                                Appointment Required</p>
+
+                            <h4>Saturday</h4>
+                            <p>6:30 AM - 12:30 PM
+                                Appointment Required
+                            </p>
+                            <p>1:30 PM - 4:00 PM
+                                Appointment Required</p>
+                        </div>
+
+                        <div id="tabs-3">
+                            <h4>Sunday - Monday</h4>
+                            <p>Closed</p>
+
+                            <h4>Tuesday - Wednesday</h4>
+                            <p>Morning session is at 11:00 AM</p>
+                            <p>Afternoon sessions are at 12:30 PM & 2:00 PM</p>
+                            <p>Evening sessions are at 6:15 PM & 7:45 PM</p>
+
+                            <h4>Thursday</h4>
+                            <p>Morning sessions are at 6:30 AM, 8:00 AM, 11:00 AM</p>
+                            <p>Afternoon sessions are at 12:30 PM & 2:00 PM</p>
+                            <p>Evening sessions are at 6:15 PM & 7:45 PM</p>
+
+                            <h4>Friday</h4>
+                            <p>Morning session is at 11:00 AM</p>
+                            <p>Afternoon sessions are at 12:30 PM, 2:00 PM, 4:00 PM & 5:30 PM</p>
+                            <p>Evening sessions are at 7:00 PM & 8:30 PM</p>
+
+                            <h4>Saturday</h4>
+                            <p>Morning session are at 6:30 AM, 8:00 AM, 9:30 AM & 11:00 AM</p>
+                            <p>Afternoon sessions are at 12:30 PM, 2:00 PM, 3:30 PM & 5:00 PM</p>
+                        </div>
+                        <div id="tabs-4">
+                            <h4>Temple closures</h4>
+                            <p>&#187; <span id="mt0"></span></p>
+                            <p>&#187; <span id="mt1"></span></p>
+                            <p>&#187; <span id="mt2"></span></p>
+                            <p>&#187; <span id="mt3"></span></p>
+                            <p>&#187; <span id="mt4"></span></p>
+                            <p>&#187; <span id="mt5"></span></p>
+                            <p>&#187; <span id="mt6"></span></p>
+                            <p>&#187; <span id="mt7"></span></p>
+                            <p>&#187; <span id="mt8"></span></p>
+                        </div>
+                    </div>
+                    <div class="lineheightdco">
+                        <h4>Temple Background</h4>
+                        <p>The Manhattan New York Temple was the 119th temple of the Church when President Gordon B. Hinckley dedicated it on June 13, 2004.</p>
+
+                        <p>The Manhattan New York Temple was the first ever in the New York metro region and serves more than 42,000 church members in New York, New Jersey and Connecticut. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="push"></div>
+    </main>
+    <footer>
+        <hr>
+        <p> &copy; Temple Inn & Suites | <span id="currentTimeAndDate"></span></p>
+    </footer>
+    <script src="scripts/currenttimeanddate.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/tempInfo.js"></script>
+    <script src="scripts/activelink.js"></script>
+    <script src="scripts/accord.js"></script>
+    <script src="scripts/closures.js"></script>
+</body>
+
+</html>

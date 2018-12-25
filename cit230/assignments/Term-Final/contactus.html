@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Temple Inn & Suites! We are happy you are here ;) Please feel free to contact as by filling out this form. We willl get back to you shortly">
+    <title>Temple Inn & Suites - Contact Us</title>
+    <link rel="tab-icon" href="./images/temple.png">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="align">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <h1 class="headTitle"><a href="index.html">Temple Inn & Suites</a></h1>
+        </div>
+        <h3 class="headCaption">It's time to relax.</h3>
+
+        <nav class="navbar">
+            <button class="hamburger" onclick="toggleHam()">
+                <p>Menu</p><img src="images/temple.png" alt="hamburger icon">
+            </button>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+
+        <div class="cumcon">
+            <iframe class="cum" title="Google map iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d775.3519216656006!2d-77.0963223!3d38.9831909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1544120101547" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+            <P>Tel: 202-555-0118 For International: +1-202-555-0148</P>
+        </div>
+
+        <form method="get" action="confirmationcu.html" id="reserveForm">
+            <h2 class="bookCon">Contact Us</h2>
+            <h5>*Please allow up to 5 business days for us to get back to you! We appreciate your business!</h5>
+            <div>
+                <input type="text" class="fname" name="firstName" pattern="[A-Za-z ] {3, }" placeholder="First Name" required>
+            </div>
+
+            <div>
+                <input type="text" class="lname" name="lastName" pattern="[A-Za-z ] {3, }" placeholder="Last Name" required>
+            </div>
+
+            <div class="falign">
+                <div>
+                    <input type="tel" id="phone" class="telle" name="phone" pattern="[0-9]{10,}" placeholder="Phone Number" required>
+                </div>
+                <div>
+                    <input type="email" id="email" class="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+
+
+            <h2 class="dee">Comments</h2>
+
+
+            <div class="commentsnote">
+                <div class="txtarea">
+                    <textarea name="comments" id="comments" rows="8" cols="50"></textarea>
+                </div>
+            </div>
+            <br>
+            <button class="subBtn" type="submit" value="Submit">Send</button>
+        </form>
+
+        <div class="push"></div>
+    </main>
+     <footer>
+        <hr>
+        <p> &copy; Temple Inn & Suites | <span id="currentTimeAndDate"></span></p>
+    </footer>
+    <script src="scripts/currenttimeanddate.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="scripts/activelink.js"></script>
+</body>
+
+</html>

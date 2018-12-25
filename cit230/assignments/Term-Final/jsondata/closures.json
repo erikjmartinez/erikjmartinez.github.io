@@ -1,0 +1,20 @@
+{
+    "Templehours": [
+        {
+            "name": "Washington D.C. Temple",
+            "closures": "Temple is currently closed due to renovations and is scheduled to be opened and rededicated in 2020."
+    },
+        {
+            "title": "Oakland California Temple",
+            "closures": "Temple is currently closed due to renovations  and is scheduled to be opened and rededicated in 2019."
+    },
+         {
+            "title": "San Diego California Temple",
+            "closures": ["Thursday, December 13, 2018 (Limited Hours)", "Tuesday, December 25, 2018", "Tuesday, January 1, 2019", "Monday, March 18, 2019 - Monday, April 1, 2019", "Saturday, April 6, 2019", "Thursday, July 4, 2019", "Monday, September 30, 2019 - Monday, November 11, 2019", "Wednesday, November 27, 2019 - Thursday, November 28, 2019", "Tuesday, December 24, 2019 - Wednesday, December 25, 2019", "Tuesday, December 31, 2019"]
+    },
+         {
+            "title": "Manhattan New York Temple",
+            "closures": ["Tuesday, December 25, 2018", "Tuesday, January 1, 2019", "Monday, January 21, 2019 - Monday, February 4, 2019", "Saturday, April 6, 2019", "Thursday, July 4, 2019", "Tuesday, July 23, 2019 - Monday, October 28, 2019", "Wednesday, November 27, 2019 - Thursday, November 28, 2019", "Tuesday, December 24, 2019 - Wednesday, December 25, 2019", "Tuesday, December 31, 2019"]
+    }
+  ]
+}

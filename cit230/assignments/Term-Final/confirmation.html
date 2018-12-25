@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Temple Inn & Suites! We are happy you are here ;)">
+    <title>Temple Inn & Suites - Booking Confirmation</title>
+    <link rel="tab-icon" href="./images/temple.png">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="align">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <h1 class="headTitle"><a href="index.html">Temple Inn & Suites</a></h1>
+        </div>
+        <h3 class="headCaption">It's time to relax.</h3>
+
+        <nav class="navbar">
+            <button class="hamburger" onclick="toggleHam()">
+                <p>Menu</p><img src="images/temple.png" alt="hamburger icon">
+            </button>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="activ confirmpage">
+            <h2>Thank you for booking with us!</h2>
+            <p>This is just to confirm that we have received your request.</p>
+            <p>You will be receiving an email soon with more details regarding your stay.</p>
+            <p>See you soon!</p>
+        </div>
+        
+
+        <div class="push"></div>
+    </main>
+    <footer>
+        <hr>
+        <p> &copy; Temple Inn & Suites | <span id="currentTimeAndDate"></span></p>
+    </footer>
+    <script src="scripts/currenttimeanddate.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="scripts/activelink.js"></script>
+</body>
+
+</html>
