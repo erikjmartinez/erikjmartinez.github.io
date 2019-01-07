@@ -9,7 +9,7 @@ body {
 }
 
 body {
-    background-color: gray;
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,7 +19,7 @@ h2,
 h3,
 h4,
 h5 {
-    color: white;
+    color: black;
 }
 
 .headTitle {
@@ -49,7 +49,7 @@ header {
 }
 
 .bookaroom {
-    background-color: #fafafa;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
