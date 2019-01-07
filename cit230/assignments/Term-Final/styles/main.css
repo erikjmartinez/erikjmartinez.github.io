@@ -440,6 +440,10 @@ footer a {
 
 .ui-tabs .ui-tabs-nav li {}
 
+.ui-widget-content {
+    background: white !important;
+}
+
 /*-------------------------------------------------*/
 /*for form on reservation page*/
 #reserveForm {}
