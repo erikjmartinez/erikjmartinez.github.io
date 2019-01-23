@@ -251,15 +251,17 @@ th {
 }
 
 tbody > tr > th {
-	color: #000000;
+	color: ;
 }
 
 tr:nth-child(even) {
-	background: #000000;
+	background:;
+    border-bottom: black solid 1px;
 }
 
 tr:nth-child(odd) {
-	background: #BEBEBE;
+	background: ;
+    border-bottom: black solid 1px;
 }
 
 td {
@@ -284,7 +286,7 @@ tfoot {
 #item20,
 #item23,
 #item24 {
-	color: #A8A8A8;
+	color: black;
 }
 
 /*----------table2-------------*/
@@ -409,7 +411,7 @@ tfoot {
 	transition: all 0.1s ease-in-out;
 	background-color: black;
 	border: 2px solid black;
-	;
+	margin-bottom: 10px;
 }
 
 @media (max-width: 800px) {
