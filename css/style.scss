@@ -32,9 +32,9 @@ $bg-color: #393d47;
   flex-wrap: wrap;
 }
 //  breakpoints
-$break-small: 20em;
-$break-medium: 37.5em;
-$break-large: 62em;
+$break-small: 20em; //600px
+$break-medium: 37.5em; //650px
+$break-large: 62em; //992px
 
 @mixin breakpoint($break) {
   @if $break == large {
@@ -114,6 +114,10 @@ p {
   .section {
     width: 100%;
   }
+}
+.pc-primary,
+.pc-secondary {
+  height: 60vh;
 }
 .card-container {
   max-width: 1050px;
