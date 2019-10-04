@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #40514E;
+}
+
+h1 {
+    font-size: 5.625rem;
+    font-family: 'Bitter', serif;
+    margin: 50px auto 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #66BFBF;
+    padding-bottom: 10px;
+}
+
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    color: #11999E;
+}
+
+p {
+    line-height: 2;
+}
+
+hr {
+    border: solid #EAF6F6 6PX;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+.top-container {
+    position: relative;
+    padding-top: 100px;
+    background-color: #E4F9F5;
+}
+
+.top-container h2 {
+    font-weight: normal;
+}
+
+.top-container h1,
+.top-container h2 {
+    color: #66BFBF;
+}
+
+.tc {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.bc {
+    position: absolute;
+    left: 300px;
+    bottom: 250px;
+}
+
+.profile {
+    margin-top: 10px;
+
+}
+
+.profile p {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.contact-me p {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 80px auto;
+    text-align: left;
+}
+
+.profile img,
+.skill-row img {
+    max-width: 150px;
+    border-radius: 150px;
+}
+
+
+.c1 {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.c2 {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+a {
+    color: #11999E;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+.contact-me {
+    line-height: 2;
+}
+
+.btn {
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 16px;
+    -webkit-box-shadow: 0px 1px 0px #11999E;
+    -moz-box-shadow: 0px 1px 0px #11999E;
+    box-shadow: 0px 1px 0px #11999E;
+    color: #ffffff;
+    font-size: 20px;
+    background: #11999E;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #66BFBF;
+    text-decoration: none;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottom-container p {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 10px 0;
+}
