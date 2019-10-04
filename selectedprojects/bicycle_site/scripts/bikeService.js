@@ -26,7 +26,11 @@
 //    }
 //};
 var bikeServices = new XMLHttpRequest();
-bikeServices.open("GET", "/jsondata/services.json", true);
+bikeServices.open(
+  "GET",
+  "https://raw.githubusercontent.com/erikjmartinez/erikjmartinez.github.io/master/selectedprojects/bicycle_site/jsondata/services.json",
+  true
+);
 bikeServices.send();
 
 bikeServices.onload = function() {
