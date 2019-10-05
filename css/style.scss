@@ -42,7 +42,7 @@ $break-large: 62em; //992px
       @content;
     }
   } @else if $break == medium {
-    @media (max-width: $break-medium) {
+    @media (min-width: $break-medium) {
       @content;
     }
   } @else if $break == small {
@@ -115,6 +115,21 @@ p {
     width: 100%;
   }
 }
+.parallax-container .section {
+  @include breakpoint(large) {
+    position: absolute;
+    top: 40%;
+  }
+}
+#index-banner .section {
+  @include breakpoint(large) {
+    top: 10%;
+  }
+  @include breakpoint(small) {
+    top: 0;
+  }
+}
+
 .pc-primary,
 .pc-secondary {
   height: 60vh;
@@ -138,20 +153,13 @@ p {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 calc(50% - 1rem);
   flex: 1 1 calc(50% - 1rem);
-}
-
-.skills .card img {
-  max-width: 50px;
-  border-radius: 6px;
-}
-
-@media screen and (min-width: 650px) {
-  .skills .card {
+  @include breakpoint(medium) {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 calc(25% - 1rem);
     flex: 1 1 calc(25% - 1rem);
   }
 }
+
 .card {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -171,32 +179,17 @@ p {
     -webkit-box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
   }
-}
-
-.card img {
-  display: block;
-  margin: 0 auto;
-}
-.card h3 {
-  font-weight: 400;
-  font-size: 1rem;
-  margin: 2rem 0 0;
-  text-align: center;
-}
-
-@media only screen and (max-width: 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
+  img {
+    max-width: 50px;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
   }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #index-banner .section {
-    top: 0;
+  h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 2rem 0 0;
+    text-align: center;
   }
 }
 
@@ -209,6 +202,7 @@ p {
 
 footer.page-footer {
   margin: 0;
+  background: linear-gradient(to bottom right, #292c33, $bg-color);
 }
 img:nth-child(12) {
   display: none;
