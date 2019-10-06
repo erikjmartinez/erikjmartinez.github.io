@@ -14,7 +14,8 @@
 body {
   font-family: "Raleway", sans-serif;
 }
-body h1 {
+body h1,
+body .page-footer div h4 {
   color: #57eea1;
   font-family: "Righteous", cursive;
   font-weight: 700;
@@ -150,6 +151,12 @@ p {
   margin: 2rem 0 0;
   text-align: center;
 }
+.card a {
+  color: #1d1e25;
+}
+.card a:hover {
+  text-decoration: underline;
+}
 
 .icon-block {
   padding: 0 15px;
@@ -157,6 +164,15 @@ p {
 
 .icon-block .material-icons {
   font-size: inherit;
+}
+
+input,
+textarea {
+  color: #9e9e9e;
+}
+input:focus,
+textarea:focus {
+  color: #fff;
 }
 
 footer.page-footer {
