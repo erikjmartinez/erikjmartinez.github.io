@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Catamaran", sans-serif;
+  font-family: 'Catamaran', sans-serif;
   line-height: 1.6;
   color: #333;
   font-size: 1.1rem;
@@ -98,7 +98,7 @@ img {
 /* section-b */
 .section-b {
   position: relative;
-  background: url("../img/toyota_supra_red.jpg") no-repeat bottom center/cover;
+  background: url('../img/bmw_xdrive.jpg') no-repeat bottom center/cover;
   height: 600px;
 }
 
