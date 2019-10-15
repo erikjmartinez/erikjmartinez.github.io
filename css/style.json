@@ -1,0 +1,81 @@
+{
+  "generator": "analyze-css v0.12.7",
+  "metrics": {
+    "base64Length": 0,
+    "redundantBodySelectors": 3,
+    "redundantChildNodesSelectors": 0,
+    "colors": 12,
+    "comments": 1,
+    "commentsLength": 33,
+    "complexSelectors": 1,
+    "duplicatedSelectors": 0,
+    "duplicatedProperties": 0,
+    "emptyRules": 0,
+    "expressions": 0,
+    "oldIEFixes": 0,
+    "imports": 0,
+    "importants": 0,
+    "mediaQueries": 4,
+    "notMinified": 0,
+    "multiClassesSelectors": 0,
+    "parsingErrors": 0,
+    "oldPropertyPrefixes": 8,
+    "propertyResets": 0,
+    "qualifiedSelectors": 1,
+    "specificityIdAvg": 0.05,
+    "specificityIdTotal": 2,
+    "specificityClassAvg": 0.95,
+    "specificityClassTotal": 38,
+    "specificityTagAvg": 0.65,
+    "specificityTagTotal": 26,
+    "selectors": 40,
+    "selectorLengthAvg": 1.475,
+    "selectorsByAttribute": 0,
+    "selectorsByClass": 31,
+    "selectorsById": 2,
+    "selectorsByPseudo": 9,
+    "selectorsByTag": 24,
+    "length": 2538,
+    "rules": 35,
+    "declarations": 81
+  },
+  "offenders": {
+    "oldPropertyPrefixes": [
+      "*, *::before, *::after { -webkit-box-sizing: border-box } // was required by Android Browser 3, Chrome 9, iOS Safari 4.2, Safari 5 and earlier @ 1:22",
+      ".skills { -ms-flex-wrap: wrap } // was required by IE 10, IE Mobile 10 and earlier @ 1:1196",
+      ".skills .card { -ms-flex: 1 1 calc(50% - 1rem) } // was required by IE 10, IE Mobile 10 and earlier @ 1:1263",
+      ".skills .card { -ms-flex: 1 1 calc(25% - 1rem) } // was required by IE 10, IE Mobile 10 and earlier @ 1:1378",
+      ".card { -ms-flex: 1 } // was required by IE 10, IE Mobile 10 and earlier @ 1:1460",
+      ".card { -webkit-transition: all 200ms ease } // was required by Android Browser 4.2, Chrome 25, iOS Safari 6, Opera 12, Safari 6 and earlier @ 1:1478",
+      ".card { -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1) } // was required by Android Browser 3, Chrome 9, iOS Safari 4.2, Safari 5 and earlier @ 1:1612",
+      ".card:hover { -webkit-box-shadow: 0px 6px 25px rgba(0,0,0,.1) } // was required by Android Browser 3, Chrome 9, iOS Safari 4.2, Safari 5 and earlier @ 1:1779"
+    ],
+    "redundantBodySelectors": [
+      "body h1 @ 1:112",
+      "body .page-footer div h4 @ 1:112",
+      "body h2 @ 1:207"
+    ],
+    "complexSelectors": ["body .page-footer div h4 @ 1:112"],
+    "mediaQueries": [
+      "@media (max-width: 62em) (1 rules) @ 1:858",
+      "@media (max-width: 62em) (1 rules) @ 1:938",
+      "@media (max-width: 20em) (1 rules) @ 1:994",
+      "@media (min-width: 37.5em) (1 rules) @ 1:1319"
+    ],
+    "qualifiedSelectors": ["footer.page-footer @ 1:2212"],
+    "colors": [
+      "#393d47 (7 times)",
+      "#ffffff (6 times)",
+      "#292c33 (4 times)",
+      "rgba(0,0,0,0.1) (4 times)",
+      "#1d1e25 (2 times)",
+      "#57eea1 (1 times)",
+      "#2d2d2d (1 times)",
+      "rgba(255,255,255,0.8) (1 times)",
+      "#828283 (1 times)",
+      "#ebecec (1 times)",
+      "#9e9e9e (1 times)",
+      "#121318 (1 times)"
+    ]
+  }
+}
