@@ -10,7 +10,8 @@
 body {
   background-color: #80d4ea;
 }
-body #clock {
+
+section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,9 +21,22 @@ body #clock {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
   font-family: courier, monospace;
   font-size: 100px;
   height: 100vh;
+  color: white;
+}
+@media (max-width: 31em) {
+  section {
+    font-size: 50px;
+  }
+}
+@media (max-width: 20em) {
+  section {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

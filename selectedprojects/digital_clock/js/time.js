@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-  function displayTime() {
+  function timeInterval() {
     let currentTime = new Date();
+
     let hours = currentTime.getHours();
     let minutes = currentTime.getMinutes();
     let seconds = currentTime.getSeconds();
     let meridiem = 'AM';
-    // Get div by id
+
+    // Get divs by id
     let clockDiv = document.getElementById('clock');
 
     // While seconds is less then 10
@@ -31,12 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Set div with id clock to the current time
-    clockDiv.innerText = hours + ':' + minutes + ':' + seconds;
+    clockDiv.innerText = hours + ':' + minutes + ':' + seconds + ' ' + meridiem;
 
     // Clock 'tick' effect
     // run displayTime function every second
-    setInterval(displayTime, 1000);
+    setInterval(timeInterval, 1000);
   }
-  // Call function
-  displayTime();
+  timeInterval();
 });
