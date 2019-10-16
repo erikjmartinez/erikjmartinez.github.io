@@ -1,0 +1,45 @@
+@mixin reset {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: courier, monospace;
+  font-size: 100px;
+  height: 100vh;
+}
+
+$body-background-color: #80d4ea;
+
+*,
+::before,
+::after {
+  @include reset;
+}
+
+body {
+  background-color: $body-background-color;
+  #clock {
+    @include layout();
+  }
+}
+
+// #clock {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-family: courier, monospace;
+//   font-size: 100px;
+//   height: 100vh;
+// }
