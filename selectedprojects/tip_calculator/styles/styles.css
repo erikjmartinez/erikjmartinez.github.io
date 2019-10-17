@@ -1,0 +1,104 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+section {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  /* text-align: left; */
+  flex-direction: column;
+  height: 100vh;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e74c3c,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e74c3c,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.calculator {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+
+form {
+  padding: 2em;
+}
+.input-group {
+  font-size: 1.3em;
+}
+
+.dollar_sign::before {
+  position: absolute;
+  content: '$';
+  padding: 2px;
+}
+
+.dollar_sign input {
+  padding-left: 15px;
+}
+
+.pound_sign::before {
+  position: absolute;
+  content: '#';
+  padding: 2px;
+}
+
+.pound_sign input {
+  padding-left: 15px;
+}
+
+input,
+select,
+option {
+  padding: 0.4em;
+  border-radius: 10px;
+  border: whitesmoke;
+  width: 15em;
+  outline: none;
+}
+
+button {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+option:focus,
+button:focus {
+  box-shadow: 0 0 3px #e74c3c;
+}
+
+#totalTip {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+}
