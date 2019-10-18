@@ -10,8 +10,8 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('mapContainer', { static: false })
   gmap: ElementRef;
   map: google.maps.Map;
-  lat = 43.826069;
-  lng = -111.789528;
+  lat = 37.54;
+  lng = -77.46;
 
   coordinates = new google.maps.LatLng(this.lat, this.lng);
   mapOptions: google.maps.MapOptions = {
