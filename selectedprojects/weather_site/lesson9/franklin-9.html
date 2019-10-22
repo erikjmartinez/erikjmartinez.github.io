@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dank Weather-Franklin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Franklin weather page" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main-9.css" />
+    <link rel="stylesheet" href="styles/medium-9.css" />
+    <link rel="stylesheet" href="styles/large-9.css" />
+  </head>
+
+  <body>
+    <header>
+      <img class="hmm" src="images/hmm.png" alt="thinking emoji" />
+      <h1>Weather or Not</h1>
+      <h2>Here I Come</h2>
+      <button class="hamburger" onclick="toggleHam()">
+        <img src="images/Hamburger_icon.png" alt="" />
+      </button>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li class="links"><a href="/lesson9/index.html">Home</a></li>
+        <li class="links"><a href="/lesson9/franklin-9.html">Franklin</a></li>
+        <li class="links"><a href="#">Greenville</a></li>
+        <li class="links"><a href="#">Springfield</a></li>
+        <li class="links">
+          <a href="/lesson9/stormcenter.html">Storm Center</a>
+        </li>
+        <li class="links"><a href="/lesson9/gallery-9.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 class="ftitle">Weather or Not Franklin Forecast</h2>
+      <figure>
+        <img
+          src="images/franklinsmall.jpg"
+          alt="Franklin"
+          class="frankpic"
+          srcset="
+            ./images/franklinlarge.jpg 1200w,
+            ./images/franklinmed.jpg    800w,
+            ./images/franklinsmall.jpg  400w
+          "
+        />
+      </figure>
+      <section class="weather-summary">
+        <h3>Weather Summary</h3>
+
+        <div class="current">
+          <p><span id="crip"></span></p>
+          <picture>
+            <img
+              src="images/placeholder.png"
+              alt="current weather"
+              id="weather_icon"
+            />
+          </picture>
+        </div>
+
+        <div class="highlow">
+          <p>High: <span id="high">00</span>&deg;F</p>
+          <p>Low: <span id="low">00</span>&deg;F</p>
+        </div>
+
+        <div class="conditions">
+          <h3>Current Weather</h3>
+          <p>Tempetaure: <span id="currenttemp"></span>&deg;F</p>
+          <p>Wind Speed: <span id="currentspeed"></span></p>
+          <!-- <p>Precipitation: 0%</p>-->
+          <p>Windchill: <span id="windchill"></span>&deg;F</p>
+        </div>
+      </section>
+
+      <section class="forecast">
+        <h3 class="tenday">Ten Day Forecast</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Day 1</th>
+              <th>Day 2</th>
+              <th>Day 3</th>
+              <th>Day 4</th>
+              <th>Day 5</th>
+              <th>Day 6</th>
+              <th>Day 7</th>
+              <th>Day 8</th>
+              <th>Day 9</th>
+              <th>Day 10</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="forecast-main">
+              <!-- <td><span id="day1"></span> &deg;F</td>
+              <td><span id="day2"></span> &deg;F</td>
+              <td><span id="day3"></span> &deg;F</td>
+              <td><span id="day4"></span> &deg;F</td>
+              <td><span id="day5"></span> &deg;F</td>
+              <td><span id="day6"></span> &deg;F</td>
+              <td><span id="day7"></span> &deg;F</td>
+              <td><span id="day8"></span> &deg;F</td>
+              <td><span id="day9"></span> &deg;F</td>
+              <td><span id="day10"></span> &deg;F</td> -->
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <article class="peek">
+        <h3>Franklin Breaks Record</h3>
+        <img class="peeked" src="images/peeked.jpg" alt="peek image" />
+        <p class="town-article">
+          Lorem ipsum dolor sit amet, ne eum vivendum facilisi molestiae.
+          Officiis pericula ei nec. Sea an vitae nullam platonem. Dico persecuti
+          te ius, ei nec quando commodo. Lorem ipsum dolor sit amet, ne eum
+          vivendum facilisi molestiae. Officiis pericula ei nec. Sea an vitae
+          nullam platonem. Dico persecuti te ius, ei nec quando commodo.Lorem
+          ipsum dolor sit amet, ne eum vivendum facilisi molestiae. Officiis
+          pericula ei nec. Sea an vitae nullam platonem. Dico persecuti te ius,
+          ei nec quando commodo.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <section class="contact">
+        Dank Weather 1738 Weather or Not Dr. California, US
+      </section>
+      <section class="footer-bar">
+        &copy;2018 | All Rights Reserved | Weather or Not |
+        <span id="currentdate">May 23 2018</span>
+      </section>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <!--    <script src="scripts/windchill.js"></script>-->
+    <script src="scripts/openweather.js"></script>
+  </body>
+</html>
