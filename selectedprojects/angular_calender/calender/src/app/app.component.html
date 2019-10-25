@@ -1,6 +1,37 @@
+<!-- <select class="form-control">
+  <option *ngFor="let option of options" [value]="options[option]">
+    {{ option }}
+  </option>
+</select>
+<p></p>
+<button (click)="toggleList()">Filter</button>
+<p>Selected option: {{ selectedOption }}</p> -->
+
+<article>
+  <select (change)="selectChangeHandler($event)">
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+  </select>
+  <p>
+    <span>You selected: </span><b>{{ selectedDay }}</b>
+  </p>
+</article>
+
 <full-calendar
+  #calendar
   defaultView="dayGridMonth"
+  [header]="{
+    left: 'prev,next today',
+    center: 'title',
+    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+  }"
   [plugins]="calendarPlugins"
+  [weekends]="calendarWeekends"
+  [events]="calendarEvents"
+  (dateClick)="handleDateClick($event)"
 ></full-calendar>
 
 <router-outlet></router-outlet>

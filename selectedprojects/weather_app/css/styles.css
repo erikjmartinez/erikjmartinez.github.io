@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#2f96a3, #2e3e8f);
+  color: #ffffff;
+  letter-spacing: 1pt;
+}
+
+.location,
+.temp {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temp {
+  flex-direction: column;
+}
+.temp .temp__degree__section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.temp .temp__degree__section h2 {
+  font-size: 40px;
+}
+.temp .temp__degree__section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */
