@@ -28,8 +28,6 @@ export class AppComponent {
     this.selectedDay = event.target.value;
   }
 
-  toggleFormat() {}
-
   handleDateClick(arg) {
     if (confirm('Would you like to add an event to ' + arg.dateStr + ' ?')) {
       this.calendarEvents = this.calendarEvents.concat({

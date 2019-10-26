@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800|Righteous&display=swap');
+
+$primary-font:'Righteous',
+cursive;
+
+$secondary-font: 'Raleway',
+sans-serif;
+
+@mixin bg-img-layout {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin flex-col-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Border box reset */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+body {
+    font-family: $secondary-font;
+    letter-spacing: 1pt;
+
+    h1,
+    h2 {
+        font-family: $primary-font;
+        font-weight: 800;
+        line-height: 1.2;
+        margin: 0 0 1.5rem 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.site-hero {
+    height: 70vh;
+    background-color: #000000;
+    background-image: url('../images/unsplashdark.jpg');
+    @include bg-img-layout();
+    @include flex-col-layout();
+    color: #ffffff;
+    text-align: center;
+
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 2pt;
+
+        @media (min-width: 650px) {
+            font-size: 3rem;
+        }
+    }
+
+    p {
+        font-size: 1.1rem;
+
+        @media (min-width: 650px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.about-me {
+    height: 50vh;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    @media (max-width: 450px) {
+        margin-bottom: 10rem;
+    }
+
+    @media (max-width: 300px) {
+        margin-bottom: 15rem;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        letter-spacing: 2pt;
+        padding-top: 4rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        padding: 20px;
+
+        @media (min-width: 650px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.technical-skills {
+    padding: 4rem 0;
+    background-color: #000000;
+    background-image: url('../images/unsplashdesktop.jpg');
+    @include bg-img-layout();
+    color: #ffffff;
+
+    .technical-skills--header {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        @media (min-width: 650px) {
+            margin-bottom: 2rem;
+        }
+
+
+        h2 {
+            font-size: 2.5em;
+            letter-spacing: 2pt;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 650px;
+
+            @media (min-width: 650px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.container,
+.site-hero--small,
+.about-me--small,
+.technical-skills--small {
+    max-width: 650px;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    padding: 2.5rem;
+    background: rgba(0, 0, 0, 0.651);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.skills {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.skills .card img {
+    max-width: 60px;
+    border-radius: 6px;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 2rem 0 0;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 2pt;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+@media (min-width: 650px) {
+    .container {
+        max-width: 1050px;
+    }
+
+    .skills .card {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(25% - 1rem);
+        flex: 1 1 calc(25% - 1rem);
+    }
+}
