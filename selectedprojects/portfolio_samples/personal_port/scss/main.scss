@@ -53,6 +53,30 @@ body {
 
 }
 
+nav {
+    height: 6vh;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-container--links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+
+    li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
 .site-hero {
     height: 70vh;
     background-color: #000000;
@@ -61,6 +85,7 @@ body {
     @include flex-col-layout();
     color: #ffffff;
     text-align: center;
+    margin-top: 2em;
 
     h1 {
         font-size: 3.5rem;
@@ -81,17 +106,18 @@ body {
 }
 
 .about-me {
-    height: 50vh;
+    height: 40vh;
     background-color: #ffffff;
     text-align: center;
     margin-bottom: 5rem;
 
     @media (max-width: 450px) {
-        margin-bottom: 10rem;
+
+        margin-bottom: 15rem;
     }
 
-    @media (max-width: 300px) {
-        margin-bottom: 15rem;
+    @media (max-width: 320px) {
+        margin-bottom: 20rem;
     }
 
     h2 {
@@ -180,13 +206,10 @@ body {
 }
 
 .skills .card img {
-    max-width: 60px;
-    border-radius: 6px;
-}
-
-.card img {
     display: block;
     margin: 0 auto;
+    max-width: 3em;
+    border-radius: 6px;
 }
 
 .card h3 {
@@ -196,11 +219,6 @@ body {
     text-align: center;
     color: #ffffff;
     letter-spacing: 2pt;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
 }
 
 @media (min-width: 650px) {
