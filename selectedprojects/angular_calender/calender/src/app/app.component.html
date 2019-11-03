@@ -1,12 +1,4 @@
-<!-- <select class="form-control">
-  <option *ngFor="let option of options" [value]="options[option]">
-    {{ option }}
-  </option>
-</select>
-<p></p>
-<button (click)="toggleList()">Filter</button>
-<p>Selected option: {{ selectedOption }}</p> -->
-<article>
+<!-- <article>
   <select (change)="selectChangeHandler($event)">
     <option value="Monday">Monday</option>
     <option value="Tuesday">Tuesday</option>
@@ -17,7 +9,7 @@
   <p>
     <span>You selected: </span><b>{{ selectedDay }}</b>
   </p>
-</article>
+</article> -->
 
 <full-calendar
   #calendar
@@ -31,6 +23,7 @@
   [weekends]="calendarWeekends"
   [events]="calendarEvents"
   (dateClick)="handleDateClick($event)"
+  (eventClick)="eventClick($eventDetail)"
 ></full-calendar>
-
+<p>Display event : {{ displayEvent | json }}</p>
 <router-outlet></router-outlet>
