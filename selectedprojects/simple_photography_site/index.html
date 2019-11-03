@@ -9,7 +9,8 @@
   <link rel="camera icon" href="/erikjmartinez.github.io/images/photography-icon.png" />
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="styles/reset.css" type="text/css" />
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="styles/simplelightbox.min.css" type="text/css" />
   <link rel="stylesheet" href="styles/mobilephotography.css" type="text/css" />
 </head>
 
@@ -18,7 +19,7 @@
     <h1 class="head">Gringuitolokito's Mobile Photography Sample</h1>
   </header>
   <main>
-    <section>
+    <section class="gallery">
       <a href="images/airport.jpg" class=" progressive replace">
         <img src="images/small.jpg" class="preview" alt="Airport" />
       </a>
@@ -67,6 +68,13 @@
     </div>
   </footer>
   <script src="js/lazyloading.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/simple-lightbox.min.js"></script>
+  <script>
+    $(function () {
+      const $gallery = $('.gallery a').simpleLightbox();
+    });
+  </script>
 </body>
 
 </html>
