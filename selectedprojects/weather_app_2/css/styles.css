@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(../images/darkskys.jpg);
+  /* background: linear-gradient(#2f96a3, #2e3e8f); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1pt;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+canvas,
+img {
+  width: 80px;
+  padding: 5px;
+}
+
+.c-weather {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  /* align-items: center; */
+  flex-direction: column;
+  /* background: linear-gradient(#2f96a3, #2e3e8f); */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+  transition: all 200ms ease;
+}
+
+.c-weather h1 {
+  text-align: center;
+}
+
+.c-weather__info {
+  text-align: center;
+  padding: 25px;
+}
+
+.c-forecast__card {
+  /* background: linear-gradient(#2f96a3, #2e3e8f); */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+  transition: all 200ms ease;
+}
+
+.strip {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  letter-spacing: 1pt;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+@media screen and (max-width: 400px) {
+  .strip {
+    flex-direction: column;
+  }
+}
+
+.close-btn {
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.close-btn:hover {
+  border-width: 1.3px;
+  font-size: 14px;
+}
+
+.content {
+  /* display: none; */
+  transition: opacity 1s ease-in;
+}
+.hide {
+  display: none;
+}
+.preloader {
+  height: 50px;
+  transform-origin: bottom center;
+  animation: rotate 3s linear infinite;
+}
+
+.text {
+  color: #ffffff;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
+}
+
+.bounceball:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform-origin: 50%;
+  animation: bounce 500ms alternate infinite ease;
+}
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0;
+  }
+}
