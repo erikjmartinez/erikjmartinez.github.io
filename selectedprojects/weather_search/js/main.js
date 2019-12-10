@@ -19,31 +19,29 @@ document.getElementById("submit").addEventListener("click", function() {
       const body = document.querySelector("#results");
       const cityTitle = document.createElement("p");
       const cityName = document.createElement("h3");
-      //const weatherIcon = document.createElement("img");
       const weatherIcon = document.createElement("i");
       const currently = document.createElement("p");
+      const desc = document.createElement("p");
 
       // Get icon code
-      let iconCode = data.weather[0].icon;
+      let iconCode = data.weather[0].id;
 
       cityTitle.className += "lead city-title";
       cityName.className += "city-name";
-      //weatherIcon.className += "weather-icon";
-      weatherIcon.className += `wi wi-${iconCode}`;
       currently.className += "lead currently-text";
+      weatherIcon.className += `wi wi-owm-${iconCode} wi-2x`;
+      desc.className += "weather-desc";
 
       cityTitle.textContent = "City";
       cityName.textContent = data.name;
       currently.textContent = "Currently";
-
-      //   let icon_path = "//openweathermap.org/img/w/" + iconCode + ".png";
+      desc.textContent = data.weather[0].description;
 
       body.appendChild(cityTitle);
       body.appendChild(cityName);
-      body.appendChild(weatherIcon);
       body.appendChild(currently);
-
-      //document.querySelector(".weather-icon").src = icon_path;
+      body.appendChild(weatherIcon);
+      body.appendChild(desc);
     });
   }
 });
