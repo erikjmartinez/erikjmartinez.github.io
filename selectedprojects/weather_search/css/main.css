@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Solway:400,700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-custom {
+  border-radius: 0.3em;
+  color: #000000;
+}
+.btn-custom span {
+  margin: 0 0.3em;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#results .city-title {
+  margin: 0;
+}
+#results .city-name {
+  grid-column: 1;
+  grid-row: 2;
+  line-height: 1;
+}
+#results .currently-text {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/*# sourceMappingURL=main.css.map */
