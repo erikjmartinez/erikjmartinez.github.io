@@ -26,13 +26,25 @@
                             placeholder="Enter Zip Code" aria-label="Recipient's Zip Code"
                             aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary btn-custom" id="submit" type="button">Go<span
+                            <button class="btn btn-outline-secondary btn--custom" id="submit" type="button">Go<span
                                     class="mdi mdi-cloud-outline"></span></button>
                         </div>
 
                     </div>
                 </div>
-                <div id="results"></div>
+                <div class="content content--hide">
+                    <div id="results">
+                        <p class="lead city"></p>
+                        <h3 class="city__name"></h3>
+                        <i id="wi"></i>
+                        <p class="lead currently"></p>
+                        <p class="currently__desc"></p>
+                    </div>
+                    <div class="c-forecast">
+                        <ol>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

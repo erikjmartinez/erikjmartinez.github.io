@@ -7,3 +7,17 @@ sans-serif;
 
 $normal: 400;
 $bold: 700;
+
+body {
+  font-family: $secondary-font;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $primary-font;
+    font-weight: $bold;
+  }
+}

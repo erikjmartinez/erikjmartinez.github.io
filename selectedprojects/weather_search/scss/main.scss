@@ -32,16 +32,8 @@ $break-large: 60em;
     }
 }
 
-//.input-container {
-// max-width: 60%;
-// margin: 0 auto;
 
-// @include breakpoint(medium) {
-//     max-width: 80%;
-// }
-//}
-
-.btn-custom {
+.btn--custom {
     border-radius: .3em;
     color: #000000;
 
@@ -50,23 +42,38 @@ $break-large: 60em;
     }
 }
 
+.content--hide {
+    display: none;
+}
+
 #results {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
-    .city-title {
+    .city {
         margin: 0;
+
+        &__name {
+            grid-column: 1;
+            grid-row: 2;
+            line-height: 1;
+        }
     }
 
-    .city-name {
-        grid-column: 1;
-        grid-row: 2;
-        line-height: 1;
-    }
-
-    .currently-text {
+    .currently {
         grid-column: 2;
         grid-row: 1;
+
+        &__desc {
+            grid-column: 2;
+            grid-row: 2;
+            margin: 3px 0 0 45px;
+        }
+    }
+
+    .wi {
+        grid-column: 2;
+        grid-row: 2;
     }
 }

@@ -31,7 +31,6 @@ window.addEventListener("load", () => {
       document.querySelector(".c-weather__summary").innerHTML = summary;
       document.getElementById("c-temp").innerHTML = degree;
 
-      // Get weather icon
       const weathericon = document.querySelector(".c-weather__icon");
       weathericon.appendChild(canvas);
 
@@ -44,6 +43,7 @@ window.addEventListener("load", () => {
       for (var i = 0; i < 5; i++) {
         let iconId = `c-forecast--icon--${i}`;
         const item = document.createElement("li");
+
         item.classList.add("c-forecast__card");
         item.innerHTML =
           "<div class='c-weather__info'><canvas id=" +

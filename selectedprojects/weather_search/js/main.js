@@ -16,32 +16,26 @@ document.getElementById("submit").addEventListener("click", function() {
   } else {
     getCurrentWeather(zipCode.value).then(data => {
       console.log(data);
-      const body = document.querySelector("#results");
-      const cityTitle = document.createElement("p");
-      const cityName = document.createElement("h3");
-      const weatherIcon = document.createElement("i");
-      const currently = document.createElement("p");
-      const desc = document.createElement("p");
+      // Display content
+      const showContent = document.querySelector(".content");
+      showContent.classList.remove("content--hide");
+
+      document.querySelector(".city").innerHTML = "City";
+      document.querySelector(".city__name").innerHTML = data.name;
+      document.querySelector(".currently").innerHTML = "Currently";
+      document.querySelector(".currently__desc").innerHTML =
+        data.weather[0].description;
 
       // Get icon code
       let iconCode = data.weather[0].id;
+      let iconClass = "wi wi-owm-" + iconCode + " wi-2x";
+      const showIcon = document.getElementById("wi");
+      showIcon.className = iconClass;
 
-      cityTitle.className += "lead city-title";
-      cityName.className += "city-name";
-      currently.className += "lead currently-text";
-      weatherIcon.className += `wi wi-owm-${iconCode} wi-2x`;
-      desc.className += "weather-desc";
-
-      cityTitle.textContent = "City";
-      cityName.textContent = data.name;
-      currently.textContent = "Currently";
-      desc.textContent = data.weather[0].description;
-
-      body.appendChild(cityTitle);
-      body.appendChild(cityName);
-      body.appendChild(currently);
-      body.appendChild(weatherIcon);
-      body.appendChild(desc);
+      // get 5 day forecast
+      getFiveDayForecast(zipCode.value).then(fiveDayData => {
+        console.log(fiveDayData);
+      });
     });
   }
 });
@@ -51,9 +45,16 @@ function validateZipCode(elementValue) {
   return zipCodePattern.test(elementValue);
 }
 
-function getCurrentWeather(zipCode) {
-  const api = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&appid=7b807c1ed0a1bc132675e584fce248e1&units=imperial'`;
-  return fetch(api).then(res => {
+async function getCurrentWeather(zipCode) {
+  const API = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&appid=7b807c1ed0a1bc132675e584fce248e1&units=imperial`;
+  return await fetch(API).then(res => {
+    return res.json();
+  });
+}
+
+async function getFiveDayForecast(zipCode) {
+  const fiveDayAPI = `https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},us&appid=7b807c1ed0a1bc132675e584fce248e1&units=imperial`;
+  return await fetch(fiveDayAPI).then(res => {
     return res.json();
   });
 }

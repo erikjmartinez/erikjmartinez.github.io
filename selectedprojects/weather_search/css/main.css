@@ -7,12 +7,29 @@
   margin: 0;
 }
 
-.btn-custom {
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Solway", serif;
+  font-weight: 700;
+}
+
+.btn--custom {
   border-radius: 0.3em;
   color: #000000;
 }
-.btn-custom span {
+.btn--custom span {
   margin: 0 0.3em;
+}
+
+.content--hide {
+  display: none;
 }
 
 #results {
@@ -20,17 +37,26 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-#results .city-title {
+#results .city {
   margin: 0;
 }
-#results .city-name {
+#results .city__name {
   grid-column: 1;
   grid-row: 2;
   line-height: 1;
 }
-#results .currently-text {
+#results .currently {
   grid-column: 2;
   grid-row: 1;
+}
+#results .currently__desc {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 3px 0 0 45px;
+}
+#results .wi {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 /*# sourceMappingURL=main.css.map */
