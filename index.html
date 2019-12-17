@@ -1,384 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="An online portfolio of Full-Stack/Front-End developer Erik Martinez."
-    />
-    <meta name="keywords" content="Full-Stack developer, Front-End developer" />
-    <meta name="author" content="Erik Martinez" />
 
-    <title>Erik Martinez</title>
-    <link rel="camera icon" href="images/tablogo.png" />
-    <!-- CSS  -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway|Righteous&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-149447416-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="The online portfolio of Erik Martinez." />
+  <meta name="keywords" content="web developer, front end developer, full stack developer" />
+  <meta name="author" content="Erik Martinez" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Erik Martinez - Portfolio</title>
+</head>
 
-      gtag('config', 'UA-149447416-1');
-    </script>
-  </head>
-  <body>
-    <nav id="casa">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="index.html" class="brand-logo"
-          ><img src="images/emlogow.png" alt="logo"
-        /></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#casa">Home</a></li>
-          <li><a href="#aboutme">About Me</a></li>
-          <li><a href="#techskills">Technical Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contactme">Contact Me</a></li>
-        </ul>
+<body>
+  <div class="loader">
+    <span class="loader--dot"></span>
+    <span class="loader--dot"></span>
+    <span class="loader--dot"></span>
+    <span class="loader--dot"></span>
+    <span class="loader--dot"></span>
+    <span class="loader--dot"></span>
+    <span class="loader--text"></span>
+  </div>
+  <main class="main__content hide">
+    <section class="site-hero">
+      <header class="site-hero--small">
+        <h1>Erik Martinez</h1>
+        <p>
+          <span id="developer"></span>
+        </p>
+      </header>
+    </section>
 
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#casa" class="sidenav-close">Home</a></li>
-          <li><a href="#aboutme" class="sidenav-close">About Me</a></li>
-          <li>
-            <a href="#techskills" class="sidenav-close">Technical Skills</a>
-          </li>
-          <li><a href="#projects" class="sidenav-close">Projects</a></li>
-          <li><a href="#contactme" class="sidenav-close">Contact Me</a></li>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
-          ><i class="material-icons white-text">menu</i></a
-        >
-      </div>
-    </nav>
+    <section class="about-me" id="about">
+      <header class="about-me--small">
+        <h2>About Me</h2>
+        <p>
+          I'm a continuous, tireless seeker of all things tech. When I am not coding for work,I am coding to learn or
+          just for fun &#128526;.
+        </p>
+        <p>
+          I'm a well-organised person, a problem solver, and I have eye for detail. I
+          <svg class="heart" viewBox="0 0 32 29.6">
+            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+          </svg> the outdoors, tech and binge watching TV series with my wife.
+        </p>
+        <p>
+          My skills are broad: from front end development to back end development. I enjoy each aspect, and love
+          building sites from start to finish.
+        </p>
 
-    <div id="index-banner" class="parallax-container pc-primary">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <br /><br />
-          <h1 class="header center">
-            Erik Martinez
-          </h1>
-          <div class="row center">
-            <h5 class="header col s12 white-text">
-              <i class="material-icons white-text">subdirectory_arrow_right</i>
-              A Full-Stack Developer in the making.
-              <i class="material-icons white-text">subdirectory_arrow_left</i>
-            </h5>
-          </div>
-          <div class="row center" id="aboutme">
-            <a
-              href="https://github.com/erikjmartinez"
-              class="btn-large waves-effect waves-light"
-              ><img src="images/GitHub-Mark-Light-32px.png" alt="GitHub" />My
-              GitHub</a
-            >
-          </div>
+      </header>
+    </section>
+
+    <section class="technical-skills alt-bg" id="skills">
+      <header class="technical-skills--header">
+        <div class="technical-skills--small">
+          <h2>Technical Skills</h2>
+          <p>
+            I specialize in full stack development, with knowledge and
+            experience in the following technologies.
+          </p>
         </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="section">
-        <!--   Icon Section   -->
-        <div class="row">
-          <div class="col s12 center black-text">
-            <h2>About Me</h2>
-          </div>
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center black-text">
-                <i class="material-icons">school</i>
-              </h2>
-              <h5 class="center">
-                Brigham Young University-Idaho Graduate
-              </h5>
-
-              <!-- <p class="light center">
-                Graduated from Brigham Young University-Idaho
-              </p> -->
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center black-text">
-                <i class="material-icons">computer</i>
-              </h2>
-              <h5 class="center">LOVES Technology</h5>
-
-              <!-- <p class="light">
-                By utilizing elements and principles of Material Design, we were
-                able to create a framework that incorporates components and
-                animations that provide more feedback to users. Additionally, a
-                single underlying responsive system across all platforms allow
-                for a more unified user experience.
-              </p> -->
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center black-text">
-                <i class="material-icons">insert_emoticon</i>
-              </h2>
-              <h5 class="center" id="techskills">Proud Nerd</h5>
-
-              <!-- <p class="light">
-                We have provided detailed documentation as well as specific code
-                examples to help new users get started. We are also always open
-                to feedback and can answer any questions a user may have about
-                Materialize.
-              </p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="parallax-container pc-secondary valign-wrapper">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <div class="row center">
-            <h2 class="header col s12 light white-text">
-              Technical Skills
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section id="skills">
-      <div class="card-container">
+      </header>
+      <div class="container">
         <div class="flex skills">
           <div class="card">
-            <img src="images/html.png" alt="HTML5 Logo" />
+            <img src="./images/html.png" alt="HTML5 Logo" />
             <h3>HTML</h3>
           </div>
           <div class="card">
-            <img src="images/css.png" alt="CSS3 Shield" />
+            <img src="./images/css.png" alt="CSS3 Shield" />
             <h3>CSS</h3>
           </div>
           <div class="card">
-            <img src="images/sass.png" alt="Sass Logo" />
+            <img src="./images/sass.png" alt="Sass Logo" />
             <h3>Sass</h3>
           </div>
           <div class="card">
-            <img src="images/js.png" alt="JavaScript Logo" />
+            <img src="./images/js.png" alt="JavaScript Logo" />
             <h3>JavaScript</h3>
           </div>
           <div class="card">
-            <img src="images/ts.png" alt="TypeScript Logo" />
+            <img src="./images/ts.png" alt="TypeScript Logo" />
             <h3>TypeScript</h3>
           </div>
           <div class="card">
-            <img src="images/angular.png" alt="Angular Logo" />
+            <img src="./images/angular.png" alt="Angular Logo" />
             <h3>Angular</h3>
           </div>
           <div class="card">
-            <img src="images/dotnet.png" alt=".NET Logo" />
-            <h3>.NET</h3>
+            <img src="./images/nodejs-icon.svg" alt="Node.js Logo" />
+            <h3>Node.js</h3>
           </div>
           <div class="card">
-            <img src="images/php.png" alt="PHP Logo" />
+            <img src="./images/php.png" alt="PHP Logo" />
             <h3>PHP</h3>
           </div>
           <div class="card">
-            <img src="images/mysql.png" alt="MySQL Logo" />
+            <img src="./images/microsoft-sql-server.png" alt="Microsoft SQL Server Logo" />
+            <h3>Microsoft SQL Server</h3>
+          </div>
+          <div class="card">
+            <img src="./images/mysqllogo.svg" alt="MySQL Logo" />
             <h3>MySQL</h3>
           </div>
           <div class="card">
-            <img src="images/microsoft-sql-server.png" alt="SQL Server Logo" />
-            <h3>SQL Server</h3>
+            <img src="./images/postgresql.png" alt="PostgreSQL Logo" />
+            <h3>PostgreSQL</h3>
           </div>
           <div class="card">
-            <img src="images/windows.png" alt="Windows Logo" />
-            <h3>Windows</h3>
+            <img src="./images/git.png" alt="Git Logo" />
+            <h3>Git</h3>
           </div>
           <div class="card">
-            <img src="images/macos.png" alt="MacOS Logo" />
-            <h3>MacOS</h3>
-          </div>
-          <div class="card">
-            <img src="images/linux.png" alt="Linux Logo" />
+            <img src="./images/linux.png" alt="Git Logo" />
             <h3>Linux</h3>
           </div>
-          <div class="card">
-            <img src="images/git.png" alt="Git Logo" />
-            <h3 id="projects">Git</h3>
-          </div>
         </div>
       </div>
     </section>
+  </main>
+  <script src="js/texttype.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+  <script src="js/loading.js"></script>
+</body>
 
-    <div class="parallax-container pc-secondary valign-wrapper">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <div class="row center">
-            <h2 class="header col s12 light white-text">
-              Projects
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section id="skills">
-      <div class="card-container">
-        <div class="flex skills">
-          <div class="card">
-            <a href="selectedprojects/bicycle_site/home.html">
-              <img
-                src="images/gear-system-bicycle-spare-parts-512.png"
-                alt="The Mountain Spoke Logo"
-              />
-              <h3>The Mountain Spoke</h3>
-            </a>
-          </div>
-          <div class="card">
-            <a href="selectedprojects/simple_photography_site/index.html">
-              <img
-                src="images/photography-icon.png"
-                alt="Simple Photography Logo"
-              />
-              <h3>Flex Photography</h3>
-            </a>
-          </div>
-          <div class="card">
-            <a href="selectedprojects/dealership_site/index.html">
-              <img src="images/car_brake.png" alt="Dealership Logo" />
-              <h3>Dealership Landing Page</h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="page-footer" id="contactme">
-      <div class="container form-container">
-        <div class="row">
-          <div class="col s12 center">
-            <h4>Let's Connect</h4>
-
-            <form
-              action="https://getform.io/f/59b10047-5ed7-45db-8116-51c31f01dbdc"
-              method="post"
-              id="myForm"
-            >
-              <div class="input-field col s12 m6">
-                <!-- <i class="material-icons prefix">account_circle</i> -->
-                <label for="name">Name</label>
-                <input type="text" name="name" />
-              </div>
-              <div class="input-field col s12 m6">
-                <!-- <i class="material-icons prefix">email</i> -->
-                <label for="email">Email</label>
-                <input type="email" name="_replyto" class="validate" />
-              </div>
-              <div class="input-field col s12 m12">
-                <label for="message">Message</label>
-                <textarea
-                  name="message"
-                  class="materialize-textarea"
-                ></textarea>
-              </div>
-              <input type="text" name="_gotcha" style="display:none" />
-              <button
-                class="btn waves-effect waves-light s12"
-                type="submit"
-                value="Send"
-                onclick="resetForm()"
-              >
-                Send<i class="material-icons right">send</i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- <div id="form" class="container">
-        <div class="section">
-          <div class="row">
-            <div class="col s12 center">
-              <h3 id="contact">
-                <a href="mailto:someone@example.com" target="_top"
-                  ><i class="mdi-content-send deep-orange-text"></i
-                ></a>
-              </h3>
-              <h4 class="">Contact Me</h4>
-              <div class="row">
-                <form class="col s12">
-                  <div class="row">
-                    <div class="input-field col s12 m6">
-                      <input id="first_name" type="text" class="validate" />
-                      <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                      <input id="last_name" type="text" class="validate" />
-                      <label for="last_name">Last Name</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <textarea
-                        id="textarea1"
-                        class="materialize-textarea"
-                      ></textarea>
-                      <label for="textarea1">Message</label>
-
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <input id="email" type="email" class="validate" />
-                          <label for="email">Email</label>
-                        </div>
-                      </div>
-                      <button
-                        class="deep-orange darken-1 btn waves-effect waves-light"
-                        type="submit"
-                        name="action"
-                      >
-                        Submit
-                        <i class="material-icons right">send</i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="footer-copyright">
-        <div class="container center white-text">
-          <span>
-            Erik Martinez | 2019 | Made with
-            <a
-              class="materialize-red-text text-lighten-3"
-              href="http://materializecss.com"
-              >Materialize</a
-            ></span
-          >
-        </div>
-      </div>
-    </footer>
-
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/reset.js"></script>
-  </body>
 </html>

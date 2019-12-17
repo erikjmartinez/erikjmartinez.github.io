@@ -1,24 +1,104 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800|Righteous&display=swap');
-
-:root {
-  /* Colors */
-  --color-1: #ffffff;
-  --color-2: #f0f4ff;
-  --color-3: #4e67eb;
-  --color-4: #291d89;
-
-  /* Font */
-  --primary-font: 'Righteous', cursive;
-  --secondary-font: 'Raleway', sans-serif;
-
-  /* Breakpoints */
-  --break-small: 20em;
-  --break-medium: 40em;
-  --break-large: 60em;
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,800|Righteous&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1pt;
+  font-size: 1em;
+}
+body h1,
+body h2 {
+  font-family: "Righteous", cursive;
+  font-weight: 800;
+  line-height: 1.2;
+}
+body h1 {
+  font-size: 1.5em;
 }
 
+.loader {
+  height: 20px;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.loader--dot {
+  animation: loader 2s ease-in-out infinite;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  border: 2px solid white;
+}
+.loader--dot:first-child {
+  background-color: #8cc759;
+  animation-delay: 0.5s;
+}
+.loader--dot:nth-child(2) {
+  background-color: #8c6daf;
+  animation-delay: 0.4s;
+}
+.loader--dot:nth-child(3) {
+  background-color: #ef5d74;
+  animation-delay: 0.3s;
+}
+.loader--dot:nth-child(4) {
+  background-color: #f9a74b;
+  animation-delay: 0.2s;
+}
+.loader--dot:nth-child(5) {
+  background-color: #60beeb;
+  animation-delay: 0.1s;
+}
+.loader--dot:nth-child(6) {
+  background-color: #fbef5a;
+  animation-delay: 0s;
+}
+.loader--text {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+  width: 4rem;
+  margin: auto;
+}
+.loader--text:after {
+  content: "Loading";
+  font-weight: bold;
+  animation: loading-text 2s infinite;
+}
 
-/* Border box reset */
+@keyframes loader {
+  15% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(230px);
+  }
+  65% {
+    transform: translateX(230px);
+  }
+  95% {
+    transform: translateX(0);
+  }
+}
+@keyframes loading-text {
+  0% {
+    content: "Loading";
+  }
+  25% {
+    content: "Loading.";
+  }
+  50% {
+    content: "Loading..";
+  }
+  75% {
+    content: "Loading...";
+  }
+}
 *,
 *::before,
 *::after {
@@ -31,21 +111,24 @@
 html {
   height: 100%;
   font-size: 1rem;
-  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-body {
-  font-family: var(--secondary-font);
-  color: #fff;
-  letter-spacing: 1pt;
+.hide {
+  display: none;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation: fadeOut 2s ease-out;
+  animation: fadeOut 2s ease-out;
+}
+
+main {
+  -webkit-animation: fadeIn 2s ease-in;
+  animation: fadeIn 2s ease-in;
 }
 
 h1,
 h2 {
-  color: #ffffff;
-  font-family: var(--primary-font);
-  font-weight: 800;
-  line-height: 1.2;
   margin: 0 0 1.5rem 0;
 }
 
@@ -53,118 +136,119 @@ a {
   text-decoration: none;
 }
 
-/* Site-Header */
-/* .site-header {
-  color: white;
-  text-align: center;
+nav {
+  height: 6vh;
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.site-hero {
+  height: 80vh;
+  background-color: #000000;
+  background-image: url("../images/unsplashdark.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: calc(90vh - 60px);
-}
-
-.site-header h1 {
-  font-size: 3em;
-}
-
-.site-header p {
-  font-size: 1.1rem;
-  margin: 2.5rem 0;
-  padding: 20px;
-  max-width: 650px;
-}
-
-.primary {
-  color: var(--color-3);
-}
-
-.underline a {
-  display: inline-block;
-}
-
-.underline > a:hover {
-  text-decoration: underline;
-}
-
-a.button {
-  color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 1rem 1.75rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  display: inline-block;
-  margin: 10px;
-}
-
-a.button:hover {
-  color: white;
-  border: 1px solid white;
-} */
-
-/* Main Header */
-.main-header {
-  color: white;
-  background-image: url('./images/unsplashdark.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  text-align: center;
-  height: 70vh;
-}
-
-.main-header h1,
-.main-header p {
-  color: white;
-}
-
-.about-me,
-.about-me h1 {
-  color: black;
+  color: #ffffff;
   text-align: center;
 }
-
-/* Technical Section */
-.section {
-  padding: 2rem 0;
-  background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1007&q=80');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.site-hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2pt;
+}
+@media (min-width: 650px) {
+  .site-hero h1 {
+    font-size: 3rem;
+  }
+}
+.site-hero p {
+  font-size: 1.1rem;
+}
+@media (min-width: 650px) {
+  .site-hero p {
+    font-size: 1.2rem;
+  }
 }
 
-.section-header {
+.about-me {
+  background-color: #ffffff;
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 5em 0;
 }
-
-.section-header h2 {
+.about-me h2 {
   font-size: 2.5em;
   letter-spacing: 2pt;
 }
+.about-me p {
+  font-size: 1.1rem;
+  padding: 10px;
+}
+@media (min-width: 650px) {
+  .about-me p {
+    font-size: 1.2rem;
+  }
+}
 
-.section-header p {
+.heart {
+  fill: red;
+  position: relative;
+  top: 5px;
+  max-width: 15px;
+  vertical-align: text-top;
+}
+
+.technical-skills {
+  padding: 5em 0;
+  background-color: #000000;
+  background-image: url("../images/unsplashdesktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+.technical-skills .technical-skills--header {
+  text-align: center;
+  padding-bottom: 3em;
+}
+.technical-skills .technical-skills--header h2 {
+  font-size: 2.5em;
+  letter-spacing: 2pt;
+}
+.technical-skills .technical-skills--header p {
   font-size: 1.1rem;
   margin: 0 auto;
   padding: 20px;
   max-width: 650px;
 }
+@media (min-width: 650px) {
+  .technical-skills .technical-skills--header p {
+    font-size: 1.2rem;
+  }
+}
 
 .container,
-.small-container {
-  max-width: 1050px;
+.site-hero--small,
+.about-me--small,
+.technical-skills--small {
+  max-width: 650px;
   padding: 0 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -181,10 +265,6 @@ a.button:hover {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  /*border: 1px solid #ebecec;
-   border-radius: 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
   margin: 0.5rem;
 }
 
@@ -200,13 +280,10 @@ a.button:hover {
 }
 
 .skills .card img {
-  max-width: 60px;
-  border-radius: 6px;
-}
-
-.card img {
   display: block;
   margin: 0 auto;
+  max-width: 3em;
+  border-radius: 6px;
 }
 
 .card h3 {
@@ -218,26 +295,9 @@ a.button:hover {
   letter-spacing: 2pt;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-@media screen and (min-width: 650px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  .section {
-    padding: 4rem 0;
-  }
-
-  .section-header {
-    margin-bottom: 4rem;
-  }
-
-  .section-header p {
-    font-size: 1.1rem;
+@media (min-width: 650px) {
+  .container {
+    max-width: 1050px;
   }
 
   .skills .card {
@@ -246,3 +306,37 @@ img {
     flex: 1 1 calc(25% - 1rem);
   }
 }
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

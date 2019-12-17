@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800|Righteous&display=swap');
+
+$primary-font:'Righteous',
+cursive;
+
+$secondary-font: 'Raleway',
+sans-serif;
+
+body {
+  font-family: $secondary-font;
+  letter-spacing: 1pt;
+  font-size: 1em;
+
+  h1,
+  h2 {
+    font-family: $primary-font;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}

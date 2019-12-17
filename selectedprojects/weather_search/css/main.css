@@ -52,11 +52,40 @@ body h6 {
 #results .currently__desc {
   grid-column: 2;
   grid-row: 2;
-  margin: 3px 0 0 45px;
+  margin: 0.8em 0 0 2.7em;
+}
+#results .currently__temp {
+  grid-column: 2;
+  grid-row: 2;
+  margin: -8px 0 0 45px;
+}
+#results .currently__feels {
+  grid-column: 2;
+  margin: 1.8em 3em;
+  grid-column: 2;
+  grid-row: 2/3;
+  font-size: 0.9em;
 }
 #results .wi {
   grid-column: 2;
   grid-row: 2;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.forecast h4 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.forecast ol {
+  margin: -8px 0 0 45px;
+  grid-column: 2;
+}
+.forecast li {
+  list-style: none;
+  grid-column: 2;
 }
 
 /*# sourceMappingURL=main.css.map */
