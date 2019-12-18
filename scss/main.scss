@@ -143,7 +143,7 @@ nav {
     @include bg-img-layout();
     color: #ffffff;
 
-    .technical-skills--header {
+    &--header {
         text-align: center;
         padding-bottom: 3em;
 
@@ -165,10 +165,52 @@ nav {
     }
 }
 
+.experience {
+    padding: 5em 0;
+    color: #000000;
+
+    &-header {
+        text-align: center;
+        padding-bottom: 3em;
+
+        h2 {
+            font-size: 2.5em;
+            letter-spacing: 2pt;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 650px;
+
+            @media (min-width: 650px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.job-description {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+
+    h3,
+    p {
+        margin-bottom: 1.5em;
+    }
+
+    ul {
+        padding-left: 3em;
+    }
+}
+
 .container,
 .site-hero--small,
 .about-me--small,
-.technical-skills--small {
+.technical-skills--small,
+.experience--small {
     max-width: 650px;
     padding: 0 1rem;
     margin-left: auto;
@@ -216,7 +258,52 @@ nav {
     letter-spacing: 2pt;
 }
 
+/* Experience */
+.job {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    // border-bottom: 1px solid #ebecec;
+    margin: 0 1.5em 2em;
+
+    &-title {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    &-company img {
+        width: 110px;
+        // height: 50px;
+    }
+
+    &-description h3 {
+        text-align: center;
+    }
+
+    //     &:last-of-type {
+    //         border-bottom: none;
+    //         margin-bottom: 0;
+    //         padding-bottom: 0;
+    //     }
+
+    //     &-title {
+    //         text-align: center;
+    //         padding-bottom: 2rem;
+    //     }
+
+    //     &-description h3 {
+    //         text-align: center;
+    //         font-weight: 800;
+    //     }
+
+    //     &-description p {
+    //         margin-bottom: 1.5rem;
+    //     }
+}
+
 @media (min-width: 650px) {
+
     .container {
         max-width: 1050px;
     }
@@ -227,6 +314,58 @@ nav {
         flex: 1 1 calc(25% - 1rem);
     }
 }
+
+@media (min-width: 900px) {
+    .job {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding: 2rem 0;
+
+        &-title {
+            text-align: left;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+            margin-right: 5em;
+            padding-bottom: 2em;
+        }
+    }
+
+}
+
+// @media screen and (min-width: 900px) {
+//     .job {
+//         -webkit-box-orient: horizontal;
+//         -webkit-box-direction: normal;
+//         -ms-flex-direction: row;
+//         flex-direction: row;
+//         padding: 2rem 0;
+
+//         &-title {
+//             text-align: left;
+//             -webkit-box-flex: 0;
+//             -ms-flex: 0 1 200px;
+//             flex: 0 1 200px;
+//             margin: 0 6rem 0 0;
+//         }
+
+//         &-description {
+//             -webkit-box-flex: 1;
+//             -ms-flex: 1;
+//             flex: 1;
+
+//             h3 {
+//                 text-align: left;
+//             }
+//         }
+//     }
+
+//     .experience-subcontainer {
+//         max-width: 1050px;
+//     }
+// }
 
 @-webkit-keyframes fadeOut {
     0% {
