@@ -48,6 +48,7 @@ html {
 }
 
 main {
+    position: relative;
     -webkit-animation: fadeIn 2s ease-in;
     animation: fadeIn 2s ease-in;
 }
@@ -62,13 +63,129 @@ a {
 }
 
 nav {
-    height: 6vh;
-    background-color: black;
-    overflow: hidden;
     position: fixed;
-    top: 0;
     width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #2A251F;
+    color: #ffffff;
+
+    li {
+        list-style: none;
+        // padding-left: 0;
+        padding: 0 1em;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+    }
+
+    span {
+        display: flex;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: #ffffff;
+        // transition: all 0.3s ease;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
 }
+
+.logo {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    // transform: translateX(100%);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width:768px) {
+    // body {
+    //     overflow: hidden;
+    // }
+
+    .nav-inactive {
+        transform: translateX(100%);
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        width: 50%;
+        top: 8vh;
+        background-color: #2A251F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+
+        li {
+            opacity: 0;
+        }
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+@keyframes navLinksFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+.toggle .bar-1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .bar-2 {
+    opacity: 0;
+}
+
+.toggle .bar-3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}
+
+// nav {
+//     height: 6vh;
+//     background-color: black;
+//     overflow: hidden;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+// }
 
 .site-hero {
     height: 80vh;
