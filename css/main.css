@@ -99,44 +99,6 @@ body h1 {
     content: "Loading...";
   }
 }
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  height: 100%;
-  font-size: 1rem;
-  scroll-behavior: smooth;
-}
-
-.hide {
-  display: none;
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
-  -webkit-animation: fadeOut 2s ease-out;
-  animation: fadeOut 2s ease-out;
-}
-
-main {
-  position: relative;
-  -webkit-animation: fadeIn 2s ease-in;
-  animation: fadeIn 2s ease-in;
-}
-
-h1,
-h2 {
-  margin: 0 0 1.5rem 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 nav {
   position: fixed;
   width: 100%;
@@ -157,6 +119,19 @@ nav li a {
   color: #ffffff;
   font-size: 1em;
   letter-spacing: 1px;
+  position: relative;
+}
+nav li a::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0;
+  background-color: #ffffff;
+  position: absolute;
+  transition: all ease-in-out 280ms;
+}
+nav li a:hover::after {
+  width: 100%;
 }
 nav span {
   display: flex;
@@ -236,14 +211,62 @@ nav span {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+.hide {
+  display: none;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation: fadeOut 2s ease-out;
+  animation: fadeOut 2s ease-out;
+}
+
+main {
+  position: relative;
+  -webkit-animation: fadeIn 2s ease-in;
+  animation: fadeIn 2s ease-in;
+}
+
+h1,
+h2 {
+  margin: 0 0 1.5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .site-hero {
   height: 80vh;
+  height: calc(var(--vh, 1vh) * 80);
   background-color: #000000;
   background-image: url("../images/unsplashdark.jpg");
+  /* Background image is centered vertically and horizontally at all times */
   background-position: center;
+  /* Background image doesn't tile */
   background-repeat: no-repeat;
-  background-size: cover;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+   the content's height is greater than the image's height */
   background-attachment: fixed;
+  /* This is what makes the background image rescale based
+   on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+   while the background image is loading */
+  background-color: #464646;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,10 +332,19 @@ nav span {
   padding: 5em 0;
   background-color: #000000;
   background-image: url("../images/unsplashdesktop.jpg");
+  /* Background image is centered vertically and horizontally at all times */
   background-position: center;
+  /* Background image doesn't tile */
   background-repeat: no-repeat;
-  background-size: cover;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+   the content's height is greater than the image's height */
   background-attachment: fixed;
+  /* This is what makes the background image rescale based
+   on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+   while the background image is loading */
+  background-color: #464646;
   color: #ffffff;
 }
 .technical-skills--header {
