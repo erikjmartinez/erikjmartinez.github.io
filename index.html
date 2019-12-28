@@ -23,16 +23,16 @@
     <span class="loader--dot"></span>
     <span class="loader--text"></span>
   </div>
-  <main class="main-content hide">
+  <main class="main-content hide" id="home">
     <nav>
       <div class="logo">
-        <h4>E.M</h4>
+        <a href="#home"><img src="images/emlogow.png" alt="Logo"></a>
       </div>
       <ul class="nav-links nav-inactive">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Experience</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
       </ul>
       <div class="burger">
         <span class="bar-1"></span>
@@ -134,7 +134,7 @@
         </div>
     </section>
 
-    <section class="experience alt-bg" id="skills">
+    <section class="experience alt-bg" id="experience">
       <header class="experience-header">
         <div class="experience--small">
           <h2>Experience</h2>
@@ -148,7 +148,7 @@
           <div class="job-title">
             <div class="job-company">
               <img src="images/byui2.png" alt="Brigham Young University">
-              <p class="dates">January 2019 – December 2019</p>
+              <p class="dates">Jan. 2019 – Dec. 2019</p>
             </div>
           </div>
           <div class="job-description">
@@ -171,7 +171,7 @@
           <div class="job-title">
             <div class="job-company">
               <img src="images/byui2.png" alt="Brigham Young University">
-              <p class="dates">April 2019 – July 2019</p>
+              <p class="dates">Apr. 2019 – Jul. 2019</p>
             </div>
           </div>
           <div class="job-description">
@@ -192,6 +192,45 @@
       </div>
     </section>
 
+    <section class="projects-section" id="projects">
+      <header class="projects-section--header">
+        <div class="projects-section--small">
+          <h2>Projects</h2>
+          <p>Some projects I made in my free time.</p>
+          <!-- <p>
+            <a href="https://github.com/taniarascia" class="button">View GitHub</a>
+          </p> -->
+        </div>
+      </header>
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://taniarascia.github.io/new-moon/" target="_blank">New Moon</a></td>
+              <td>A dark syntax theme optimized for web development.</td>
+            </tr>
+            <tr>
+              <td><a href="https://taniarascia.github.io/primitive" target="_blank">Primitive</a></td>
+              <td>A Sass starterpack that provides helpful, browser-consistent styling for UI elements.</td>
+            </tr>
+            <tr>
+              <td><a href="https://taniarascia.github.io/coffee" target="_blank">Cafetography</a></td>
+              <td>A project to keep track of the flavor and ambiance of all the coffeeshops that I write at.</td>
+            </tr>
+            <tr>
+              <td><a href="https://taniarascia.com/music" target="_blank">Ivory &amp; Ivory</a></td>
+              <td>A list of all my musical recordings, in which I sing and play accordion.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
   </main>
   <script src="js/loading.js"></script>

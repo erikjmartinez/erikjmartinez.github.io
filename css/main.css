@@ -1,19 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600,800|Righteous&display=swap");
-body {
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
   font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
   letter-spacing: 1pt;
-  font-size: 1em;
 }
-body h1,
-body h2 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Righteous", cursive;
   font-weight: 800;
   line-height: 1.2;
-}
-body h1 {
-  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+}
 .loader {
   height: 20px;
   width: 250px;
@@ -147,6 +175,10 @@ nav span {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 22px;
+}
+.logo img {
+  max-width: 5em;
+  vertical-align: middle;
 }
 
 .nav-links {
@@ -404,12 +436,101 @@ a {
   padding-left: 3em;
 }
 
+.projects-section {
+  padding: 5em 0;
+  background-image: url("../images/projects.jpg");
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+   the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+   on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+   while the background image is loading */
+  background-color: #464646;
+  color: #ffffff;
+}
+.projects-section--header {
+  text-align: center;
+  padding-bottom: 3em;
+}
+.projects-section--header h2 {
+  font-size: 2.5em;
+  letter-spacing: 2pt;
+}
+.projects-section--header p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 650px;
+}
+@media (min-width: 650px) {
+  .projects-section--header p {
+    font-size: 1.2rem;
+  }
+}
+.projects-section .container table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1.1rem;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.651);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.projects-section .container table a {
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 1.25rem;
+  position: relative;
+}
+.projects-section .container table a::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0;
+  background-color: #ffffff;
+  position: absolute;
+  transition: all ease-in-out 280ms;
+}
+.projects-section .container table a:hover::after {
+  width: 100%;
+}
+.projects-section .container table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+.projects-section .container table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+.projects-section .container table th {
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #fff;
+  font-weight: 400;
+}
+.projects-section .container table td {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #ebecec;
+  color: #ffffff;
+}
+.projects-section .container table tbody > tr:last-child > td {
+  border-bottom: 0;
+}
+
 .container,
 .site-hero--small,
 .about-me--small,
 .technical-skills--small,
-.experience--small {
-  max-width: 650px;
+.experience--small,
+.projects-section--small {
+  max-width: 700px;
   padding: 0 1rem;
   margin-left: auto;
   margin-right: auto;
