@@ -438,20 +438,6 @@ a {
 
 .projects-section {
   padding: 5em 0;
-  background-image: url("../images/projects.jpg");
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center;
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  /* Background image is fixed in the viewport so that it doesn't move when 
-   the content's height is greater than the image's height */
-  background-attachment: fixed;
-  /* This is what makes the background image rescale based
-   on the container's size */
-  background-size: cover;
-  /* Set a background color that will be displayed
-   while the background image is loading */
-  background-color: #464646;
   color: #ffffff;
 }
 .projects-section--header {
@@ -473,7 +459,8 @@ a {
     font-size: 1.2rem;
   }
 }
-.projects-section .container table {
+
+.container table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
@@ -484,13 +471,13 @@ a {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
-.projects-section .container table a {
+.container table a {
   font-weight: 800;
   color: #ffffff;
   font-size: 1.25rem;
   position: relative;
 }
-.projects-section .container table a::after {
+.container table a::after {
   content: "";
   display: block;
   height: 5px;
@@ -499,28 +486,28 @@ a {
   position: absolute;
   transition: all ease-in-out 280ms;
 }
-.projects-section .container table a:hover::after {
+.container table a:hover::after {
   width: 100%;
 }
-.projects-section .container table tr:first-child th:first-child {
+.container table tr:first-child th:first-child {
   border-top-left-radius: 6px;
 }
-.projects-section .container table tr:first-child th:last-child {
+.container table tr:first-child th:last-child {
   border-top-right-radius: 6px;
 }
-.projects-section .container table th {
+.container table th {
   color: #fff;
   padding: 1rem;
   font-size: 1.25rem;
   border-bottom: 2px solid #fff;
   font-weight: 400;
 }
-.projects-section .container table td {
+.container table td {
   padding: 1.5rem 1rem;
   border-bottom: 1px solid #ebecec;
   color: #ffffff;
 }
-.projects-section .container table tbody > tr:last-child > td {
+.container table tbody > tr:last-child > td {
   border-bottom: 0;
 }
 
@@ -534,6 +521,16 @@ a {
   padding: 0 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 450px) {
+  .container,
+.site-hero--small,
+.about-me--small,
+.technical-skills--small,
+.experience--small,
+.projects-section--small {
+    padding: 0 0.5rem;
+  }
 }
 
 .card {

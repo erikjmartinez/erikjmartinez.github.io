@@ -446,17 +446,17 @@ td {
 
 .container2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/erikjmartinez.github.io/selectedprojects/bicycle_site/images/homeBanner.jpg");
+    url("../images/homeBanner.jpg");
 }
 
 .container3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/erikjmartinez.github.io/selectedprojects/bicycle_site/images/events&toursLarge.jpg");
+    url("../images/events&toursLarge.jpg");
 }
 
 .container4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/erikjmartinez.github.io/selectedprojects/bicycle_site/images/nottrek2.jpg");
+    url("../images/nottrek2.jpg");
 }
 
 .content2 {
