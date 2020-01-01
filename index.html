@@ -33,6 +33,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="burger">
         <span class="bar-1"></span>
@@ -243,33 +244,44 @@
       </header>
       <div class="container">
         <form action="https://getform.io/f/59b10047-5ed7-45db-8116-51c31f01dbdc" method="post" id="myForm">
-          <div class="input-field col s12 m6">
-            <!-- <i class="material-icons prefix">account_circle</i> -->
-            <label for="name">Name</label>
-            <input type="text" name="name" />
+
+          <label for="name">Name</label>
+          <input type="text" name="name" />
+
+          <label for="email">Email</label>
+          <input type="email" name="_replyto" class="validate" />
+
+          <label for="message">Message</label>
+          <textarea name="message" cols="10" rows="10"></textarea>
+          <div class="btn-align">
+            <input type="text" name="_gotcha" style="display:none" />
+            <button type="submit" value="Send" onclick="resetForm()">
+              Send
+            </button>
           </div>
-          <div class="input-field col s12 m6">
-            <!-- <i class="material-icons prefix">email</i> -->
-            <label for="email">Email</label>
-            <input type="email" name="_replyto" class="validate" />
-          </div>
-          <div class="input-field col s12 m12">
-            <label for="message">Message</label>
-            <textarea name="message" class="materialize-textarea"></textarea>
-          </div>
-          <input type="text" name="_gotcha" style="display:none" />
-          <button class="btn waves-effect waves-light s12" type="submit" value="Send" onclick="resetForm()">
-            Send
-          </button>
         </form>
       </div>
     </section>
+
+    <footer>
+      <p>Made By Erik Martinez</p>
+      <p>You can also find me here on these platforms.</p>
+      <div class="social">
+        <a href="https://github.com/erikjmartinez?tab=repositories" target="_blank"><img
+            src="images/GitHub-Mark-Light-32px.png" alt=""></a>
+        <a href="https://twitter.com/__SuperMart" target="_blank"><img src="images/icons8-twitter-48.png"
+            alt="Twitter logo by Icons8"></a>
+        <a href="https://www.linkedin.com/in/erikjosemartinez/" target="_blank"><img src="images/icons8-linkedin-48.png"
+            alt="LinkedIn logo by Icons8"></a>
+      </div>
+    </footer>
   </main>
   <script src="js/loading.js"></script>
   <script src="js/texttype.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
   <script src="js/hamburgermenu.js"></script>
   <script src="js/mobileviewport.js"></script>
+  <script src="js/formreset.js"></script>
 </body>
 
 </html>

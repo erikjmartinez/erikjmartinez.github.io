@@ -636,6 +636,27 @@ a {
     font-size: 1.2rem;
   }
 }
+.contact-section .btn-align {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-section .btn-align button {
+  -webkit-appearance: none;
+  -webkit-transition: background 500ms ease;
+  transition: background 500ms ease;
+  background-color: #45bafc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 
 label {
   display: block;
@@ -670,6 +691,17 @@ textarea:focus {
   border: 1px solid #45bafc;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;
+}
+
+footer {
+  padding: 1em 0;
+  text-align: center;
+  background-color: #2A251F;
+  color: #ffffff;
+}
+footer .social a {
+  vertical-align: middle;
+  text-decoration: none;
 }
 
 @media (min-width: 650px) {
