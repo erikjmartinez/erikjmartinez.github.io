@@ -135,7 +135,7 @@
     </section>
 
     <section class="experience alt-bg" id="experience">
-      <header class="experience-header">
+      <header class="experience--header">
         <div class="experience--small">
           <h2>Experience</h2>
           <p>
@@ -145,13 +145,13 @@
       </header>
       <div class="container">
         <div class="flex job">
-          <div class="job-title">
-            <div class="job-company">
+          <div class="job--title">
+            <div class="job--company">
               <img src="images/byui2.png" alt="Brigham Young University">
               <p class="dates">Jan. 2019 – Dec. 2019</p>
             </div>
           </div>
-          <div class="job-description">
+          <div class="job--description">
             <h3>Web Front-End Developer Assistant</h3>
             <p>Hired as an assistant at Brigham Young University - Idaho with a focus on helping students understand
               basic web fundamentals.
@@ -168,13 +168,13 @@
         </div>
 
         <div class="flex job">
-          <div class="job-title">
-            <div class="job-company">
+          <div class="job--title">
+            <div class="job--company">
               <img src="images/byui2.png" alt="Brigham Young University">
               <p class="dates">Apr. 2019 – Jul. 2019</p>
             </div>
           </div>
-          <div class="job-description">
+          <div class="job--description">
             <h3>Jr. Software Developer</h3>
             <p>Hired at Brigham Young University - Idaho to create new software for the Computer Information Technology
               Department.
@@ -234,6 +234,36 @@
       </div>
     </section>
 
+    <section class="contact-section" id="contact">
+      <header class="contact-section--header">
+        <div class="contact-section--small">
+          <h2>Contact</h2>
+          <p>Let's get in touch.</p>
+        </div>
+      </header>
+      <div class="container">
+        <form action="https://getform.io/f/59b10047-5ed7-45db-8116-51c31f01dbdc" method="post" id="myForm">
+          <div class="input-field col s12 m6">
+            <!-- <i class="material-icons prefix">account_circle</i> -->
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="input-field col s12 m6">
+            <!-- <i class="material-icons prefix">email</i> -->
+            <label for="email">Email</label>
+            <input type="email" name="_replyto" class="validate" />
+          </div>
+          <div class="input-field col s12 m12">
+            <label for="message">Message</label>
+            <textarea name="message" class="materialize-textarea"></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" />
+          <button class="btn waves-effect waves-light s12" type="submit" value="Send" onclick="resetForm()">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
   </main>
   <script src="js/loading.js"></script>
   <script src="js/texttype.js"></script>

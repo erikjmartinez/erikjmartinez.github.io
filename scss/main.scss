@@ -77,15 +77,80 @@ a {
     text-decoration: none;
 }
 
+// Global styling
+.container,
+.site-hero--small,
+.about-me--small,
+.technical-skills--small,
+.experience--small,
+.projects-section--small,
+.contact-section,
+.contact-section--small {
+    max-width: 700px;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 450px) {
+        padding: 0 .5rem;
+    }
+}
+
+.card {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    padding: 2.5rem;
+    background: rgba(0, 0, 0, 0.651);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.skills {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.skills .card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 3em;
+    border-radius: 6px;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 2rem 0 0;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 2pt;
+}
+
+// Intro section
 .site-hero {
     height: 80vh;
     height: calc(var(--vh, 1vh) * 80);
     background-color: #000000;
-    background-image: url('../images/unsplashdark.jpg');
+    background-image: url('../images/sitehero-sm.jpg');
     @include bg-img-layout();
     @include flex-col-layout();
     color: #ffffff;
     text-align: center;
+
+    @media (min-width: 850px) {
+        background-image: url(/images/sitehero-lg.jpg);
+    }
 
     // margin-top: 2em;
     // header {
@@ -115,6 +180,7 @@ a {
     }
 }
 
+// About me section
 .about-me {
     background-color: #ffffff;
     text-align: center;
@@ -144,10 +210,11 @@ a {
     // animation: pulse 1s ease infinite;
 }
 
+// Tech section
 .technical-skills {
     padding: 5em 0;
     background-color: #000000;
-    background-image: url('../images/unsplashdesktop.jpg');
+    background-image: url('../images/skillshero.jpg');
     @include bg-img-layout();
     color: #ffffff;
 
@@ -173,11 +240,12 @@ a {
     }
 }
 
+// Experience section
 .experience {
     padding: 5em 0;
     color: #000000;
 
-    &-header {
+    &--header {
         text-align: center;
         padding-bottom: 3em;
 
@@ -199,26 +267,52 @@ a {
     }
 }
 
-.job-description {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+.job {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    // border-bottom: 1px solid #ebecec;
+    margin: 0 1.5em 2em;
 
-    h3,
-    p {
-        margin-bottom: 1.5em;
+    &--title {
+        text-align: center;
+        padding-bottom: 2rem;
     }
 
-    ul {
-        padding-left: 3em;
+    &--company img {
+        width: 110px;
+        // height: 50px;
     }
+
+    &--description {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+
+        h3 {
+            text-align: center;
+        }
+
+        h3,
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        ul {
+            padding-left: 3em;
+        }
+    }
+
 }
 
+// Project section
 .projects-section {
+    background-image: url('../images/projects.jpg');
+    @include bg-img-layout();
     padding: 5em 0;
-    // background-image: url('../images/projects.jpg');
-    // @include bg-img-layout();
     color: #ffffff;
+    // background: linear-gradient(to top right, #f6f6f7, #fefefe);
 
     &--header {
         text-align: center;
@@ -246,7 +340,7 @@ a {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     text-align: left;
     background: rgba(0, 0, 0, 0.651);
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -307,106 +401,67 @@ a {
     }
 }
 
-.container,
-.site-hero--small,
-.about-me--small,
-.technical-skills--small,
-.experience--small,
-.projects-section--small {
-    max-width: 700px;
-    padding: 0 1rem;
-    margin-left: auto;
-    margin-right: auto;
+// Contact section 
+.contact-section {
+    padding: 5em 0;
 
-    @media (max-width: 450px) {
-        padding: 0 .5rem;
+    &--header {
+        text-align: center;
+        padding-bottom: 3em;
+
+        h2 {
+            font-size: 2.5em;
+            letter-spacing: 2pt;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 650px;
+
+            @media (min-width: 650px) {
+                font-size: 1.2rem;
+            }
+        }
     }
 }
 
-.card {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
-    padding: 2.5rem;
-    background: rgba(0, 0, 0, 0.651);
-    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: 0.5rem;
-}
-
-.flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.skills {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.skills .card img {
+label {
     display: block;
-    margin: 0 auto;
-    max-width: 3em;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+[type=text],
+[type=email],
+textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #dee0e0;
     border-radius: 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
-.card h3 {
-    font-weight: 600;
-    font-size: 1rem;
-    margin: 2rem 0 0;
-    text-align: center;
-    color: #ffffff;
-    letter-spacing: 2pt;
+[type=text]:hover,
+[type=email]:hover,
+textarea:hover {
+    border: 1px solid #c4c7c7;
 }
 
-/* Experience */
-.job {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    // border-bottom: 1px solid #ebecec;
-    margin: 0 1.5em 2em;
-
-    &-title {
-        text-align: center;
-        padding-bottom: 2rem;
-    }
-
-    &-company img {
-        width: 110px;
-        // height: 50px;
-    }
-
-    &-description h3 {
-        text-align: center;
-    }
-
-    //     &:last-of-type {
-    //         border-bottom: none;
-    //         margin-bottom: 0;
-    //         padding-bottom: 0;
-    //     }
-
-    //     &-title {
-    //         text-align: center;
-    //         padding-bottom: 2rem;
-    //     }
-
-    //     &-description h3 {
-    //         text-align: center;
-    //         font-weight: 800;
-    //     }
-
-    //     &-description p {
-    //         margin-bottom: 1.5rem;
-    //     }
+[type=text]:focus,
+[type=email]:focus,
+textarea:focus {
+    outline: 0;
+    border: 1px solid #45bafc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;
 }
+
 
 @media (min-width: 650px) {
 
@@ -440,38 +495,6 @@ a {
     }
 
 }
-
-// @media screen and (min-width: 900px) {
-//     .job {
-//         -webkit-box-orient: horizontal;
-//         -webkit-box-direction: normal;
-//         -ms-flex-direction: row;
-//         flex-direction: row;
-//         padding: 2rem 0;
-
-//         &-title {
-//             text-align: left;
-//             -webkit-box-flex: 0;
-//             -ms-flex: 0 1 200px;
-//             flex: 0 1 200px;
-//             margin: 0 6rem 0 0;
-//         }
-
-//         &-description {
-//             -webkit-box-flex: 1;
-//             -ms-flex: 1;
-//             flex: 1;
-
-//             h3 {
-//                 text-align: left;
-//             }
-//         }
-//     }
-
-//     .experience-subcontainer {
-//         max-width: 1050px;
-//     }
-// }
 
 @-webkit-keyframes fadeOut {
     0% {

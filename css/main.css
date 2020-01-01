@@ -281,11 +281,78 @@ a {
   text-decoration: none;
 }
 
+.container,
+.site-hero--small,
+.about-me--small,
+.technical-skills--small,
+.experience--small,
+.projects-section--small,
+.contact-section,
+.contact-section--small {
+  max-width: 700px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 450px) {
+  .container,
+.site-hero--small,
+.about-me--small,
+.technical-skills--small,
+.experience--small,
+.projects-section--small,
+.contact-section,
+.contact-section--small {
+    padding: 0 0.5rem;
+  }
+}
+
+.card {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.651);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.skills .card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 3em;
+  border-radius: 6px;
+}
+
+.card h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 2rem 0 0;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 2pt;
+}
+
 .site-hero {
   height: 80vh;
   height: calc(var(--vh, 1vh) * 80);
   background-color: #000000;
-  background-image: url("../images/unsplashdark.jpg");
+  background-image: url("../images/sitehero-sm.jpg");
   /* Background image is centered vertically and horizontally at all times */
   background-position: center;
   /* Background image doesn't tile */
@@ -314,6 +381,11 @@ a {
   align-items: center;
   color: #ffffff;
   text-align: center;
+}
+@media (min-width: 850px) {
+  .site-hero {
+    background-image: url(/images/sitehero-lg.jpg);
+  }
 }
 .site-hero h1 {
   font-size: 3.5rem;
@@ -363,7 +435,7 @@ a {
 .technical-skills {
   padding: 5em 0;
   background-color: #000000;
-  background-image: url("../images/unsplashdesktop.jpg");
+  background-image: url("../images/skillshero.jpg");
   /* Background image is centered vertically and horizontally at all times */
   background-position: center;
   /* Background image doesn't tile */
@@ -403,40 +475,71 @@ a {
   padding: 5em 0;
   color: #000000;
 }
-.experience-header {
+.experience--header {
   text-align: center;
   padding-bottom: 3em;
 }
-.experience-header h2 {
+.experience--header h2 {
   font-size: 2.5em;
   letter-spacing: 2pt;
 }
-.experience-header p {
+.experience--header p {
   font-size: 1.1rem;
   margin: 0 auto;
   padding: 20px;
   max-width: 650px;
 }
 @media (min-width: 650px) {
-  .experience-header p {
+  .experience--header p {
     font-size: 1.2rem;
   }
 }
 
-.job-description {
+.job {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 1.5em 2em;
+}
+.job--title {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.job--company img {
+  width: 110px;
+}
+.job--description {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-.job-description h3,
-.job-description p {
+.job--description h3 {
+  text-align: center;
+}
+.job--description h3,
+.job--description p {
   margin-bottom: 1.5em;
 }
-.job-description ul {
+.job--description ul {
   padding-left: 3em;
 }
 
 .projects-section {
+  background-image: url("../images/projects.jpg");
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+   the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+   on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+   while the background image is loading */
+  background-color: #464646;
   padding: 5em 0;
   color: #ffffff;
 }
@@ -464,7 +567,7 @@ a {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   text-align: left;
   background: rgba(0, 0, 0, 0.651);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -511,86 +614,62 @@ a {
   border-bottom: 0;
 }
 
-.container,
-.site-hero--small,
-.about-me--small,
-.technical-skills--small,
-.experience--small,
-.projects-section--small {
-  max-width: 700px;
-  padding: 0 1rem;
-  margin-left: auto;
-  margin-right: auto;
+.contact-section {
+  padding: 5em 0;
 }
-@media (max-width: 450px) {
-  .container,
-.site-hero--small,
-.about-me--small,
-.technical-skills--small,
-.experience--small,
-.projects-section--small {
-    padding: 0 0.5rem;
+.contact-section--header {
+  text-align: center;
+  padding-bottom: 3em;
+}
+.contact-section--header h2 {
+  font-size: 2.5em;
+  letter-spacing: 2pt;
+}
+.contact-section--header p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 650px;
+}
+@media (min-width: 650px) {
+  .contact-section--header p {
+    font-size: 1.2rem;
   }
 }
 
-.card {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-  padding: 2.5rem;
-  background: rgba(0, 0, 0, 0.651);
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  margin: 0.5rem;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.skills {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.skills .card img {
+label {
   display: block;
-  margin: 0 auto;
-  max-width: 3em;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+[type=text],
+[type=email],
+textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid #dee0e0;
   border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
-.card h3 {
-  font-weight: 600;
-  font-size: 1rem;
-  margin: 2rem 0 0;
-  text-align: center;
-  color: #ffffff;
-  letter-spacing: 2pt;
+[type=text]:hover,
+[type=email]:hover,
+textarea:hover {
+  border: 1px solid #c4c7c7;
 }
 
-/* Experience */
-.job {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0 1.5em 2em;
-}
-.job-title {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-.job-company img {
-  width: 110px;
-}
-.job-description h3 {
-  text-align: center;
+[type=text]:focus,
+[type=email]:focus,
+textarea:focus {
+  outline: 0;
+  border: 1px solid #45bafc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;
 }
 
 @media (min-width: 650px) {
