@@ -1,9 +1,10 @@
+const html = document.querySelectorAll("section");
 const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links li");
 
-burger.addEventListener("click", () => {
-  nav.classList.toggle("nav-inactive");
+function mobileNav() {
+  // nav.classList.toggle("nav-inactive");
   nav.classList.toggle("nav-active");
   navLinks.forEach((link, index) => {
     // console.log(index);
@@ -16,4 +17,6 @@ burger.addEventListener("click", () => {
   });
   // Burger Animation
   burger.classList.toggle("toggle");
-});
+}
+
+burger.addEventListener("click", mobileNav);
