@@ -1,0 +1,17 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Erik Martinez - Portfolio",
+  "scope": "/",
+  "display": "browser",
+  "start_url": "https://erikjmartinez.github.io/",
+  "short_name": "Erik Martinez -",
+  "theme_color": "transparent",
+  "description": "The online portfolio of Erik Martinez.",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": "",
+  "prefer_related_applications": "false",
+  "icons": [],
+  "generated": "true"
+}
