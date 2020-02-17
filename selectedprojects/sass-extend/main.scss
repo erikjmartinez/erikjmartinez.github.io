@@ -1,0 +1,95 @@
+$layout-padding: 3em;
+$primary-color: #0090ff;
+$darken-primary: darken($primary-color, 20%);
+
+%text {
+  font-size: 0.9rem;
+  line-height: 1.7em;
+}
+
+%titles {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat';
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 4fr 1fr;
+  grid-template-areas:
+    'main posts'
+    'footer posts';
+  height: 100vh;
+}
+
+section {
+  padding: $layout-padding * 2.5;
+
+  & > p {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+  }
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  @extend %text;
+  padding: 2em;
+  margin-right: 0.5em;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+aside {
+  padding: $layout-padding;
+  grid-area: posts;
+  background: $darken-primary;
+  color: lighten($primary-color, 30%);
+
+  li {
+    @extend %text;
+  }
+
+  a {
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+}
+
+footer {
+  padding: $layout-padding;
+
+  p {
+    @extend %text;
+  }
+}
+
+h1 {
+  @extend %titles;
+  font-size: 3.5rem;
+  color: $primary-color;
+  margin-bottom: 0;
+}
+
+h3 {
+  @extend %titles;
+  font-size: 1.3rem;
+}
