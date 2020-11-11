@@ -356,13 +356,13 @@ a {
   /* Background image doesn't tile */
   background-repeat: no-repeat;
   /* Background image is fixed in the viewport so that it doesn't move when 
-   the content's height is greater than the image's height */
+      the content's height is greater than the image's height */
   background-attachment: fixed;
   /* This is what makes the background image rescale based
-   on the container's size */
+      on the container's size */
   background-size: cover;
   /* Set a background color that will be displayed
-   while the background image is loading */
+      while the background image is loading */
   background-color: #464646;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,13 +439,13 @@ a {
   /* Background image doesn't tile */
   background-repeat: no-repeat;
   /* Background image is fixed in the viewport so that it doesn't move when 
-   the content's height is greater than the image's height */
+      the content's height is greater than the image's height */
   background-attachment: fixed;
   /* This is what makes the background image rescale based
-   on the container's size */
+      on the container's size */
   background-size: cover;
   /* Set a background color that will be displayed
-   while the background image is loading */
+      while the background image is loading */
   background-color: #464646;
   color: #ffffff;
 }
@@ -502,7 +502,7 @@ a {
 }
 .job--title {
   text-align: center;
-  padding-bottom: 2rem;
+  padding: 2rem 2rem 2rem 0;
 }
 .job--company img {
   width: 110px;
@@ -523,6 +523,24 @@ a {
   padding-left: 3em;
 }
 
+.btn-github {
+  -webkit-appearance: none;
+  -webkit-transition: background 500ms ease;
+  transition: background 500ms ease;
+  background-color: #45bafc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
 .projects-section {
   background-image: url("../images/projects.jpg");
   /* Background image is centered vertically and horizontally at all times */
@@ -530,13 +548,13 @@ a {
   /* Background image doesn't tile */
   background-repeat: no-repeat;
   /* Background image is fixed in the viewport so that it doesn't move when 
-   the content's height is greater than the image's height */
+      the content's height is greater than the image's height */
   background-attachment: fixed;
   /* This is what makes the background image rescale based
-   on the container's size */
+      on the container's size */
   background-size: cover;
   /* Set a background color that will be displayed
-   while the background image is loading */
+      while the background image is loading */
   background-color: #464646;
   padding: 5em 0;
   color: #ffffff;
@@ -694,7 +712,7 @@ textarea:focus {
 footer {
   padding: 1em 0;
   text-align: center;
-  background-color: #2A251F;
+  background-color: #2a251f;
   color: #ffffff;
 }
 footer .social a {
