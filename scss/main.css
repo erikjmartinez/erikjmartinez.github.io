@@ -1,0 +1,938 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,800|Righteous&display=swap");
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 1pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Righteous", cursive;
+  font-weight: 800;
+  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+.loader {
+  height: 20px;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.loader--dot {
+  -webkit-animation: loader 2s ease-in-out infinite;
+          animation: loader 2s ease-in-out infinite;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  border: 2px solid white;
+}
+
+.loader--dot:first-child {
+  background-color: #8cc759;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.loader--dot:nth-child(2) {
+  background-color: #8c6daf;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.loader--dot:nth-child(3) {
+  background-color: #ef5d74;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.loader--dot:nth-child(4) {
+  background-color: #f9a74b;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loader--dot:nth-child(5) {
+  background-color: #60beeb;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.loader--dot:nth-child(6) {
+  background-color: #fbef5a;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.loader--text {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+  width: 4rem;
+  margin: auto;
+}
+
+.loader--text:after {
+  content: "Loading";
+  font-weight: bold;
+  -webkit-animation: loading-text 2s infinite;
+          animation: loading-text 2s infinite;
+}
+
+@-webkit-keyframes loader {
+  15% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  45% {
+    -webkit-transform: translateX(230px);
+            transform: translateX(230px);
+  }
+  65% {
+    -webkit-transform: translateX(230px);
+            transform: translateX(230px);
+  }
+  95% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes loader {
+  15% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  45% {
+    -webkit-transform: translateX(230px);
+            transform: translateX(230px);
+  }
+  65% {
+    -webkit-transform: translateX(230px);
+            transform: translateX(230px);
+  }
+  95% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes loading-text {
+  0% {
+    content: "Loading";
+  }
+  25% {
+    content: "Loading.";
+  }
+  50% {
+    content: "Loading..";
+  }
+  75% {
+    content: "Loading...";
+  }
+}
+
+@keyframes loading-text {
+  0% {
+    content: "Loading";
+  }
+  25% {
+    content: "Loading.";
+  }
+  50% {
+    content: "Loading..";
+  }
+  75% {
+    content: "Loading...";
+  }
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  background-color: #2A251F;
+  color: #ffffff;
+}
+
+nav li {
+  list-style: none;
+  padding: 0 1em;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+nav li a::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0;
+  background-color: #ffffff;
+  position: absolute;
+  -webkit-transition: all ease-in-out 280ms;
+  transition: all ease-in-out 280ms;
+}
+
+nav li a:hover::after {
+  width: 100%;
+}
+
+nav span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #ffffff;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.logo {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.logo img {
+  max-width: 5em;
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    height: calc(var(--vh, 1vh) * 92);
+    width: 50%;
+    top: 8vh;
+    background-color: #2A251F;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinksFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .bar-2 {
+  opacity: 0;
+}
+
+.toggle .bar-3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+.hide {
+  display: none;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation: fadeOut 2s ease-out;
+  animation: fadeOut 2s ease-out;
+}
+
+main {
+  position: relative;
+  -webkit-animation: fadeIn 2s ease-in;
+  animation: fadeIn 2s ease-in;
+}
+
+h1,
+h2 {
+  margin: 0 0 1.5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container,
+.site-hero--small,
+.about-me--small,
+.technical-skills--small,
+.experience--small,
+.projects-section--small,
+.contact-section,
+.contact-section--small {
+  max-width: 700px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 450px) {
+  .container,
+  .site-hero--small,
+  .about-me--small,
+  .technical-skills--small,
+  .experience--small,
+  .projects-section--small,
+  .contact-section,
+  .contact-section--small {
+    padding: 0 0.5rem;
+  }
+}
+
+.card {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.651);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.skills .card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 3em;
+  border-radius: 6px;
+}
+
+.card h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 2rem 0 0;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 2pt;
+}
+
+.site-hero {
+  height: 80vh;
+  height: calc(var(--vh, 1vh) * 80);
+  background-color: #000000;
+  background-image: url("../images/sitehero-sm.jpg");
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 850px) {
+  .site-hero {
+    background-image: url(/images/sitehero-lg.jpg);
+  }
+}
+
+.site-hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2pt;
+}
+
+@media (min-width: 650px) {
+  .site-hero h1 {
+    font-size: 3rem;
+  }
+}
+
+.site-hero p {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 650px) {
+  .site-hero p {
+    font-size: 1.2rem;
+  }
+}
+
+.about-me {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5em 0;
+}
+
+.about-me h2 {
+  font-size: 2.5em;
+  letter-spacing: 2pt;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+@media (min-width: 650px) {
+  .about-me p {
+    font-size: 1.2rem;
+  }
+}
+
+.heart {
+  fill: red;
+  position: relative;
+  top: 5px;
+  max-width: 15px;
+  vertical-align: text-top;
+}
+
+.technical-skills {
+  padding: 5em 0;
+  background-color: #000000;
+  background-image: url("../images/skillshero.jpg");
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.technical-skills--header {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.technical-skills--header h2 {
+  font-size: 2.5em;
+  letter-spacing: 2pt;
+}
+
+.technical-skills--header p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 650px;
+}
+
+@media (min-width: 650px) {
+  .technical-skills--header p {
+    font-size: 1.2rem;
+  }
+}
+
+.experience {
+  padding: 5em 0;
+  color: #000000;
+}
+
+.experience--header {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.experience--header h2 {
+  font-size: 2.5em;
+  letter-spacing: 2pt;
+}
+
+.experience--header p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 650px;
+}
+
+@media (min-width: 650px) {
+  .experience--header p {
+    font-size: 1.2rem;
+  }
+}
+
+.job {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 1.5em 2em;
+}
+
+.job--title {
+  text-align: center;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.job--company img {
+  width: 110px;
+}
+
+.job--description {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.job--description h3 {
+  text-align: center;
+}
+
+.job--description h3,
+.job--description p {
+  margin-bottom: 1.5em;
+}
+
+.job--description ul {
+  padding-left: 3em;
+}
+
+.btn-github {
+  -webkit-appearance: none;
+  -webkit-transition: background 500ms ease;
+  transition: background 500ms ease;
+  background-color: #45bafc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.projects-section {
+  background-image: url("../images/projects.jpg");
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  padding: 5em 0;
+  color: #ffffff;
+}
+
+.projects-section--header {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.projects-section--header h2 {
+  font-size: 2.5em;
+  letter-spacing: 2pt;
+}
+
+.projects-section--header p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 650px;
+}
+
+@media (min-width: 650px) {
+  .projects-section--header p {
+    font-size: 1.2rem;
+  }
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1.1em;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.651);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.container table a {
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.container table a::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0;
+  background-color: #ffffff;
+  position: absolute;
+  -webkit-transition: all ease-in-out 280ms;
+  transition: all ease-in-out 280ms;
+}
+
+.container table a:hover::after {
+  width: 100%;
+}
+
+.container table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+
+.container table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+.container table th {
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #fff;
+  font-weight: 400;
+}
+
+.container table td {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #ebecec;
+  color: #ffffff;
+}
+
+.container table tbody > tr:last-child > td {
+  border-bottom: 0;
+}
+
+.contact-section {
+  padding: 5em 0;
+}
+
+.contact-section--header {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.contact-section--header h2 {
+  font-size: 2.5em;
+  letter-spacing: 2pt;
+}
+
+.contact-section--header p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 650px;
+}
+
+@media (min-width: 650px) {
+  .contact-section--header p {
+    font-size: 1.2rem;
+  }
+}
+
+.contact-section .btn-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact-section .btn-align button {
+  -webkit-appearance: none;
+  -webkit-transition: background 500ms ease;
+  transition: background 500ms ease;
+  background-color: #45bafc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+[type="text"],
+[type="email"],
+textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid #dee0e0;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+[type="text"]:hover,
+[type="email"]:hover,
+textarea:hover {
+  border: 1px solid #c4c7c7;
+}
+
+[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: 0;
+  border: 1px solid #45bafc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #a9dffe;
+}
+
+footer {
+  padding: 1em 0;
+  text-align: center;
+  background-color: #2a251f;
+  color: #ffffff;
+}
+
+footer .social a {
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+@media (min-width: 650px) {
+  .container {
+    max-width: 1050px;
+  }
+  .skills .card {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(25% - 1rem);
+    flex: 1 1 calc(25% - 1rem);
+  }
+}
+
+@media (min-width: 900px) {
+  .job {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 2rem 0;
+  }
+  .job-title {
+    text-align: left;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 200px;
+    flex: 0 1 200px;
+    margin-right: 5em;
+    padding-bottom: 2em;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
