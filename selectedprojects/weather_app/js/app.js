@@ -1,71 +1,89 @@
 window.addEventListener('load', () => {
-    let long;
-    let lat;
-    const locationTimezone = document.querySelector('.location--timezone');
-    const tempDegree = document.querySelector('.temp--degree');
-    const tempDescription = document.querySelector('.temp--description');
+  // create vars for api call
+  let long;
+  let lat;
 
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(position => {
-            long = position.coords.longitude;
-            lat = position.coords.latitude;
-            //console.log(lat, long);
-            const proxy = 'https://cors-anywhere.herokuapp.com/'
+  // create vars for DOM elements
+  const cDate = document.getElementById('currentDate');
+  const cTemp = document.getElementById('currentTemp');
+  const cDescription = document.getElementById('currentDescription');
 
-            const api = `${proxy}https://api.darksky.net/forecast/8c1a710cc5b01aaf9b78e7100381e1c4/${lat},${long}`;
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      long = position.coords.longitude;
+      lat = position.coords.latitude;
+      // console.log(lat, long);
+      // const proxy = 'https://cors-anywhere.herokuapp.com/'
 
-            fetch(api)
-                .then(res => {
-                    return res.json();
-                })
+      const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=7b807c1ed0a1bc132675e584fce248e1&units=imperial`;
 
-                .then(data => {
-                    console.log(data);
-                    const {
-                        icon,
-                        temperature,
-                        summary
-                    } = data.currently;
+      fetch(api)
+        .then((res) => {
+          return res.json();
+        })
 
-                    // Set DOM elements from API
-                    locationTimezone.textContent = data.timezone;
-                    tempDegree.textContent = temperature;
-                    tempDescription.textContent = summary;
+        .then((data) => {
+          console.log(data);
+          //   create vars for the weather data
+          const temperature = data.main.temp;
+          const summary = data.weather[0].description;
+          const icon = data.weather[0].icon;
 
-                    // Celcius
-                    let celsius = (temperature - 32) * (5 / 9);
+          // Set DOM elements from API
+          cDate.innerHTML = formatTimezone(data.timezone);
+          cTemp.innerHTML = `${temperature} F`;
+          cDescription.innerHTML = summary;
 
-                    const tempSection = document.querySelector('.temp');
-                    const tempSectionSpan = document.querySelector('.temp span');
+          // Celcius
+          let celsius = (temperature - 32) * (5 / 9);
+          let tempSection = document.querySelector('.flex-container');
 
-                    // Change temp to Celsius
-                    tempSection.addEventListener('click', () => {
-                        if (tempSectionSpan.textContent === "F") {
-                            tempSectionSpan.textContent = "C";
-                            tempDegree.textContent = celsius.toFixed(1);
+          // Change temp to Celsius
+          tempSection.addEventListener('click', () => {
+            if (cTemp.innerHTML === `${temperature} F`) {
+              cTemp.innerHTML = `${celsius.toFixed(1)} C`;
+            } else {
+              cTemp.innerHTML = `${temperature} F`;
+            }
+          });
 
-                        } else {
-                            tempSectionSpan.textContent = "F";
-                            tempDegree.textContent = temperature;
-
-                        }
-
-
-                    });
-
-                    // Set Icon
-                    setIcons(icon, document.querySelector('.icon'));
-                });
+          // Set Icon
+          document.getElementById('icon').src = `http://openweathermap.org/img/w/${icon}.png`;
         });
-
-    }
-
-    function setIcons(icon, iconId) {
-        const skycons = new Skycons({
-            color: "white"
-        });
-        const currentIcon = icon.replace(/-/g, "_").toUpperCase();
-        skycons.play();
-        return skycons.set(iconId, Skycons[currentIcon]);
-    }
+    });
+  }
 });
+
+function formatTimezone(tz) {
+  d = new Date();
+  localTime = d.getTime();
+  localOffset = d.getTimezoneOffset() * 60000;
+  utc = localTime + localOffset;
+  let zone = utc + 1000 * tz;
+  nd = new Date(zone).toLocaleDateString('en-us', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+  return nd;
+}
+
+function switchTempMessaurement() {
+  // Celcius
+  let celsius = (temperature - 32) * (5 / 9);
+
+  const tempSection = document.getElementById('currentTemp');
+  const tempSectionSpan = document.querySelector('degreeSymbol');
+
+  // Change temp to Celsius
+  tempSection.addEventListener('click', () => {
+    if (tempSectionSpan.nodeValue === 'F') {
+      tempSectionSpan.nodeValue = 'C';
+      tempDegree.nodeValue = celsius.toFixed(1);
+    } else {
+      tempSectionSpan.nodeValue = 'F';
+      tempDegree.nodeValue = temperature;
+    }
+  });
+}
