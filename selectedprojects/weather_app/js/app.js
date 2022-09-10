@@ -68,22 +68,3 @@ function formatTimezone(tz) {
   });
   return nd;
 }
-
-function switchTempMessaurement() {
-  // Celcius
-  let celsius = (temperature - 32) * (5 / 9);
-
-  const tempSection = document.getElementById('currentTemp');
-  const tempSectionSpan = document.querySelector('degreeSymbol');
-
-  // Change temp to Celsius
-  tempSection.addEventListener('click', () => {
-    if (tempSectionSpan.nodeValue === 'F') {
-      tempSectionSpan.nodeValue = 'C';
-      tempDegree.nodeValue = celsius.toFixed(1);
-    } else {
-      tempSectionSpan.nodeValue = 'F';
-      tempDegree.nodeValue = temperature;
-    }
-  });
-}
