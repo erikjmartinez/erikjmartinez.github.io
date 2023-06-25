@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 
 :root {
   --mainTextColor-light: #000;
@@ -12,9 +12,12 @@
   --mainLinkColor: var(--mainLinkColor-light);
   --mainBorderColor: var(--mainBorderColor-light);
   --mainBgColor: var(--mainBgColor-light);
+
+  --foreground: #000;
+  --scrollBarColor: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --mainTextColor-dark: #fff;
     --secondaryTextColor-dark: #adb0b1;
@@ -28,13 +31,44 @@
     --mainBorderColor: var(--mainBorderColor-dark);
     --mainBgColor: var(--mainBgColor-dark);
   }
+} */
+
+.darkmode {
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: rgb(69, 186, 252);
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
+
+  --mainTextColor: var(--mainTextColor-dark);
+  --secondaryTextColor: var(--secondaryTextColor-dark);
+  --mainLinkColor: var(--mainLinkColor-dark);
+  --mainBorderColor: var(--mainBorderColor-dark);
+  --mainBgColor: var(--mainBgColor-dark);
+
+  --foreground: #fff;
+  --scrollBarColor: #000;
 }
 
 * {
-  font-family: 'Readex Pro';
+  font-family: "Readex Pro";
   line-height: 1.5em;
   box-sizing: border-box;
   color: var(--mainTextColor);
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollBarColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--mainLinkColor);
+  border-radius: 20px;
+  /* border: 2px solid var(--foreground); */
 }
 
 body {
@@ -122,7 +156,7 @@ a {
 }
 
 #socials--list a::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -139,6 +173,15 @@ a {
 
 #qualifications--list {
   list-style: none;
+}
+
+#qualifications--list li {
+  display: flex;
+  align-items: center;
+}
+
+#qualifications--list li svg {
+  margin-right: 10px;
 }
 
 #wrapper--techstack__items {
@@ -275,8 +318,8 @@ label {
   margin-bottom: 0.5rem;
 }
 
-[type='text'],
-[type='email'],
+[type="text"],
+[type="email"],
 textarea {
   width: 100%;
   display: block;
@@ -288,14 +331,14 @@ textarea {
   color: #000;
 }
 
-[type='text']:hover,
-[type='email']:hover,
+[type="text"]:hover,
+[type="email"]:hover,
 textarea:hover {
   border: 1px solid #45bafc;
 }
 
-[type='text']:focus,
-[type='email']:focus,
+[type="text"]:focus,
+[type="email"]:focus,
 textarea:focus {
   outline: 0;
   border: 1px solid #45bafc;
@@ -308,4 +351,20 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+/* darkmode toggle */
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
 }
