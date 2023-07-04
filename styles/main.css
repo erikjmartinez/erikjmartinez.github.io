@@ -30,6 +30,9 @@
     --mainLinkColor: var(--mainLinkColor-dark);
     --mainBorderColor: var(--mainBorderColor-dark);
     --mainBgColor: var(--mainBgColor-dark);
+
+    --foreground: #fff;
+    --scrollBarColor: #000;
   }
 } */
 
