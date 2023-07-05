@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="icon" href="icons/icon32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-2" style="width: 400px">
+      <h2 class="text-center">Password Generator</h2>
+      <div class="result-container">
+        <div class="input-group mb-2">
+          <span
+            id="result"
+            type="text"
+            class="form-control"
+            placeholder="Generated Password"
+            aria-label="Generated Password"
+            aria-describedby="basic-addon2"
+          ></span>
+          <span class="input-group-text" id="basic-addon2">
+            <button class="btn btn-sm" id="clipboard">
+              <i class="far fa-clipboard"></i></button
+          ></span>
+        </div>
+      </div>
+
+      <div class="options">
+        <h4 class="text-center">Options</h4>
+        <!-- first group of options -->
+        <section class="d-flex flex-row justify-content-center">
+          <div class="d-flex me-4">
+            <label class="form-check-label me-2" for="uppercase"
+              >Uppercase letters</label
+            >
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="uppercase"
+                checked
+              />
+            </div>
+          </div>
+          <div class="d-flex">
+            <label class="form-check-label me-2" for="symbols">Symbols</label>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="symbols"
+                checked
+              />
+            </div>
+          </div>
+        </section>
+        <!-- second group of options -->
+        <section class="d-flex flex-row justify-content-center">
+          <div class="d-flex me-4">
+            <label class="form-check-label me-2" for="lowercase"
+              >Lowercase letters</label
+            >
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="lowercase"
+                checked
+              />
+            </div>
+          </div>
+          <div class="d-flex">
+            <label class="form-check-label me-2" for="numbers">Numbers</label>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="numbers"
+                checked
+              />
+            </div>
+          </div>
+        </section>
+        <!--  -->
+        <section class="d-flex align-items-center justify-content-center p-1">
+          <label class="form-check-label me-2">Password length</label>
+          <input
+            type="number"
+            class="form-control form-control-sm"
+            style="width: 15% !important"
+            id="length"
+            min="4"
+            max="20"
+            value="20"
+          />
+        </section>
+        <!--  -->
+        <section class="d-flex justify-content-center p-1 mb-2">
+          <button class="btn btn-primary btn-sm" id="generate">
+            Generate password
+          </button>
+        </section>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
